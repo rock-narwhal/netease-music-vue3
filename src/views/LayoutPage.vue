@@ -1,19 +1,46 @@
 <script setup>
+import {ref, onMounted, watch} from 'vue'
+import emitter from '@/utils/MittBus.js'
+import {useRoute} from "vue-router";
+import HeaderBar from "@/components/layout/HeaderBar.vue";
+import LeftAside from "@/components/layout/LeftAside.vue";
+import FooterBar from "@/components/layout/FooterBar.vue";
 
+const contentRef = ref(null)
+onMounted(() => {
+  emitter.on('contentScrollTop', () => {
+    contentRef.value.scrollTop = 0
+  })
+})
+
+//监听路由，通知leftAside
+const route = useRoute()
+watch(() => route.path, val => {
+  contentRef.value.scrollTop = 0
+  emitter.emit('activeManuChange', val)
+})
 </script>
 
 <template>
   <div class="layout">
     <!--  顶栏-->
-    <div class="header"></div>
+    <div class="header">
+      <HeaderBar></HeaderBar>
+    </div>
     <!--  中间区-->
     <div class="main">
       <!--    左边菜单栏-->
       <div class="aside">
-
+        <LeftAside></LeftAside>
       </div>
       <!--    中间内容区-->
-      <div class="content" ref="contentRef"></div>
+      <div class="content" ref="contentRef">
+        <router-view v-slot="{Component}">
+          <transition>
+            <component :is="Component"></component>
+          </transition>
+        </router-view>
+      </div>
 
       <!--    播放器抽屉-->
       <div class="player-drawer"></div>
@@ -23,7 +50,9 @@
     </div>
 
     <!--  底部栏-->
-    <div class="footer"></div>
+    <div class="footer">
+      <FooterBar></FooterBar>
+    </div>
   </div>
 </template>
 
@@ -46,7 +75,7 @@
   border-bottom: 1px solid @border;
   display: flex;
 
-  .aside{
+  .aside {
     width: 235px;
     height: auto;
     overflow-y: auto;
