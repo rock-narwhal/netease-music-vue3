@@ -1,5 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import BasicLayout from "@/components/BasicLayout.vue";
+import {ElButton} from "element-plus";
 </script>
 
 <template>
@@ -12,6 +14,8 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <ElButton>这是一个按钮</ElButton>
+  <BasicLayout></BasicLayout>
 </template>
 
 <style scoped>
