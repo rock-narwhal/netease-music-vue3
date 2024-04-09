@@ -4,7 +4,7 @@
 
 <template>
 <div>
-  <SvgIcon name="music" class-name="font-14"></SvgIcon>
+  <SvgIcon name="play-fill" class-name="font-20"></SvgIcon>
 </div>
 </template>
 

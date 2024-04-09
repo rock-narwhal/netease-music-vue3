@@ -26,6 +26,12 @@ const svgClass = computed(() => {
   </svg>
 </template>
 
-<style>
-
+<style scoped >
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  //line-height: 30px;
+  line-height: 2em;
+  overflow: hidden;
+}
 </style>
