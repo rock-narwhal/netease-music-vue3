@@ -10,6 +10,7 @@ import router from "@/router/index.js";
 import {createPinia} from 'pinia'
 import '@/assets/iconfont/iconfont.css'
 import '@/assets/less/element.less'
+import '@/assets/less/commons.less'
 
 const app = createApp(App)
 //element-plus

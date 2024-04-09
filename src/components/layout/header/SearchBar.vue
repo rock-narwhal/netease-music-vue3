@@ -1,8 +1,10 @@
 <script setup>
-import {ref} from 'vue'
-import {getHotSearch, getSuggest} from "@/api/api_other.js";
-import {useRouter} from "vue-router";
+import {ref, onMounted} from 'vue'
+import {getHotSearch, getSuggest} from "@/api/api_other.js"
+import {useRouter} from "vue-router"
 import {Search} from '@element-plus/icons-vue'
+import HisAndHot from '@/components/layout/header/HisAndHot.vue'
+import SearchSuggest from '@/components/layout/header/SearchSuggest.vue'
 
 const keywords = ref('')
 
@@ -27,18 +29,6 @@ const searchSuggest = async (val) => {
 
 // 是否展示搜索弹窗
 const showInfoTip = ref(false)
-//热搜内容
-const hotList = ref([])
-const hotSearch = async () => {
-  showInfoTip.value = true
-  if (keywords.value) {
-    await searchSuggest(keywords.value)
-  }
-  if (hotList.value.length > 0) return
-  const res = await getHotSearch()
-  if (res.code !== 200) return
-  hotList.value = res.data
-}
 
 const router = useRouter()
 const searchInput = ref(null)
@@ -63,6 +53,19 @@ const setHistory = (val) => {
     window.localStorage.setItem('searchHis', JSON.stringify(searchHis.value))
   }
 }
+const deleteHis = (val) => {
+  if (val) {
+    searchHis.value = searchHis.value.filter(item => item !== val)
+  } else {//没传参删除所有
+    searchHis.value = []
+  }
+  window.localStorage.setItem('searchHis', JSON.stringify(searchHis.value))
+}
+onMounted(() => {
+  let history = window.localStorage.getItem('searchHis');
+  if (!history) return
+  searchHis.value = JSON.parse(history) || []
+})
 </script>
 
 <template>
@@ -75,17 +78,21 @@ const setHistory = (val) => {
                 :prefix-icon="Search"
                 @input="handleInput"
                 clearable
-                @focus="hotSearch"
+                @focus="showInfoTip = true"
                 @blur="showInfoTip = false"
                 @keyup.enter.native="toSearch">
       </el-input>
     </div>
     <transition name="el-fade-in">
       <!--          搜索栏下的弹窗-->
-      <div class="search-info-tip" v-show="showInfoTip">
+      <div class="search-info-tip">
         <!--        搜索历史和热搜组件-->
-
+        <HisAndHot v-show="keywords === ''"
+                   :keywords="keywords"
+                   :search-his="searchHis"
+                   @deleteHis="deleteHis"></HisAndHot>
         <!--        搜索建议组件-->
+        <SearchSuggest v-show="keywords !== ''"></SearchSuggest>
       </div>
     </transition>
   </div>
@@ -93,6 +100,7 @@ const setHistory = (val) => {
 
 <style scoped lang="less">
 @import "@/assets/less/lessDefine";
+
 .search-bar {
   width: 100%;
   height: 100%;
@@ -104,6 +112,22 @@ const setHistory = (val) => {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .search-info-tip {
+    position: absolute;
+    top: 80px;
+    left: -70px;
+    transition: all 0.5s;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px #dddddd;
+    width: 350px;
+    height: 500px;
+    color: black;
+    overflow-y: auto;
+    padding: 10px;
+    z-index: 99;
+    background-color: white;
   }
 }
 </style>
