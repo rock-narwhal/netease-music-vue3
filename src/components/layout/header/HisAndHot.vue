@@ -4,9 +4,6 @@ import {Delete, Close} from '@element-plus/icons-vue'
 import {getHotSearch} from "@/api/api_other.js";
 
 defineProps({
-  keywords: {
-    type: String
-  },
   searchHis: {
     type: Array
   }

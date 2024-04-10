@@ -1,31 +1,11 @@
 <script setup>
 import {ref, onMounted} from 'vue'
-import {getHotSearch, getSuggest} from "@/api/api_other.js"
 import {useRouter} from "vue-router"
 import {Search} from '@element-plus/icons-vue'
 import HisAndHot from '@/components/layout/header/HisAndHot.vue'
 import SearchSuggest from '@/components/layout/header/SearchSuggest.vue'
 
 const keywords = ref('')
-
-let timer = 0
-//搜索栏输入关键字，弹出搜索建议
-const handleInput = (val) => {
-  window.clearTimeout(timer)
-  timer = window.setTimeout(() => {
-    searchSuggest(val)
-  })
-}
-
-//搜索建议
-const suggestInfo = ref({})
-// 获取搜索建议
-const searchSuggest = async (val) => {
-  if (!val) return
-  const res = await getSuggest({keywords: val})
-  if (res.code !== 200) return
-  suggestInfo.value = res.result
-}
 
 // 是否展示搜索弹窗
 const showInfoTip = ref(false)
@@ -36,7 +16,12 @@ const searchInput = ref(null)
 const toSearch = () => {
   if (!keywords.value) return
   searchInput.value.blur()
-  router.push(`/search/songs?keywords=${encodeURIComponent(keywords.value)}`)
+  router.push({
+    name:'SearchPage',
+    query:{
+      keywords: encodeURIComponent(keywords.value)
+    }
+  })
   setHistory(keywords.value)
 }
 
@@ -66,6 +51,10 @@ onMounted(() => {
   if (!history) return
   searchHis.value = JSON.parse(history) || []
 })
+
+const searchSuggestRef = ref(null)
+const handleInput = () =>{
+}
 </script>
 
 <template>
@@ -85,14 +74,14 @@ onMounted(() => {
     </div>
     <transition name="el-fade-in">
       <!--          搜索栏下的弹窗-->
-      <div class="search-info-tip">
+      <div class="search-info-tip" v-show="showInfoTip">
         <!--        搜索历史和热搜组件-->
         <HisAndHot v-show="keywords === ''"
                    :keywords="keywords"
                    :search-his="searchHis"
                    @deleteHis="deleteHis"></HisAndHot>
         <!--        搜索建议组件-->
-        <SearchSuggest v-show="keywords !== ''"></SearchSuggest>
+        <SearchSuggest ref="searchSuggestRef" v-show="keywords !== ''" :keywords="keywords"></SearchSuggest>
       </div>
     </transition>
   </div>
