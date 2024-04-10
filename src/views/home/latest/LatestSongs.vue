@@ -4,6 +4,7 @@ import {getLatestByType} from "@/api/api_toplist.js";
 import {timeConvert} from "@/utils/DateUtil.js";
 import emitter from '@/utils/MittBus.js'
 import {playStore} from "@/store/PlayStore.js";
+import SelectorMenu from "@/components/menu/SelectorMenu.vue";
 
 const menus = ref([{name: '全部', type: 0, active: false}, {name: '华语', type: 7, active: false},
   {name: '欧美', type: 96, active: false}, {name: '日本', type: 8, active: false},
@@ -45,7 +46,7 @@ const playingInfo = playStore().playingInfo
   <div>
     <div class="menu-bar">
       <SelectorMenu :option="menus" @clickTab="getLatest">
-        <template slot="rightBtn">
+        <template v-slot:rightBtn>
           <button @click="playAll" class="no-btn menu-btn play-btn">播放全部</button>
           <button @click="collectAll" class="no-btn menu-btn">收藏全部</button>
         </template>
