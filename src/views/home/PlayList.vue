@@ -3,6 +3,7 @@ import {ref, onMounted} from 'vue'
 import {getAllCat, getHighQuality, getHotCat, getPlayListByCat} from "@/api/api_playlist.js";
 import emitter from '@/utils/MittBus.js'
 import {useRouter} from "vue-router";
+import SvgIcon from "@/components/svg/SvgIcon.vue";
 
 const showAllCats = ref(false)
 
@@ -116,8 +117,8 @@ const toPlaylistDetail = (id) => {
       <img class="img-front img-80" :src="highInfo.coverImgUrl +'param?400y400'">
       <div class="info-wrap">
         <div>
-          <button class="cir-btn-orange">
-            <i class="iconfont icon-huiyuanhuangguanguanjun-xianxing"></i>
+          <button class="cir-btn-orange font-14">
+            <svg-icon name="crown-gold"></svg-icon>
             精品歌单
           </button>
         </div>
@@ -232,7 +233,7 @@ const toPlaylistDetail = (id) => {
         border: 1px solid @greyD8;
 
         &:hover {
-          background-color: @grayF2;
+          background-color: @greyF2;
         }
       }
 

@@ -41,6 +41,7 @@ const onTagClick = (name) => {
     <div class="cat-group" v-for="(catGroup,index) in catList" :key="index">
       <div class="group-title">
         <i class="iconfont font-24" :class="configs[index].icon"></i>
+<!--        <SvgIcon name="international-grey" class-name="font-24"></SvgIcon>-->
         <span class="mleft-6">{{ configs[index].title }}</span>
       </div>
       <div class="cat-list font-14">
@@ -64,7 +65,7 @@ const onTagClick = (name) => {
   width: 720px;
   border-radius: 8px;
   background-color: white;
-  box-shadow: 0 1px 4px #dddddd;
+  box-shadow: 0 1px 4px @border;
   text-align: left;
 
   .header-title {
