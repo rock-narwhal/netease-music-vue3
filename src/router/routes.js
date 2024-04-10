@@ -43,7 +43,9 @@ export default [
                     {
                         path: 'latest',
                         name: 'LatestPage',
-                        redirect: '/homePage/latest/songs',
+                        redirect: {
+                            name: 'LatestSongPage'
+                        },
                         component: () => import('@/views/home/latest/LatestPage.vue'),
                         meta: {title: '最新音乐'},
                         children: [

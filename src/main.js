@@ -11,6 +11,7 @@ import {createPinia} from 'pinia'
 import '@/assets/iconfont/iconfont.css'
 import '@/assets/less/element.less'
 import '@/assets/less/commons.less'
+import LazyLoad from 'vue3-lazyload'
 
 const app = createApp(App)
 //element-plus
@@ -19,6 +20,11 @@ app.use(ElementPlus)
 app.use(router)
 // pinia
 app.use(createPinia())
+//懒加载
+app.use(LazyLoad, {
+    loading: '@/assets/img/loading.gif',
+    error:'@/assets/img/error.jpg'
+})
 // svg图标
 app.component(SvgIcon)
 
