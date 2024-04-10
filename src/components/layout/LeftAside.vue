@@ -1,12 +1,12 @@
 <script setup>
-import {computed, ref, onMounted} from "vue";
+import {computed, ref, reactive, onMounted, onUnmounted} from "vue";
 import {userStore} from "@/store/userStore.js";
 import {useRouter} from "vue-router";
 import emitter from '@/utils/MittBus.js'
 
 const user = userStore()
 
-const menuList = ref([
+const menu = reactive([
   {path: '/homePage/personalrecom', title: '发现音乐', login: false, type: 0},
   {path: '/homePage/recomsongs', title: '每日推荐', login: true, type: 1},
   {path: '/homePage/video', title: '视频', login: true, type: 0},
@@ -17,10 +17,10 @@ const menuList = ref([
 const activeMenu = ref('/personalrecom')
 
 const commonList = computed(() => {
-  return menuList.value.filter(item => item.type === 0)
+  return menu.filter(item => item.type === 0)
 })
 const myList = computed(() => {
-  return menuList.value.filter(item => item.type === 1)
+  return menu.filter(item => item.type === 1)
 })
 
 const router = useRouter()
@@ -39,6 +39,10 @@ const activeMenuChange = (val) => {
 
 onMounted(() => {
   emitter.on('activeMenuChange', activeMenuChange)
+})
+
+onUnmounted(() => {
+  emitter.off('activeMenuChange')
 })
 </script>
 
