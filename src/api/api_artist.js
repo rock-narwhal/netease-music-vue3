@@ -9,4 +9,4 @@ export const artistAlbum = ({id, offset, limit}) => get('/artist/album', {id, of
 // 歌手MV
 export const artistMV = ({id, offset, limit}) => get('/artist/mv', {id, offset, limit})
 //歌手信息
-export const artistInfo = (id) => get('/artist/desc', {id})
+export const artistDesc = (id) => get('/artist/desc', {id})
