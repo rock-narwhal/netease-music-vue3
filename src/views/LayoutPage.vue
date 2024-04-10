@@ -36,7 +36,7 @@ watch(() => route.path, val => {
       <!--    中间内容区-->
       <div class="content" ref="contentRef">
         <router-view v-slot="{Component}">
-          <transition>
+          <transition name="el-fade-in">
             <component :is="Component"></component>
           </transition>
         </router-view>

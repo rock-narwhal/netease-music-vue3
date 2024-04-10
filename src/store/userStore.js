@@ -9,6 +9,8 @@ export const userStore = defineStore('user', {
                 nickname: '',
                 avatarUrl: ''
             },
+            createPlayList:[], //创建的歌单
+            subscribePlaylist:[], //收藏的歌单
         }
     }
 })
