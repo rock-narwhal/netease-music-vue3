@@ -46,8 +46,8 @@ const toAlbumDetail = (id) => {
     <!--  搜索 单曲页面  {{$route.query}}-->
     <el-skeleton :rows="10" animated v-show="isLoading"></el-skeleton>
     <ImgWidthList :list="list" mode="al" @clickItem="toAlbumDetail">
-      <template v-slot="{artist}">
-        {{ artist.name }} <span v-if="artist.trans">({{ artist.trans }})</span>
+      <template v-slot="{scope}">
+        {{ scope.artist.name }} <span v-if="scope.artist.trans">({{ scope.artist.trans }})</span>
       </template>
     </ImgWidthList>
   </div>

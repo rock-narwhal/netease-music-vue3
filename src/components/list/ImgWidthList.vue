@@ -72,7 +72,7 @@ const getCoverImg = (item) => {
           {{ item.name }}
         </div>
         <div class="float-item clearfix" :style="{'width': `${100 - coverWidth}%`}">
-          <slot :artist="item.artist"></slot>
+          <slot :scope="item"></slot>
         </div>
       </div>
     </li>
