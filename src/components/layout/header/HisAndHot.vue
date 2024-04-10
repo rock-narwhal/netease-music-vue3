@@ -2,6 +2,7 @@
 import {ref, defineEmits, defineProps, onMounted} from 'vue'
 import {Delete, Close} from '@element-plus/icons-vue'
 import {getHotSearch} from "@/api/api_other.js";
+import {useRouter} from "vue-router";
 
 defineProps({
   searchHis: {
@@ -23,8 +24,13 @@ onMounted(async () => {
   if (res.code !== 200) return
   hotList.value = res.data
 })
-const clickHot = () => {
 
+const router = useRouter()
+const clickHot = (keywords) => {
+  router.push({
+    name:'SearchPage',
+    query:{keywords}
+  })
 }
 </script>
 

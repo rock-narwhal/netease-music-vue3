@@ -15,6 +15,7 @@ export default [
                 redirect: {
                     name: 'PersonalRecom'
                 },
+                props: true,
                 children: [
                     {
                         path: 'personalrecom',
@@ -63,6 +64,52 @@ export default [
                             },
                         ]
                     },
+                ]
+            },
+            // 搜索页
+            {
+                name: 'SearchPage',
+                path: 'search',
+                props: true,
+                component : ()=> import('@/views/search/SearchPage.vue'),
+                redirect: {name:'SearchSongs'},
+                children:[
+                    {
+                        name: 'SearchSongs',
+                        path: 'songs',
+                        props: true,
+                        component: () => import('@/views/search/SearchSongs.vue')
+                    },
+                    {
+                        name: 'SearchAlbums',
+                        path: 'albums',
+                        props: true,
+                        component: () => import('@/views/search/SearchAlbums.vue')
+                    },
+                    {
+                        name: 'SearchArtists',
+                        path: 'artists',
+                        props: true,
+                        component: () => import('@/views/search/SearchArtists.vue')
+                    },
+                    {
+                        name: 'SearchPlaylist',
+                        path: 'playlist',
+                        props: true,
+                        component: () => import('@/views/search/SearchPlaylist.vue')
+                    },
+                    {
+                        name: 'SearchUsers',
+                        path: 'users',
+                        props: true,
+                        component: () => import('@/views/search/SearchUsers.vue')
+                    },
+                    {
+                        name: 'SearchMvs',
+                        path: 'mvs',
+                        props: true,
+                        component: () => import('@/views/search/SearchMvs.vue')
+                    }
                 ]
             }
         ]
