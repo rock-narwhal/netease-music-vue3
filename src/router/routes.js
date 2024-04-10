@@ -44,20 +44,20 @@ export default [
                         path: 'latest',
                         name: 'LatestPage',
                         redirect: {
-                            name: 'LatestSongPage'
+                            name: 'LatestSongs'
                         },
                         component: () => import('@/views/home/latest/LatestPage.vue'),
                         meta: {title: '最新音乐'},
                         children: [
                             {
                                 path: 'songs',
-                                name: 'LatestSongPage',
+                                name: 'LatestSongs',
                                 component: () => import('@/views/home/latest/LatestSongs.vue'),
                                 meta: {title: '新歌速递'}
                             },
                             {
                                 path: 'albums',
-                                name: 'LatestAlbumPage',
+                                name: 'LatestAlbums',
                                 component: () => import('@/views/home/latest/LatestAlbums.vue'),
                                 meta: {title: '新碟上架'}
                             },
