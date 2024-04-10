@@ -71,9 +71,9 @@ export default [
                 name: 'SearchPage',
                 path: 'search',
                 props: true,
-                component : ()=> import('@/views/search/SearchPage.vue'),
-                redirect: {name:'SearchSongs'},
-                children:[
+                component: () => import('@/views/search/SearchPage.vue'),
+                redirect: {name: 'SearchSongs'},
+                children: [
                     {
                         name: 'SearchSongs',
                         path: 'songs',
@@ -109,6 +109,92 @@ export default [
                         path: 'mvs',
                         props: true,
                         component: () => import('@/views/search/SearchMvs.vue')
+                    }
+                ]
+            },
+            // 详情页
+            {
+                name: 'Detail',
+                path: 'detail',
+                props: true,
+                component: () => import('@/views/detail/DetailPage.vue'),
+                children: [
+                    {
+                        name: 'ArtistDetail',
+                        path: 'artist',
+                        props: true,
+                        component: () => import('@/views/detail/artist/ArtistDetail.vue'),
+                        redirect: {name: 'ArtistAlbum'},
+                        children: [
+                            {
+                                name: 'ArtistAlbum',
+                                path: 'album',
+                                component: () => import('@/views/detail/artist/ArtistAlbum.vue'),
+                            },
+                            {
+                                name: 'ArtistMV',
+                                path: 'mv',
+                                component: () => import('@/views/detail/artist/ArtistMV.vue'),
+                            },
+                            {
+                                name: 'ArtistInfo',
+                                path: 'info',
+                                component: () => import('@/views/detail/artist/ArtistInfo.vue'),
+                            },
+                            {
+                                name: 'SimilarArtist',
+                                path: 'similar',
+                                component: () => import('@/views/detail/artist/SimilarArtist.vue'),
+                            }
+                        ]
+                    },
+                    {
+                        name: 'AlbumDetail',
+                        path: 'album',
+                        props: true,
+                        component: () => import('@/views/detail/album/AlbumDetail.vue'),
+                        redirect: {name: 'AlbumSongs'},
+                        children: [
+                            {
+                                name: 'AlbumSongs',
+                                path: 'songs',
+                                component: () => import('@/views/detail/album/AlbumSongs.vue')
+                            },
+                            {
+                                name: 'AlbumComments',
+                                path: 'comments',
+                                component: () => import('@/views/detail/album/AlbumComments.vue')
+                            },
+                            {
+                                name: 'AlbumInfo',
+                                path: 'info',
+                                component: () => import('@/views/detail/album/AlbumInfo.vue')
+                            }
+                        ]
+                    },
+                    {
+                        name: 'PlaylistDetail',
+                        path: 'playlist',
+                        props: true,
+                        component: () => import('@/views/detail/playlist/PlaylistDetail.vue'),
+                        redirect: {name: 'PlaylistSongs'},
+                        children: [
+                            {
+                                name: 'PlaylistSongs',
+                                path: 'songs',
+                                component: () => import("@/views/detail/playlist/PlaylistSongs.vue")
+                            },
+                            {
+                                name: 'PlaylistComments',
+                                path: 'comments',
+                                component: () => import('@/views/detail/playlist/PlaylistComments.vue')
+                            },
+                            {
+                                name: 'PlaylistCollectors',
+                                path: 'collectors',
+                                component: () => import('@/views/detail/playlist/PlaylistCollectors.vue')
+                            }
+                        ]
                     }
                 ]
             }
