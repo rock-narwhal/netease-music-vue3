@@ -46,6 +46,9 @@ const clickAvatar = () => {
     <div class="search-input">
       <SearchBar/>
     </div>
+    <div class="logout-btn-wrap">
+      <el-button type="danger" v-show="user.isLogin" @click="user.doLogout">退出登录</el-button>
+    </div>
     <div class="login-info font-12">{{ user.nickname }}</div>
     <div class="avatar-wrap pointer" @click="clickAvatar">
       <el-avatar :size="30" icon="el-icon-user-solid" :src="avatarUrl"></el-avatar>
@@ -114,5 +117,12 @@ const clickAvatar = () => {
 .login-info {
   float: right;
   margin-left: 10px;
+}
+.logout-btn-wrap{
+  height: 100%;
+  float: right;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
 }
 </style>

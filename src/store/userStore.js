@@ -1,5 +1,5 @@
 import {defineStore} from 'pinia'
-import {checkLoginStatus, getUserAccountInfo, getUserDetail} from "@/api/api_login.js";
+import {checkLoginStatus, getUserAccountInfo, getUserDetail, logout} from "@/api/api_login.js";
 
 export const userStore = defineStore('user', {
     state: () => {
@@ -27,6 +27,11 @@ export const userStore = defineStore('user', {
         }
     },
     actions: {
+        async doLogout(){
+            const res = await logout()
+            if(res.code !== 200) return
+            this.clearLogInfo()
+        },
         async doLogin(cookie) {
             document.cookie = cookie
             this.isLogin = true
@@ -42,14 +47,14 @@ export const userStore = defineStore('user', {
         async queryUserAccount(){
             const res = await getUserAccountInfo(new Date().getTime())
             if(res.code !== 200) return
-            this.account = res.data.account
-            this.profile = res.data.profile || {}
+            this.account = res.account
+            this.profile = res.profile || {}
         },
         async checkLogin() {
             console.log('checkLogin')
             const res = await checkLoginStatus(new Date().getTime())
             if (res.data.code !== 200) {
-                this.loginOut()
+                this.clearLogInfo()
                 return
             }
             this.isLogin = true
@@ -57,14 +62,14 @@ export const userStore = defineStore('user', {
             this.profile = res.data.profile || {}
             await this.queryUserDetail()
         },
-        loginOut() {
+        clearLogInfo() {
             console.log('loginOut')
             this.isLogin = false
             this.account = {}
             this.profile = {}
             this.createPlayList = []
             this.subscribePlaylist = []
-            document.cookie = ''
+            document.cookie = null
         }
     }
 })

@@ -30,6 +30,12 @@ export const get = (url, params) => {
         .catch(err => handleError(err))
 }
 
+export const postWithCookie = (url, data, headers, params) => {
+    data = data || {}
+    data.cookie = document.cookie
+    return post(url, data, headers, params)
+}
+
 export const post = (url, data, headers, params) => {
     params = params || {}
     return axios.post(

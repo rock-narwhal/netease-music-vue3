@@ -1,14 +1,23 @@
 <script setup>
-import {ref, onMounted, onUnmounted} from 'vue'
+import {ref, onMounted, onUnmounted, watch} from 'vue'
 import SvgIcon from "@/components/svg/SvgIcon.vue";
-import {getQrKey, qrCheck, qrCreate} from "@/api/api_login.js";
+import {captchaSent, getQrKey, qrCheck, qrCreate} from "@/api/api_login.js";
 import emitter from '@/utils/MittBus.js'
 import {userStore} from "@/store/userStore.js";
+import logo from '@/assets/img/cloudMusic.png'
+import {ElMessage} from "element-plus";
 
 const showLogin = ref(false)
 
 //登录方式  QR:二维码 PW:手机号+密码  VC:手机号+验证码
 const loginType = ref('QR')
+watch(loginType, (val) => {
+  if (val === 'QR') {
+    qrLogin()
+  } else {
+    window.clearInterval(qrCheckTimer)
+  }
+})
 
 const qrUrl = ref('') //二维码url
 const qrKey = ref('')
@@ -21,7 +30,6 @@ const qrLogin = async () => {
   res = await qrCreate(qrKey.value, true, new Date().getTime())
   if (res.code !== 200) return
   qrUrl.value = res.data.qrimg
-  console.log('二维码url:' + res)
   await checkQrLogin()
 }
 
@@ -51,7 +59,7 @@ const checkQrLogin = async () => {
     }
     if (res.code === 803) {
       console.log('登录成功')
-      user.doLogin(res.cookie)
+      await user.doLogin(res.cookie)
       window.clearInterval(qrCheckTimer)
     }
   }, 3000)
@@ -85,13 +93,34 @@ const closeLoginWindow = () => {
   console.log('登录框关闭')
   window.clearInterval(qrCheckTimer)
 }
+
+const toPhoneLogin = () => {
+  loginType.value = 'VC'
+}
+
+const phone = ref('')
+
+const verCode = ref('')
+
+const sendVerCode = () => {
+  if(!phone.value) return
+  const res = captchaSent(phone.value)
+  if(res.code !== 200){
+    ElMessage('验证码发送失败，请稍后再试!')
+    return
+  }
+}
+
+const vcLogin = () =>{
+
+}
 </script>
 
 <template>
   <el-dialog v-model="showLogin" width="350"
              @opened="openLoginWindow"
              @close="closeLoginWindow">
-    <div class="login-dialog">
+    <div class="login-dialog" v-show="loginType === 'QR'">
       <h1 class="middle title">扫码登录</h1>
       <div class="middle" style="width: 180px;height: 180px; background-color: #666666">
         <img v-lazy="qrUrl" style="width: 180px; height: 180px">
@@ -101,9 +130,30 @@ const closeLoginWindow = () => {
       </div>
       <p class="middle tips">使用<span style="color: #0086b3" class="pointer">网易云音乐APP</span>扫码登录</p>
 
-      <p class="middle switch-tip pointer">选择其他登录方式
+      <p class="middle switch-tip pointer" @click="toPhoneLogin">选择其他登录方式
         <svg-icon name="arrow-right" class-name="font-12"></svg-icon>
       </p>
+    </div>
+    <div class="login-dialog" v-show="loginType === 'VC'">
+      <div class="middle logo" style="width: 180px;height: 180px;">
+        <img :src="logo" width="180px" height="180px" alt="">
+      </div>
+      <div class="middle input-wrapper">
+        <el-input v-model="phone"
+                  style="width: 250px"
+                  type="number"
+                  placeholder="请输入手机号"></el-input>
+        <el-input v-model="verCode"
+                  style="width: 250px"
+                  type="number">
+          <template #append>
+            <el-button @click="sendVerCode">获取验证码</el-button>
+          </template>
+        </el-input>
+      </div>
+      <div class="middle login-button">
+        <el-button type="danger" @click="vcLogin">登录</el-button>
+      </div>
     </div>
   </el-dialog>
 </template>
