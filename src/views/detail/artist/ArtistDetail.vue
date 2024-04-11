@@ -46,7 +46,7 @@ const getArtistDetail = async () => {
               收藏
             </button>
             <button class="cir-btn-white pointer font-14">
-              <svg-icon name="user" class-name="font-14"></svg-icon>
+              <svg-icon name="me" class-name="font-18"></svg-icon>
               个人主页
             </button>
           </div>
