@@ -78,8 +78,8 @@ const checkVip = computed(() => {
           </div>
         </template>
         <template v-slot:others>
-          <div v-if="album.artist">歌手:{{ album.artist.name }}</div>
-          <div>时间:{{ format(album.publishTime) }}</div>
+          <div v-if="album.artist">歌手：{{ album.artist.name }}</div>
+          <div>时间：{{ format(album.publishTime) }}</div>
         </template>
       </detail-banner>
     </div>

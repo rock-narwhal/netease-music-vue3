@@ -17,3 +17,18 @@ export const format = (timestamp) => {
     const day = ("0" + date.getDate()).slice(-2); // 保证日期显示两位数
     return year + '-' + month + '-' + day;
 }
+
+export const dateTimeFormat = (timestamp) =>{
+    let date = new Date(timestamp);
+    let year = date.getFullYear()
+    let month = ("0" + (date.getMonth() + 1)).slice(-2);
+    let day = ("0" + date.getDate()).slice(-2);
+    let hour = ("0" + date.getHours()).slice(-2);
+    let min = ("0" + date.getMinutes()).slice(-2);
+
+    let now = new Date().getFullYear()
+    if(now === year){ //同一年不需要年份
+        return month + '月' + day +'日 ' + hour +':'+min
+    }
+    return year + '年' + month + '月' + day +'日 ' + hour +':'+min
+}
