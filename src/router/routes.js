@@ -190,9 +190,9 @@ export default [
                                 component: () => import('@/views/detail/playlist/PlaylistComments.vue')
                             },
                             {
-                                name: 'PlaylistCollectors',
-                                path: 'collectors',
-                                component: () => import('@/views/detail/playlist/PlaylistCollectors.vue')
+                                name: 'PlaylistSubscribers',
+                                path: 'subscribers',
+                                component: () => import('@/views/detail/playlist/PlaylistSubscribers.vue')
                             }
                         ]
                     }

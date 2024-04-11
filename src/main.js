@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
@@ -23,7 +23,7 @@ app.use(createPinia())
 //懒加载
 app.use(LazyLoad, {
     loading: '@/assets/img/loading.gif',
-    error:'@/assets/img/error.jpg'
+    error: '@/assets/img/error.jpg'
 })
 // svg图标
 app.component(SvgIcon)

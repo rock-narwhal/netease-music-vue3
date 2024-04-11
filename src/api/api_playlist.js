@@ -20,3 +20,5 @@ export const playlistSongs = (id) => get('/playlist/track/all',{id})
 export const playlistDynamic = (id) => get('/playlist/detail/dynamic', {id})
 /* 歌单评论 */
 export const playlistComments = ({id, offset, limit}) => get('/comment/playlist', {id, offset, limit})
+
+export const playlistSubscribers = ({id, offset, limit}) => get('/playlist/subscribers', {id, offset, limit})
