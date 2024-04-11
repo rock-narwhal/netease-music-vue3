@@ -4,6 +4,8 @@ import {useRoute} from "vue-router";
 import {albumDetail, albumDetailDynamic} from "@/api/api_music.js";
 import {format} from '@/utils/DateUtil.js'
 import TabMenu from "@/components/menu/TabMenu.vue";
+import DetailBanner from "@/components/banner/DetailBanner.vue";
+import SvgIcon from "@/components/svg/SvgIcon.vue";
 
 const menu = reactive([
   {name: 'AlbumSongs', path: '/detail/album/songs', title: '歌曲列表'},
@@ -18,6 +20,7 @@ const songs = ref([])
 const route = useRoute()
 
 watch(() => route.query, (val) => {
+  if(val.id === album.value.id) return
   album.value.id = val.id
   getAlbumDetail()
   getAlbumDynamic()
@@ -51,7 +54,7 @@ const checkVip = computed(() => {
 <template>
   <div class="album-detail">
     <div class="album-banner">
-      <detail-banner :avatar="album.picUrl">
+      <detail-banner :avatar="album.picUrl + '?param=400y400'" v-show="album.picUrl">
         <template v-slot:title>
           <div class="font-24" style="font-weight: bold">{{ album.name }}</div>
         </template>

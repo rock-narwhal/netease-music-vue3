@@ -3,6 +3,7 @@ import {ref, watch, onMounted} from 'vue'
 import {useRoute} from "vue-router";
 import {artistDetail} from "@/api/api_artist.js";
 import DetailBanner from "@/components/banner/DetailBanner.vue";
+import SvgIcon from "@/components/svg/SvgIcon.vue";
 
 const menu = ref([
   {name: 'ArtistAlbum', path: '/detail/artist/album', title: '专辑'},
@@ -33,7 +34,7 @@ const getArtistDetail = async () => {
 <template>
   <div class="artist-detail">
     <div class="artist-banner">
-      <detail-banner :avatar="artist.avatar">
+      <detail-banner :avatar="artist.avatar +'?param=400y400'" v-show="artist.avatar">
         <template v-slot:title>
           <div class="font-24" style="font-weight: bold">{{ artist.name }}</div>
           <div style="margin-top: 5px">{{ artist.transNames && artist.transNames[0] }}</div>
@@ -45,7 +46,7 @@ const getArtistDetail = async () => {
               收藏
             </button>
             <button class="cir-btn-white pointer font-14">
-              <svg-icon name="user" class-name="font-18"></svg-icon>
+              <svg-icon name="user" class-name="font-14"></svg-icon>
               个人主页
             </button>
           </div>

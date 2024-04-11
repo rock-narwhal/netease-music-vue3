@@ -48,7 +48,7 @@ defineProps({
 .comment-wrapper {
   padding: 15px 0;
   display: flex;
-  border-bottom: 1px solid @border;
+  border-bottom: 1px solid @greyF2;
 
   img {
     width: 40px;
