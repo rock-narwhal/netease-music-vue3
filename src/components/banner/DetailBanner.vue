@@ -12,7 +12,7 @@ defineProps({
 
 <template>
   <div class="banner">
-    <img v-lazy="avatar" alt="">
+    <img v-lazy="avatar + '?param=400y400'" alt="">
     <div class="banner-info">
       <!--        标题区域-->
       <slot name="title"></slot>
@@ -27,7 +27,6 @@ defineProps({
 <style scoped lang="less">
 @import "@/assets/less/lessDefine.less";
 .banner {
-  margin: 0 30px;
   display: flex;
 
   img {
