@@ -27,6 +27,8 @@ const verticalAlign = computed(() => {
     return '-0.2em'
   } else if (props.className.includes('font-16')) {
     return '-0.15em'
+  }else if(props.className.includes('font-12')){
+    return '-0.25em'
   }else{
     return '-0.125em'
   }

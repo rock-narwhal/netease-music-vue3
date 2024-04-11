@@ -3,6 +3,7 @@ import SearchBar from "@/components/layout/header/SearchBar.vue";
 import {useRouter} from "vue-router";
 import {computed} from 'vue'
 import {userStore} from "@/store/userStore.js";
+import emitter from '@/utils/MittBus.js'
 
 const router = useRouter()
 
@@ -14,9 +15,17 @@ const user = userStore()
 const avatarUrl = computed(() => {
   return user.isLogin ? user.profile.avatarUrl : ''
 })
-const nickname = computed(() => {
-  return user.isLogin ? user.profile.nickname : '未登录'
-})
+// const nickname = computed(() => {
+//   return user.isLogin ? user.profile.nickname : '未登录'
+// })
+
+const clickAvatar = () => {
+  if (user.isLogin) { // 已经登录，跳转到个人首页
+
+  } else {
+    emitter.emit('openLogin')
+  }
+}
 </script>
 
 <template>
@@ -37,8 +46,8 @@ const nickname = computed(() => {
     <div class="search-input">
       <SearchBar/>
     </div>
-    <div class="login-info font-12">{{ nickname }}</div>
-    <div class="avatar-wrap pointer">
+    <div class="login-info font-12">{{ user.nickname }}</div>
+    <div class="avatar-wrap pointer" @click="clickAvatar">
       <el-avatar :size="30" icon="el-icon-user-solid" :src="avatarUrl"></el-avatar>
     </div>
   </div>

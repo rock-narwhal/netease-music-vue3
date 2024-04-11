@@ -39,7 +39,7 @@ const updateCurrent = () =>{
 </script>
 
 <template>
-  <div class="control-bar">
+  <div class="control-bar clearfix">
     <div class="ctl-btn">
       <button class="no-btn pointer" @click="switchMode">
         <i class="iconfont" :class="playModeIcon"></i>
@@ -69,8 +69,8 @@ const updateCurrent = () =>{
 
 <style scoped lang="less">
 .control-bar {
-  width: 440px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
 
   .ctl-btn {
     width: 250px;

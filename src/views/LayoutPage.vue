@@ -5,12 +5,16 @@ import {useRoute} from "vue-router";
 import HeaderBar from "@/components/layout/HeaderBar.vue";
 import LeftAside from "@/components/layout/LeftAside.vue";
 import FooterBar from "@/components/layout/FooterBar.vue";
+import LoginWindow from "@/components/commons/LoginWindow.vue";
+import {userStore} from "@/store/userStore.js";
 
 const contentRef = ref(null)
+const user = userStore()
 onMounted(() => {
   emitter.on('contentScrollTop', () => {
     contentRef.value.scrollTop = 0
   })
+  user.checkLogin()
 })
 
 //监听路由，通知leftAside
@@ -53,6 +57,8 @@ watch(() => route.path, val => {
     <div class="footer">
       <FooterBar></FooterBar>
     </div>
+<!--    登录弹窗-->
+    <LoginWindow></LoginWindow>
   </div>
 </template>
 
