@@ -1,7 +1,7 @@
 <script setup>
 
 import PLayerCover from "@/components/commons/PLayerCover.vue";
-import {playStore} from "@/store/PlayStore.js";
+import {playStore} from "@/store/playStore.js";
 import ControlBar from "@/components/commons/ControlBar.vue";
 
 const playingInfo = playStore().playingInfo

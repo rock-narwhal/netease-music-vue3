@@ -1,7 +1,9 @@
 <script setup>
-import {ref, reactive, defineProps, defineEmits, computed} from 'vue'
+import {ref, reactive, defineProps, defineEmits, computed, onMounted} from 'vue'
 import ControlSlider from "@/components/commons/ControlSlider.vue";
 import {timeConvert} from "@/utils/DateUtil.js";
+import emitter from '@/utils/MittBus.js'
+import {playStore} from "@/store/playStore.js";
 
 defineProps({
   playingInfo: {
@@ -31,11 +33,29 @@ const switchMode = () => {
   mode.value = (mode.value + 1) % 4
 }
 
-const playFinish = () =>{}
+const playFinish = () => {
+}
 
-const updateCurrent = () =>{
+const updateCurrent = () => {
 
 }
+
+const playingInfo = playStore().playingInfo
+
+const playList = playStore().playlist
+const doPlayMusic = (song) => {
+  if(playingInfo.songId === song.id){
+    if(!playingInfo.playing){
+      playingInfo.playing = true
+    }
+  }else{ // 切换歌曲
+
+  }
+}
+
+onMounted(() => {
+  emitter.on('playMusic', doPlayMusic)
+})
 </script>
 
 <template>

@@ -3,7 +3,7 @@ import {ref, onMounted, computed} from 'vue'
 import {getLatestByType} from "@/api/api_toplist.js";
 import {timeConvert} from "@/utils/DateUtil.js";
 import emitter from '@/utils/MittBus.js'
-import {playStore} from "@/store/PlayStore.js";
+import {playStore} from "@/store/playStore.js";
 import SelectorMenu from "@/components/menu/SelectorMenu.vue";
 
 const menus = ref([{name: '全部', type: 0, active: false}, {name: '华语', type: 7, active: false},
