@@ -58,6 +58,7 @@ const checkQrLogin = async () => {
     if (res.code === 803) {
       await user.doLogin(res.cookie)
       window.clearInterval(qrCheckTimer)
+      showLogin.value = false //关闭窗口
     }
   }, 3000)
 }

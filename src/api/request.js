@@ -2,6 +2,11 @@ import axios from 'axios'
 
 const base_url = 'http://localhost:3000'
 
+const service = axios.create({
+    baseURL: base_url,
+    withCredentials: true,
+})
+
 function handleError(err) {
     let data, code, msg
     if (err.response) {
@@ -24,28 +29,32 @@ function handleError(err) {
 
 export const get = (url, params) => {
     params = params || {}
-    return axios.get(
+    // let cookie = localStorage.getItem('loginCookie')
+    // if(cookie && cookie !== ''){
+    //     params.cookie = cookie
+    // }
+    return service.get(
         base_url + url, {params}
     ).then(res => res.data)
         .catch(err => handleError(err))
 }
 
-export const postWithCookie = (url, data, headers, params) => {
-    data = data || {}
-    data.cookie = document.cookie
-    return post(url, data, headers, params)
-}
-
 export const post = (url, data, headers, params) => {
-    params = params || {}
-    return axios.post(
+    data = data || {}
+    let cookie = localStorage.getItem('loginCookie')
+    if(cookie && cookie !== ''){
+        data.cookie = cookie
+    }
+    headers = headers || {}
+    headers['Content-Type'] = 'application/json; charset=utf-8;'
+    return service.post(
         base_url + url, data, {headers, params}
     ).then(res => res.data)
         .catch(err => handleError(err))
 }
 
 export const getBlob = (url, params, headers) => {
-    axios.get(base_url + url, {params, headers, responseType: 'blob'})
+    service.get(base_url + url, {params, headers, responseType: 'blob'})
         .then(res => res.data)
         .catch(err => handleError(err))
 }
