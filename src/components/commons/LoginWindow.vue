@@ -1,7 +1,7 @@
 <script setup>
 import {ref, onMounted, onUnmounted, watch} from 'vue'
 import SvgIcon from "@/components/svg/SvgIcon.vue";
-import {captchaSent, getQrKey, qrCheck, qrCreate} from "@/api/api_login.js";
+import {captchaSent, captchaVerify, getQrKey, qrCheck, qrCreate} from "@/api/api_login.js";
 import emitter from '@/utils/MittBus.js'
 import {userStore} from "@/store/userStore.js";
 import logo from '@/assets/img/cloudMusic.png'
@@ -50,15 +50,12 @@ const checkQrLogin = async () => {
       return
     }
     const res = await qrCheck(qrKey.value, new Date().getTime())
-    console.log('二维码登录结果:', JSON.stringify(res))
     if (res.code === 800) {
-      console.log('二维码过期')
       showRefreshQr.value = true
       window.clearInterval(qrCheckTimer)
       return
     }
     if (res.code === 803) {
-      console.log('登录成功')
       await user.doLogin(res.cookie)
       window.clearInterval(qrCheckTimer)
     }
@@ -83,19 +80,17 @@ onUnmounted(() => {
 })
 //登录框开启
 const openLoginWindow = () => {
-  console.log('登录框打开')
   if (loginType.value === 'QR') {
     qrLogin()
   }
 }
 // 登录框关闭
 const closeLoginWindow = () => {
-  console.log('登录框关闭')
   window.clearInterval(qrCheckTimer)
 }
 
-const toPhoneLogin = () => {
-  loginType.value = 'VC'
+const switchLoginType = (type) => {
+  loginType.value = type
 }
 
 const phone = ref('')
@@ -107,12 +102,14 @@ const sendVerCode = () => {
   const res = captchaSent(phone.value)
   if(res.code !== 200){
     ElMessage('验证码发送失败，请稍后再试!')
-    return
   }
 }
 
-const vcLogin = () =>{
-
+const vcLogin = async () =>{
+  const res = await captchaVerify(phone.value, verCode.value)
+  if(res.code !== 200) return
+  ElMessage('登录成功')
+  await user.doLogin(document.cookie)
 }
 </script>
 
@@ -130,30 +127,35 @@ const vcLogin = () =>{
       </div>
       <p class="middle tips">使用<span style="color: #0086b3" class="pointer">网易云音乐APP</span>扫码登录</p>
 
-      <p class="middle switch-tip pointer" @click="toPhoneLogin">选择其他登录方式
+      <p class="middle switch-tip pointer" @click="switchLoginType('VC')">选择其他登录方式
         <svg-icon name="arrow-right" class-name="font-12"></svg-icon>
       </p>
     </div>
     <div class="login-dialog" v-show="loginType === 'VC'">
-      <div class="middle logo" style="width: 180px;height: 180px;">
-        <img :src="logo" width="180px" height="180px" alt="">
+      <div class="middle logo" style="width: 80px;height: 80px;">
+        <img :src="logo" width="80px" height="80px" alt="">
       </div>
       <div class="middle input-wrapper">
         <el-input v-model="phone"
                   style="width: 250px"
-                  type="number"
-                  placeholder="请输入手机号"></el-input>
+                  type="text"
+                  placeholder="请输入手机号" class="phone-input"></el-input>
         <el-input v-model="verCode"
                   style="width: 250px"
-                  type="number">
+                  type="text">
           <template #append>
             <el-button @click="sendVerCode">获取验证码</el-button>
           </template>
         </el-input>
       </div>
       <div class="middle login-button">
-        <el-button type="danger" @click="vcLogin">登录</el-button>
+        <button class="btn-red" @click="vcLogin">登 录</button>
       </div>
+      <p class="middle tips">使用<span style="color: #0086b3" class="pointer">手机验证码</span>登录</p>
+
+      <p class="middle switch-tip2 pointer" @click="switchLoginType('QR')">选择其他登录方式
+        <svg-icon name="arrow-right" class-name="font-12"></svg-icon>
+      </p>
     </div>
   </el-dialog>
 </template>
@@ -200,6 +202,30 @@ const vcLogin = () =>{
     font-size: 12px;
     vertical-align: center;
     margin-top: 90px;
+    margin-bottom: 40px;
+  }
+
+  .input-wrapper{
+    margin-top: 50px;
+
+    .phone-input{
+      margin-bottom: 10px;
+    }
+  }
+  .login-button{
+    margin-top: 80px;
+
+    .btn-red{
+      width: 250px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+  .switch-tip2{
+    color: @grey67;
+    font-size: 12px;
+    vertical-align: center;
+    margin-top: 71px;
     margin-bottom: 40px;
   }
 }
