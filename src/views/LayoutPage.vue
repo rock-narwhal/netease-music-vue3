@@ -12,7 +12,7 @@ const contentRef = ref(null)
 const user = userStore()
 onMounted(() => {
   emitter.on('contentScrollTop', () => {
-    contentRef.value.scrollTop = 0
+    contentRef.value.scrollTop || (contentRef.value.scrollTop = 0)
   })
   user.checkLogin()
 })
@@ -20,7 +20,7 @@ onMounted(() => {
 //监听路由，通知leftAside
 const route = useRoute()
 watch(() => route.path, val => {
-  contentRef.value.scrollTop = 0
+  contentRef.value.scrollTop || (contentRef.value.scrollTop = 0)
   emitter.emit('activeManuChange', val)
 })
 </script>
