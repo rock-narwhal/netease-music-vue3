@@ -29,10 +29,6 @@ function handleError(err) {
 
 export const get = (url, params) => {
     params = params || {}
-    // let cookie = localStorage.getItem('loginCookie')
-    // if(cookie && cookie !== ''){
-    //     params.cookie = cookie
-    // }
     return service.get(
         base_url + url, {params}
     ).then(res => res.data)
@@ -45,8 +41,6 @@ export const post = (url, data, headers, params) => {
     if(cookie && cookie !== ''){
         data.cookie = cookie
     }
-    headers = headers || {}
-    headers['Content-Type'] = 'application/json; charset=utf-8;'
     return service.post(
         base_url + url, data, {headers, params}
     ).then(res => res.data)

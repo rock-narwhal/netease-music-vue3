@@ -34,7 +34,6 @@ export const userStore = defineStore('user', {
         },
         async doLogin(cookie) {
             localStorage.setItem('loginCookie', cookie)
-            document.cookie = cookie
             this.isLogin = true
             await this.queryUserAccount()
             await this.queryUserDetail()
@@ -52,10 +51,11 @@ export const userStore = defineStore('user', {
         },
         async checkLogin() {
             const res = await checkLoginStatus(new Date().getTime())
-            if (res.data.code !== 200) {
+            if (!res.data || res.data.code !== 200) {
                 this.clearLogInfo()
                 return
             }
+            console.log("checkLoginStatus success :")
             this.isLogin = true
             this.account = res.data.account
             this.profile = res.data.profile || {}
@@ -67,8 +67,8 @@ export const userStore = defineStore('user', {
             this.profile = {}
             this.createPlayList = []
             this.subscribePlaylist = []
-            localStorage.removeItem('loginCookie')
             document.cookie = ''
+            localStorage.removeItem('loginCookie')
         }
     }
 })
