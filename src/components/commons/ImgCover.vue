@@ -1,0 +1,139 @@
+<script setup>
+import {computed} from 'vue'
+import SvgIcon from "@/components/svg/SvgIcon.vue";
+
+const props = defineProps({
+  src: {
+    type: String,
+    required: true
+  },
+  showType: {
+    type: String,
+    default: 'hover',
+    validator: (value) => ['hover', 'always'].includes(value)
+  },
+  btnPos: {
+    type: String,
+    default: 'right-bottom',
+    validator: (value) => ['center', 'right-bottom'].includes(value)
+  },
+  btnSize: {
+    type: String,
+    default: 'large',
+    validator: (value) => ['small', 'middle', 'large'].includes(value)
+  },
+  radius: {
+    type: String,
+    default: '8px'
+  }
+})
+
+const btnClass = computed(() => {
+  if (props.showType === 'hover') {
+    return 'btn-' + props.btnPos + ' btn-' + props.btnSize + ' hover-btn'
+  } else {
+    return 'btn-' + props.btnPos + ' btn-' + props.btnSize
+  }
+})
+
+const iconStyle = computed(() => {
+  if (props.btnSize === 'large') {
+    return {font: 'font-28', vertical: '-0.3'}
+  }
+  if (props.btnSize === 'middle') {
+    return {font: 'font-20', vertical: '-0.25'}
+  }
+  if (props.btnSize === 'small') {
+    return {font: 'font-20', vertical: '-0.35'}
+  }
+})
+const emit = defineEmits(['clickImg', 'clickBtn'])
+</script>
+
+<template>
+  <div class="img-cover-wrapper clearfix" @click="emit('clickImg')">
+    <img v-lazy="src" :style="{borderRadius: radius}">
+    <div class="right-top-area">
+      <slot></slot>
+    </div>
+    <div v-if="props.btnPos === 'center'" class="center-wrapper">
+      <div class="btn-wrapper" :class="btnClass" @click.stop="emit('clickBtn')">
+        <svg-icon name="play-fill-red" :class-name="iconStyle.font" :vertical="iconStyle.vertical"></svg-icon>
+      </div>
+    </div>
+    <div v-else class="btn-wrapper" :class="btnClass" @click.stop="emit('clickBtn')">
+      <svg-icon name="play-fill-red" :class-name="iconStyle.font" :vertical="iconStyle.vertical"></svg-icon>
+    </div>
+  </div>
+</template>
+
+<style scoped lang="less">
+.img-cover-wrapper {
+  width: 100%;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .right-top-area {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-shadow: 0 0 2px #000;
+  }
+
+  .center-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-wrapper {
+    background-color: white;
+    //border: 1px solid black;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .btn-right-bottom {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .btn-small {
+    height: 24px;
+    width: 24px;
+    line-height: 20px;
+  }
+
+  .btn-middle {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+
+  .btn-large {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+
+  .hover-btn {
+    transition: all 0.5s;
+    opacity: 0.0;
+  }
+
+  &:hover .hover-btn {
+    display: block;
+    opacity: 1.0;
+  }
+}
+</style>
