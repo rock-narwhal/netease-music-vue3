@@ -51,7 +51,7 @@ const clickOpt = (key, val) => {
       <ul>
         <li v-for="opt in item.option"
             :key="opt.val"
-            class="opt-btn pointer"
+            class="pointer"
             :class="{active: opt.val === queryParam[item.queryKey]}"
             @click="clickOpt(item.queryKey, opt.val)">
           {{ opt.name }}
@@ -67,6 +67,8 @@ const clickOpt = (key, val) => {
 .selector-container {
   .title {
     float: left;
+    height: 24px;
+    line-height: 24px;
   }
 
   ul {

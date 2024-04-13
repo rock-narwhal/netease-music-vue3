@@ -57,7 +57,7 @@ const toArtistDetail = (id) =>{
 
 <template>
   <div class="container">
-    <SelectBanner @clickOption="queryArtists"></SelectBanner>
+    <SelectBanner style="margin-bottom: 10px" @clickOption="queryArtists"></SelectBanner>
 
     <ImgList type="artist"
              :list="artistList"
