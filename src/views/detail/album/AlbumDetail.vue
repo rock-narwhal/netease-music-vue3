@@ -63,19 +63,19 @@ const checkVip = computed(() => {
             <!--          按钮-->
             <button class="cir-btn-red pointer font-14" v-show="checkVip"
                     style="background-color: #ec4141; color: white">
-              <svg-icon name="play-fill-white" class-name="font-20"></svg-icon>
+              <svg-icon name="play-fill-white" class-name="font-20" vertical="-0.25"></svg-icon>
               开通VIP畅听专辑
             </button>
             <button class="cir-btn-white pointer font-14" v-show="!albumInfo.isSub">
-              <svg-icon name="collection-records" class-name="font-18"></svg-icon>
+              <svg-icon name="collection-records" class-name="font-18" vertical="-0.2"></svg-icon>
               收藏({{ albumInfo.subCount }})
             </button>
             <button class="cir-btn-white pointer font-14">
-              <svg-icon name="download-one" class-name="font-18"></svg-icon>
+              <svg-icon name="download-one" class-name="font-18" vertical="-0.2"></svg-icon>
               VIP下载
             </button>
             <button class="cir-btn-white pointer font-14" v-show="albumInfo">
-              <svg-icon name="share" class-name="font-18"></svg-icon>
+              <svg-icon name="share" class-name="font-18" vertical="-0.2"></svg-icon>
               {{ albumInfo.shareCount }}
             </button>
           </div>

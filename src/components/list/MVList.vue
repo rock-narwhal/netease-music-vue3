@@ -44,7 +44,7 @@ const load = () => {
         class="pointer">
       <img v-lazy="item.imgurl16v9 + '?param=600y400'" alt="">
       <button class="play-count">
-        <svg-icon name="play-fill-white"></svg-icon>
+        <svg-icon name="play-fill-white" class-name="font-18" vertical="-0.2"></svg-icon>
         {{ toCNNum(item.playCount) }}
       </button>
       <button class="duration">{{ timeConvert(item.duration) }}</button>

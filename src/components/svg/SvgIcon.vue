@@ -8,6 +8,18 @@ const props = defineProps({
   },
   className: {
     type: String
+  },
+  /**
+   * 图标垂直调整
+   * 建议字体大小和vertical-align值关系
+   * 20px   -0.25em
+   * 18px   -0.2em
+   * 16px   -0.15em
+   * 其他    -0.125em
+   */
+  vertical:{
+    type: String,
+    default: '-0.125'
   }
 })
 
@@ -20,18 +32,7 @@ const svgClass = computed(() => {
 })
 
 const verticalAlign = computed(() => {
-  if(!props.className) return '-0.125em'
-  if (props.className.includes('font-20')) {
-    return '-0.25em'
-  } else if (props.className.includes('font-18')) {
-    return '-0.2em'
-  } else if (props.className.includes('font-16')) {
-    return '-0.15em'
-  }else if(props.className.includes('font-12')){
-    return '-0.25em'
-  }else{
-    return '-0.125em'
-  }
+  return props.vertical + 'em'
 })
 </script>
 
@@ -45,8 +46,8 @@ const verticalAlign = computed(() => {
 .svg-icon {
   width: 1em;
   height: 1em;
-  line-height: 30px;
-  //line-height: 2em;
-  overflow: hidden;
+  //line-height: 30px;
+  line-height: 2em;
+  //overflow: hidden;
 }
 </style>

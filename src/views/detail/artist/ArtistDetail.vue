@@ -42,11 +42,11 @@ const getArtistDetail = async () => {
         <template v-slot:buttons>
           <div class="button-group">
             <button class="cir-btn-white pointer font-14">
-              <svg-icon name="collection-records" class-name="font-18"></svg-icon>
+              <svg-icon name="collection-records" class-name="font-18" vertical="-0.2"></svg-icon>
               收藏
             </button>
             <button class="cir-btn-white pointer font-14">
-              <svg-icon name="me" class-name="font-18"></svg-icon>
+              <svg-icon name="me" class-name="font-18" vertical="-0.2"></svg-icon>
               个人主页
             </button>
           </div>
