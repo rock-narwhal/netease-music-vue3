@@ -53,17 +53,23 @@ const playingInfo = playStore().playingInfo
       </SelectorMenu>
     </div>
     <ul>
-      <li v-for="(item,index) in songList" :key="item.id" @dblclick="playSong(item)">
+      <li class="clearfix" v-for="(item,index) in songList" :key="item.id" @dblclick="playSong(item)">
         <div class="play-icon float-left">
           <span v-if="playingInfo.id !== item.id">{{ String(index + 1).padStart(2, '0') }}</span>
           <i v-else-if="playingInfo.pause" class="iconfont icon-shengyinguanbi"></i>
           <i v-else class="iconfont icon-shengyin"></i>
         </div>
-        <div class="cover float-left">
-          <img v-lazy="item.album.picUrl + '?param=100y100'" alt="">
-          <div class="play-btn pointer" @click="playSong(item)">
-            <i class="iconfont font-16 icon-bofang"></i>
-          </div>
+        <div class="cover float-left clearfix">
+          <!--          <img v-lazy="item.album.picUrl + '?param=100y100'" alt="">-->
+          <!--          <div class="play-btn pointer" @click="playSong(item)">-->
+          <!--            <i class="iconfont font-16 icon-bofang"></i>-->
+          <!--          </div>-->
+          <img-cover :src="item.album.picUrl + '?param=100y100'"
+                     btn-pos="center"
+                     show-type="always"
+                     btn-size="small"
+                     size="60px"
+          ></img-cover>
         </div>
         <div class="name float-left">
           <span>{{ item.name }}</span>
@@ -129,35 +135,37 @@ ul {
     }
 
     .cover {
-      width: 7%;
-      position: relative;
+      width: 8%;
+      //position: relative;
       height: 80px;
       display: flex;
       align-items: center;
-
-      img {
-        width: 60px;
-        height: auto;
-        border-radius: 5px;
-      }
-
-      .play-btn {
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        color: @headRed;
-        font-size: 8px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 20px;
-        position: absolute;
-        top: 30px;
-        left: 20px;
-      }
+      justify-content: center;
     }
 
+    //  img {
+    //    width: 60px;
+    //    height: auto;
+    //    border-radius: 5px;
+    //  }
+    //
+    //  .play-btn {
+    //    width: 20px;
+    //    height: 20px;
+    //    background-color: white;
+    //    color: @headRed;
+    //    font-size: 8px;
+    //    border-radius: 50%;
+    //    text-align: center;
+    //    line-height: 20px;
+    //    position: absolute;
+    //    top: 30px;
+    //    left: 20px;
+    //  }
+    //}
+
     .name {
-      width: 50%;
+      width: 49%;
       height: 100%;
       overflow: hidden;
       text-overflow: ellipsis;

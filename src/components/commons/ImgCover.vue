@@ -10,7 +10,7 @@ const props = defineProps({
   showType: {
     type: String,
     default: 'hover',
-    validator: (value) => ['hover', 'always'].includes(value)
+    validator: (value) => ['hover', 'always', 'none'].includes(value)
   },
   btnPos: {
     type: String,
@@ -25,14 +25,20 @@ const props = defineProps({
   radius: {
     type: String,
     default: '8px'
+  },
+  size:{ //指定大小 npx 或者 100%
+    type:String,
+    default: '100%'
   }
 })
 
 const btnClass = computed(() => {
   if (props.showType === 'hover') {
     return 'btn-' + props.btnPos + ' btn-' + props.btnSize + ' hover-btn'
-  } else {
+  } else if(props.showType === 'always') {
     return 'btn-' + props.btnPos + ' btn-' + props.btnSize
+  }else{
+    return 'btn-none'
   }
 })
 
@@ -48,10 +54,18 @@ const iconStyle = computed(() => {
   }
 })
 const emit = defineEmits(['clickImg', 'clickBtn'])
+
+const coverStyle =  computed(() =>{
+  if(props.size === '100%'){
+    return {width: '100%'}
+  }else{
+    return {width: props.size, height: props.size}
+  }
+})
 </script>
 
 <template>
-  <div class="img-cover-wrapper clearfix" @click="emit('clickImg')">
+  <div class="img-cover-wrapper clearfix" :style="coverStyle" @click="emit('clickImg')">
     <img v-lazy="src" :style="{borderRadius: radius}">
     <div class="right-top-area">
       <slot></slot>
@@ -69,7 +83,6 @@ const emit = defineEmits(['clickImg', 'clickBtn'])
 
 <style scoped lang="less">
 .img-cover-wrapper {
-  width: 100%;
   position: relative;
 
   img {
@@ -97,7 +110,6 @@ const emit = defineEmits(['clickImg', 'clickBtn'])
 
   .btn-wrapper {
     background-color: white;
-    //border: 1px solid black;
     text-align: center;
     border-radius: 50%;
   }
@@ -134,6 +146,10 @@ const emit = defineEmits(['clickImg', 'clickBtn'])
   &:hover .hover-btn {
     display: block;
     opacity: 1.0;
+  }
+
+  .btn-none{
+    display: none;
   }
 }
 </style>

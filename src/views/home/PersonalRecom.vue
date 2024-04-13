@@ -3,9 +3,10 @@ import {ref, onMounted} from 'vue'
 import {getPersonalized, getRecommend} from "@/api/api_playlist.js";
 import {getBanner} from "@/api/api_other.js";
 import {useRouter} from "vue-router";
+import ImgList from '@/components/list/ImgList.vue'
 
 const imgList = ref([])
-onMounted(async ()=>{
+onMounted(async () => {
   const res = await getBanner()
   if (res.code !== 200) return
   imgList.value = res.banners
@@ -18,7 +19,7 @@ onMounted(async (limit) => {
   recSongList.value = res.result
 })
 // 播放选中的歌曲
-const playRecSong = (id) =>{
+const playRecSong = (id) => {
 
 }
 
@@ -30,29 +31,29 @@ onMounted(async () => {
   recommendList.value = res.recommend
 })
 // 播放选中的专辑
-const playRecommend = (id) =>{
+const playRecommend = (id) => {
 
 }
 
 const bannerHeight = ref(200)
 
-const clickImage = (item) =>{
-  console.log('click Banner Img ',item)
+const clickImage = (item) => {
+  console.log('click Banner Img ', item)
 }
 
 const router = useRouter()
 
 // 跳转到首页playlist
-const toPlayList = () =>{
+const toPlayList = () => {
   router.push({
-    name:'PlayList'
+    name: 'PlayList'
   })
 }
 // 跳转到播放列表详情页
-const toPlayListDetail = (id) =>{
+const toPlayListDetail = (id) => {
   router.push({
-    name:'PlaylistDetail',
-    query:{
+    name: 'PlaylistDetail',
+    query: {
       id
     }
   })
@@ -76,13 +77,14 @@ const toPlayListDetail = (id) =>{
       </el-carousel>
     </div>
     <div class="play-list">
-      <h2 class="font-20 font-bold pointer" @click="toPlayList">
+      <h2 class="font-20 font-bold pointer" @click="toPlayList" v-show="recSongList.length > 0">
         热门推荐 <i class="iconfont icon-arrow-right"></i>
       </h2>
       <ImgList type="playlist"
                @clickPlay="playRecSong"
                @clickImg="toPlayListDetail"
-               :list="recSongList">
+               :list="recSongList"
+               btn-size="middle">
         <template v-slot="{item}">
           <div class="text-hidden"></div>
           {{ item.name }}
@@ -90,7 +92,7 @@ const toPlayListDetail = (id) =>{
       </ImgList>
     </div>
     <div class="play-list">
-      <h2 class="font-20 font-bold pointer" @click="toPlayList">
+      <h2 class="font-20 font-bold pointer" @click="toPlayList" v-show="recommendList.length > 0">
         推荐歌单 <i class="iconfont icon-arrow-right"></i>
       </h2>
       <ImgList type="playlist"

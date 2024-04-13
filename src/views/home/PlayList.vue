@@ -4,6 +4,8 @@ import {getAllCat, getHighQuality, getHotCat, getPlayListByCat} from "@/api/api_
 import emitter from '@/utils/MittBus.js'
 import {useRouter} from "vue-router";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
+import CatList from "@/components/list/CatList.vue";
+import ImgList from "@/components/list/ImgList.vue";
 
 const showAllCats = ref(false)
 
@@ -114,7 +116,7 @@ const toPlaylistDetail = (id) => {
     <!--    精品歌单banner-->
     <div class="banner" v-if="hasHighQuality">
       <img class="img-back" :src="highInfo.coverImgUrl">
-      <img class="img-front img-80" :src="highInfo.coverImgUrl +'param?400y400'">
+      <img class="img-front img-80" v-lazy="highInfo.coverImgUrl +'param?400y400'">
       <div class="info-wrap">
         <div>
           <button class="cir-btn-orange font-14">
@@ -162,7 +164,7 @@ const toPlaylistDetail = (id) => {
       </template>
     </ImgList>
     <!--    分页-->
-    <div class="pagination">
+    <div class="pagination" v-show="playList.length > 0">
       <el-pagination
           background
           layout="prev, pager, next"

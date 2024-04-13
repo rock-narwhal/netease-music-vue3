@@ -1,6 +1,8 @@
 <script setup>
 import {ref, defineProps, onMounted, watch, defineEmits} from "vue";
 import {getPlayListDetail} from "@/api/api_playlist.js";
+import ImgCover from "@/components/commons/ImgCover.vue";
+import {useRouter} from "vue-router";
 
 const props = defineProps({
   list: {
@@ -31,6 +33,14 @@ const clickPlay = (id) => {
   emit('clickPlay', id)
 }
 
+const router = useRouter()
+const toPlayListDetail = (id) =>{
+  router.push({
+    name:'PlaylistDetail',
+    query:{id}
+  })
+}
+
 const getDetailList = async (id) => {
   const res = await getPlayListDetail(id)
   if (res.code !== 200) return
@@ -42,10 +52,10 @@ const getDetailList = async (id) => {
   <div class="top-banner">
     <div class="banner-item" v-for="(topItem,index) in list" :key="topItem.id">
       <div class="cover pointer">
-        <img :src="topItem.coverImgUrl + '?param=300y300'">
-        <div class="play-btn pointer" @click.stop="clickPlay(topItem.id)">
-          <i class="iconfont font-18 icon-bofang"></i>
-        </div>
+        <img-cover :src="topItem.coverImgUrl + '?param=400y400'"
+        btn-pos="center"
+        @click-img="toPlayListDetail(topItem.id)"
+        @click-btn="clickPlay(topItem.id)"></img-cover>
       </div>
       <ul class="right-list">
         <li v-for="(subItem,subIndex) in detailList[index]" :key="subItem.id">
@@ -74,31 +84,6 @@ const getDetailList = async (id) => {
     .cover {
       width: 190px;
       height: 190px;
-      position: relative;
-
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-      }
-
-      .play-btn {
-        position: absolute;
-        height: 40px;
-        width: 40px;
-        text-align: center;
-        line-height: 40px;
-        top: 60px;
-        left: 60px;
-        background-color: white;
-        border-radius: 50%;
-        color: @headRed;
-        display: none;
-      }
-
-      &:hover .play-btn {
-        display: block;
-      }
     }
 
     .right-list {

@@ -1,5 +1,7 @@
 <script setup>
 import {defineProps, computed, defineEmits} from 'vue'
+import SvgIcon from "@/components/svg/SvgIcon.vue";
+import ImgCover from "@/components/commons/ImgCover.vue";
 
 const props = defineProps({
   list: {
@@ -21,6 +23,10 @@ const props = defineProps({
   isLoading: {
     type: Boolean,
     default: false
+  },
+  btnSize: {
+    type: String,
+    default: 'large'
   }
 })
 
@@ -81,16 +87,16 @@ const picUrl = (item) => {
         infinite-scroll-delay="300"
     >
       <li class="img-li" v-for="item in list" :key="item.id">
-        <div class="img-wrap pointer" @click="clickImg(item.id)">
-          <img class="img img-radius-8 img-border" v-lazy="picUrl(item)">
-          <div class="video-playcount font-12" v-if="item.playCount">
-            <i class="iconfont font-12 icon-24gl-play"></i>
+        <img-cover :src="picUrl(item)"
+                   :btn-size="btnSize"
+                   @click-img="clickImg(item.id)"
+                   @click-btn="clickPlay(item.id)"
+                   :show-type="showPlayBtn ? 'hover' : 'none'">
+          <div class="video-play-count font-12" v-if="item.playCount">
+            <svg-icon name="play-fill-white" class-name="font-14" vertical="-0.2"></svg-icon>
             {{ playCount(item.playCount) }}
           </div>
-          <div v-if="showPlayBtn" class="play-btn pointer" @click.stop="clickPlay(item.id)">
-            <i class="iconfont font-16 icon-bofang"></i>
-          </div>
-        </div>
+        </img-cover>
         <slot :item="item"></slot>
       </li>
     </ul>
@@ -115,37 +121,9 @@ const picUrl = (item) => {
   }
 }
 
-.img-wrap {
-  position: relative;
-
-  .video-playcount {
-    color: #ffffff;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    text-shadow: 0 0 2px #000;
-  }
-
-  .play-btn {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    background-color: @grey57;
-    //background-color: #fbf7f6;
-    color: @headRed;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    opacity: 0;
-    transition: all 0.8s;
-  }
-
-  &:hover .play-btn {
-    opacity: 1;
-  }
+.video-play-count {
+  color: white;
+  text-shadow: 0 0 2px #000;
 }
 
 .loading-wrap {
