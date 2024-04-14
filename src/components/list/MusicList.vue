@@ -1,5 +1,4 @@
 <script setup>
-import {defineProps, defineEmits} from 'vue'
 import {timeConvert} from "@/utils/DateUtil.js";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
 import SongTag from "@/components/commons/SongTag.vue";
@@ -33,10 +32,7 @@ defineProps({
   }
 })
 
-const emit = defineEmits(['dbClick'])
-const dbClick = (id) => {
-  emit('dbClick', id)
-}
+const emit = defineEmits(['clickItem'])
 // 音质标签
 const qualityTag = (item) =>{
   if(item.hr){
@@ -56,13 +52,13 @@ const qualityTag = (item) =>{
         {{ val }}
       </li>
     </ul>
-    <ul class="music-list flex-box hover-list" v-for="(item,index) in dataList" :key="item.id" @dblclick="dbClick(item.id)">
-      <li :style="styleCfg[0]" class="grey-item">
+    <ul class="music-list flex-box hover-list" v-for="(item,index) in dataList" :key="item.id" @dblclick.stop="emit('clickItem', item.id)">
+      <li :style="styleCfg[0]" class="grey-color">
         <span>
           {{ index < 9 ? '0' + (index + 1) : (index + 1) }}
         </span>
       </li>
-      <li :style="styleCfg[1]"  class="grey-item">
+      <li :style="styleCfg[1]"  class="grey-color">
         <svg-icon name="like" class-name="pointer font-16" style="margin-right: 10px"></svg-icon>
         <svg-icon name="download-one" class-name="pointer font-16"></svg-icon>
       </li>
@@ -74,9 +70,9 @@ const qualityTag = (item) =>{
         </song-tag>
         <song-tag v-if="item.originCoverType === 1 || item.originCoverType === 2" :tag="item.originCoverType === 1 ? '原唱' : '翻唱'"></song-tag>
       </li>
-      <li :style="styleCfg[3]" class="text-over dark-item">{{ item.ar[0].name }}</li>
-      <li :style="styleCfg[4]" class="text-over dark-item">{{ item.al.name }}</li>
-      <li :style="styleCfg[5]" class="text-over grey-item">{{ timeConvert(item.dt / 1000) }}</li>
+      <li :style="styleCfg[3]" class="text-over dark-color">{{ item.ar[0].name }}</li>
+      <li :style="styleCfg[4]" class="text-over dark-color">{{ item.al.name }}</li>
+      <li :style="styleCfg[5]" class="text-over grey-color">{{ timeConvert(item.dt / 1000) }}</li>
     </ul>
   </div>
 </template>
@@ -114,12 +110,12 @@ ul {
 }
 .music-list{
   padding-left: 30px;
-  .grey-item{
-    color: @listGrey;
-  }
-  .dark-item{
-    color: @listDark;
-  }
+  //.grey-item{
+  //  color: @listGrey;
+  //}
+  //.dark-item{
+  //  color: @listDark;
+  //}
 }
 
 .music-list:nth-child(even) {
