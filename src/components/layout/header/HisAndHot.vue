@@ -1,5 +1,5 @@
 <script setup>
-import {ref, defineEmits, defineProps, onMounted} from 'vue'
+import {ref, onMounted} from 'vue'
 import {Delete, Close} from '@element-plus/icons-vue'
 import {getHotSearch} from "@/api/api_other.js";
 import {useRouter} from "vue-router";

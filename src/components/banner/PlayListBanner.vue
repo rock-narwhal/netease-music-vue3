@@ -1,5 +1,4 @@
 <script setup>
-import {defineProps} from 'vue'
 import {toCNNum} from "@/utils/FormatUtil.js";
 import {useRouter} from "vue-router";
 

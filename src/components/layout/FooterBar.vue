@@ -15,7 +15,7 @@ const playingInfo = playStore().playingInfo
     </div>
 
     <div class="middle-area">
-      <ControlBar :playing-info="playingInfo"></ControlBar>
+      <ControlBar></ControlBar>
     </div>
 
     <div class="right-area"></div>

@@ -1,5 +1,4 @@
 <script setup>
-import {defineProps} from "vue"
 import {dateTimeFormat} from '@/utils/DateUtil.js'
 import SvgIcon from "@/components/svg/SvgIcon.vue";
 
