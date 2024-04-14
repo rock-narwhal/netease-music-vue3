@@ -26,11 +26,11 @@ const getLatest = async (type) => {
   if (res.code !== 200) return
   songList.value = res.data
 }
-
+// 播放所有
 const playAll = () => {
 
 }
-
+// 收藏所有
 const collectAll = () => {
 
 }
@@ -60,10 +60,6 @@ const playingInfo = playStore().playingInfo
           <i v-else class="iconfont icon-shengyin"></i>
         </div>
         <div class="cover float-left clearfix">
-          <!--          <img v-lazy="item.album.picUrl + '?param=100y100'" alt="">-->
-          <!--          <div class="play-btn pointer" @click="playSong(item)">-->
-          <!--            <i class="iconfont font-16 icon-bofang"></i>-->
-          <!--          </div>-->
           <img-cover :src="item.album.picUrl + '?param=100y100'"
                      btn-pos="center"
                      show-type="always"
