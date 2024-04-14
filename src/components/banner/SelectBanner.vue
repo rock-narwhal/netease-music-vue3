@@ -86,8 +86,11 @@ const clickOpt = (key, val) => {
     }
 
     li.active {
-      color: @headRed;
+      color: @selectedRed;
       background-color: @activeBackRed;
+      &:hover{
+        background-color: @activeHover;
+      }
     }
   }
 }

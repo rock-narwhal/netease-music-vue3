@@ -38,7 +38,7 @@ const clickPlayList = (id)=>{
   align-items: center;
   padding: 10px;
   border-radius: 5px;
-  background-color: @greyF2;
+  background-color: @btnGreyHover;
 
   img {
     width: 50px;
