@@ -2,6 +2,7 @@
 import {computed, defineProps, watch, ref,onMounted} from 'vue'
 import {getSuggest} from "@/api/api_other.js";
 import {useRouter} from "vue-router";
+import SuggestList from "@/components/list/SuggestList.vue";
 
 const props = defineProps(['keywords'])
 //搜索建议

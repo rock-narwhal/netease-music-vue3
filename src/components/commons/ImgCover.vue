@@ -24,11 +24,11 @@ const props = defineProps({
   },
   radius: {
     type: String,
-    default: '8px'
+    default: '5px'
   },
   size:{ //指定大小 npx 或者 100%
     type:String,
-    default: '100%'
+    default: '200px'
   }
 })
 
@@ -57,7 +57,7 @@ const emit = defineEmits(['clickImg', 'clickBtn'])
 
 const coverStyle =  computed(() =>{
   if(props.size === '100%'){
-    return {width: '100%'}
+    return {}
   }else{
     return {width: props.size, height: props.size}
   }
@@ -82,12 +82,14 @@ const coverStyle =  computed(() =>{
 </template>
 
 <style scoped lang="less">
+@import "@/assets/less/lessDefine.less";
 .img-cover-wrapper {
   position: relative;
 
   img {
     height: 100%;
     width: 100%;
+    border: 1px solid @greyEF;
   }
 
   .right-top-area {

@@ -1,11 +1,30 @@
 <script setup>
 import {defineProps, defineEmits} from 'vue'
 import {timeConvert} from "@/utils/DateUtil.js";
+import SvgIcon from "@/components/svg/SvgIcon.vue";
 
 defineProps({
   titles: {
     type: Array,
-    require: true
+    default: ['', '操作', '标题', '歌手', '专辑', '时长']
+  },
+  /**
+   * {val: '', width: '5%'},
+   *   {val: '音乐标题', width: '45%'},
+   *   {val: '歌手', width: '20%'},
+   *   {val: '专辑', width: '20%'},
+   *   {val: '时长', width: '10%'}
+   */
+  styleCfg: {
+    type: Array,
+    default: [
+      {width: '30px', flexShrink: 0}, //33px
+      {width: '55px', flexShrink: 0}, //50px
+      {width: '680px', flexShrink: 1},//577px
+      {width: '320px', flexShrink: 1},//314px
+      {width: '440px', flexShrink: 1},//446px
+      {width: '132px', flexShrink: 1},//132px
+    ]
   },
   dataList: {
     type: Array,
@@ -22,22 +41,24 @@ const dbClick = (id) => {
 <template>
   <div class="music-list-wrapper">
     <ul class="title-bar flex-box">
-      <li v-for="item in titles" :key="item.val" :style="{width:item.width}">
-        {{ item.val }}
+      <li v-for="(val,index) in titles" :key="val" :style="styleCfg[index]">
+        {{ val }}
       </li>
     </ul>
     <ul class="music-list flex-box" v-for="(item,index) in dataList" :key="item.id" @dblclick="dbClick(item.id)">
-      <li :style="{width:titles[0].width}">
+      <li :style="styleCfg[0]">
         <span>
           {{ index < 9 ? '0' + (index + 1) : (index + 1) }}
         </span>
-        <svg-icon name="like" class="pointer"></svg-icon>
-        <svg-icon name="download-one" class="pointer"></svg-icon>
       </li>
-      <li :style="{width:titles[1].width}">{{ item.name }}</li>
-      <li :style="{width:titles[2].width}">{{ item.ar[0].name }}</li>
-      <li :style="{width:titles[3].width}">{{ item.al.name }}</li>
-      <li :style="{width:titles[4].width}">{{ timeConvert(item.dt) }}</li>
+      <li :style="styleCfg[1]">
+        <svg-icon name="like" class-name="pointer font-16" style="margin-right: 10px"></svg-icon>
+        <svg-icon name="download-one" class-name="pointer font-16"></svg-icon>
+      </li>
+      <li :style="styleCfg[2]" class="text-over">{{ item.name }}</li>
+      <li :style="styleCfg[3]" class="text-over">{{ item.ar[0].name }}</li>
+      <li :style="styleCfg[4]" class="text-over">{{ item.al.name }}</li>
+      <li :style="styleCfg[5]" class="text-over">{{ timeConvert(item.dt / 1000) }}</li>
     </ul>
   </div>
 </template>
@@ -62,6 +83,19 @@ ul {
       font-size: 16px;
     }
   }
+
+  .text-over {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.title-bar{
+  padding-left: 30px;
+}
+.music-list{
+  padding-left: 30px;
 }
 
 .music-list:nth-child(even) {

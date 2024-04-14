@@ -10,13 +10,6 @@ const isLoading = ref(false)
 
 const playlistId = ref('')
 
-const titles = reactive([
-  {val: '操作', width: '5%'},
-  {val: '音乐标题', width: '45%'},
-  {val: '歌手', width: '20%'},
-  {val: '专辑', width: '20%'},
-  {val: '时长', width: '10%'}
-])
 
 const route = useRoute()
 onMounted(() => {
@@ -41,7 +34,7 @@ const queryPlaylistSongs = async () => {
 <template>
   <div class="playlist-wrapper">
     <el-skeleton :rows="10" animated v-show="isLoading"></el-skeleton>
-    <MusicList v-show="!isLoading" :titles="titles" :data-list="songs"></MusicList>
+    <MusicList v-show="!isLoading" :data-list="songs"></MusicList>
   </div>
 </template>
 

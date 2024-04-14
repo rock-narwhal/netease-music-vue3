@@ -1,6 +1,6 @@
 <script setup>
 import {onMounted, ref, watch} from 'vue'
-import {useRoute, useRouter} from "vue-router";
+import {useRoute} from "vue-router";
 import {cloudSearch} from "@/api/api_music.js";
 import MusicList from "@/components/list/MusicList.vue";
 
@@ -17,13 +17,6 @@ const queryInfo = ref({
   keywords: '',
 })
 
-const titles = ref([
-  {val: '', width: '5%'},
-  {val: '音乐标题', width: '45%'},
-  {val: '歌手', width: '20%'},
-  {val: '专辑', width: '20%'},
-  {val: '时长', width: '10%'}
-])
 const route = useRoute()
 
 const songList = ref([])
@@ -58,7 +51,7 @@ const playMusic = (song) => {
   <div>
     <!--  搜索 单曲页面  {{$route.query}}-->
     <el-skeleton :rows="10" animated v-show="isLoading"></el-skeleton>
-    <MusicList v-show="!isLoading" style="margin:0 30px" :titles="titles" :data-list="songList" :dbClick="playMusic"></MusicList>
+    <MusicList v-show="!isLoading" style="margin:0 30px" :data-list="songList" :dbClick="playMusic"></MusicList>
   </div>
 </template>
 
