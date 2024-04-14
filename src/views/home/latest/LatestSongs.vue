@@ -5,6 +5,9 @@ import {timeConvert} from "@/utils/DateUtil.js";
 import emitter from '@/utils/MittBus.js'
 import {playStore} from "@/store/playStore.js";
 import SelectorMenu from "@/components/menu/SelectorMenu.vue";
+import ImgCover from "@/components/commons/ImgCover.vue";
+import SvgIcon from "@/components/svg/SvgIcon.vue";
+import SongTag from "@/components/commons/SongTag.vue";
 
 const menus = ref([{name: '全部', type: 0, active: false}, {name: '华语', type: 7, active: false},
   {name: '欧美', type: 96, active: false}, {name: '日本', type: 8, active: false},
@@ -35,11 +38,21 @@ const collectAll = () => {
 
 }
 
-const playSong = (song) => {
-  emitter.emit('playMusic', song)
+const playMusic = (id) => {
+  emitter.emit('playMusic', id)
 }
 
 const playingInfo = playStore().playingInfo
+
+const qualityTag = (item) =>{
+  if(item.hr){
+    return 'Hi-Res'
+  }
+  if(item.sq){
+    return 'SQ'
+  }
+  return null
+}
 </script>
 
 <template>
@@ -53,8 +66,8 @@ const playingInfo = playStore().playingInfo
       </SelectorMenu>
     </div>
     <ul>
-      <li class="clearfix" v-for="(item,index) in songList" :key="item.id" @dblclick="playSong(item)">
-        <div class="play-icon float-left">
+      <li class="clearfix" v-for="(item,index) in songList" :key="item.id" @dblclick.stop="playMusic(item.id)">
+        <div class="play-icon float-left grey-color">
           <span v-if="playingInfo.id !== item.id">{{ String(index + 1).padStart(2, '0') }}</span>
           <i v-else-if="playingInfo.pause" class="iconfont icon-shengyinguanbi"></i>
           <i v-else class="iconfont icon-shengyin"></i>
@@ -65,15 +78,25 @@ const playingInfo = playStore().playingInfo
                      show-type="always"
                      btn-size="small"
                      size="60px"
+                     @click-btn="playMusic(item.id)"
           ></img-cover>
         </div>
-        <div class="name float-left">
-          <span>{{ item.name }}</span>
-          <!--          <i class="iconfont icon-"></i>-->
+        <div class="name float-left clearfix">
+          <div class="float-left">
+            <span :class="{'red-color' : playingInfo.id === item.id}">{{ item.name }}</span><span class="grey-color" v-if="item.alias.length"> ({{item.alias[0]}})</span>
+          </div>
+          <div class="float-left" style="margin-left: 5px">
+            <song-tag tag="VIP" v-if="item.fee === 1" style="margin-right: 5px" color="#FE672E"></song-tag>
+            <song-tag :tag="qualityTag(item)" v-if="qualityTag(item)" style="margin-right: 5px"></song-tag>
+            <song-tag tag="MV" style="margin-right: 5px">
+              <svg-icon name="play-fill" class-name="font-10" vertical="-0.05"></svg-icon>
+            </song-tag>
+            <song-tag style="margin-right: 5px" v-if="item.originCoverType === 1 || item.originCoverType === 2" :tag="item.originCoverType === 1 ? '原唱' : '翻唱'"></song-tag>
+          </div>
         </div>
-        <div class="artist float-left">{{ item.artists[0].name }}</div>
-        <div class="album float-left">{{ item.album.name }}</div>
-        <div class="time-minute float-left">{{ timeConvert(item.duration / 1000) }}</div>
+        <div class="artist float-left dark-color">{{ item.artists[0].name }}</div>
+        <div class="album float-left dark-color">{{ item.album.name }}</div>
+        <div class="time-minute float-left grey-color">{{ timeConvert(item.duration / 1000) }}</div>
       </li>
     </ul>
   </div>
@@ -114,16 +137,15 @@ ul {
     border-radius: 3px;
 
     &:nth-child(odd) {
-      background-color: @greyF2;
+      background-color: @listBg;
     }
 
     &:hover {
-      background-color: @greyD8;
+      background-color: @listHover;
     }
 
     .float-left {
       float: left;
-      //border-left: 1px solid black;
     }
 
     .play-icon {
@@ -132,33 +154,11 @@ ul {
 
     .cover {
       width: 8%;
-      //position: relative;
       height: 80px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-
-    //  img {
-    //    width: 60px;
-    //    height: auto;
-    //    border-radius: 5px;
-    //  }
-    //
-    //  .play-btn {
-    //    width: 20px;
-    //    height: 20px;
-    //    background-color: white;
-    //    color: @headRed;
-    //    font-size: 8px;
-    //    border-radius: 50%;
-    //    text-align: center;
-    //    line-height: 20px;
-    //    position: absolute;
-    //    top: 30px;
-    //    left: 20px;
-    //  }
-    //}
 
     .name {
       width: 49%;
