@@ -1,5 +1,5 @@
 <script setup>
-import {ref, onMounted, watch} from 'vue'
+import {ref, onMounted, watch, onUnmounted} from 'vue'
 import emitter from '@/utils/MittBus.js'
 import {useRoute} from "vue-router";
 import HeaderBar from "@/components/layout/HeaderBar.vue";
@@ -15,6 +15,10 @@ onMounted(() => {
     contentRef.value.scrollTop || (contentRef.value.scrollTop = 0)
   })
   user.checkLogin()
+})
+
+onUnmounted(() => {
+  emitter.off('contentScrollTop')
 })
 
 //监听路由，通知leftAside
@@ -57,7 +61,7 @@ watch(() => route.path, val => {
     <div class="footer">
       <FooterBar></FooterBar>
     </div>
-<!--    登录弹窗-->
+    <!--    登录弹窗-->
     <LoginWindow></LoginWindow>
   </div>
 </template>
