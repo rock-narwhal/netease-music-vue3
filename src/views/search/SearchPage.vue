@@ -46,7 +46,7 @@ watch(() => route.query, (val) => {
 
 <template>
   <div class="container">
-    <div class="font-20 margin-30 search-title" style="font-weight: bold">搜索 {{ $route.query.keywords }}</div>
+    <div class="font-20 margin-30 search-title" style="font-weight: bold">搜索 : {{ decodeURIComponent($route.query.keywords) }}</div>
     <!--  你可能感兴趣-->
     <!--      <svg-icon class="font-18" icon-class="music"></svg-icon>-->
     <div class="margin-30" style="margin-bottom: 10px">你可能感兴趣</div>

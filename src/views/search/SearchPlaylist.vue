@@ -4,6 +4,7 @@ import {useRoute, useRouter} from "vue-router";
 import {cloudSearch} from "@/api/api_music.js";
 import {toCNNum} from "@/utils/FormatUtil.js";
 import ImgWidthList from "@/components/list/ImgWidthList.vue";
+import SvgIcon from "@/components/svg/SvgIcon.vue";
 
 const isLoading = ref(false)
 
@@ -35,10 +36,10 @@ onMounted(async () => {
 })
 
 const router = useRouter()
-const toPlaylistDetail = (id) =>{
+const toPlaylistDetail = (id) => {
   router.push({
-    name:"PlaylistDetail",
-    query:{id}
+    name: "PlaylistDetail",
+    query: {id}
   })
 }
 </script>
@@ -50,28 +51,43 @@ const toPlaylistDetail = (id) =>{
       <template v-slot="{scope}">
         <div class="float-item track-count">{{ scope.trackCount }} 首</div>
         <div class="float-item ar-name">by {{ scope.creator.nickname }}</div>
-        <div class="float-item play-count"><i class="iconfont icon-bofang"></i> {{ toCNNum(scope.playCount) }}</div>
+        <div class="float-item play-count clearfix">
+          <div class="play-icon">
+            <svg-icon name="play-fill"></svg-icon>
+          </div>
+          <span style="line-height: 16px; margin-left: 5px">{{ toCNNum(scope.playCount) }}</span>
+        </div>
       </template>
     </ImgWidthList>
   </div>
 </template>
 
 <style scoped lang="less">
-.float-item{
+.float-item {
   float: left;
   line-height: 100%;
 }
-.track-count{
+
+.track-count {
   width: 20%;
 }
-.ar-name{
+
+.ar-name {
   width: 60%;
 }
-.play-count{
+
+.play-count {
   width: 20%;
-  i{
+
+  .play-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid black;
-    border-radius: 50%;
+    float: left;
+    border-radius: 50%
   }
 }
 </style>

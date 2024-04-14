@@ -82,7 +82,7 @@ watch(() => route.path, val => {
   display: flex;
 
   .aside {
-    width: 235px;
+    width: 225px;
     height: auto;
     overflow-y: auto;
     box-sizing: border-box;
