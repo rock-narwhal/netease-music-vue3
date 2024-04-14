@@ -1,5 +1,5 @@
 <script setup>
-import {ref, defineProps, onMounted, watch, defineEmits} from "vue";
+import {ref, onMounted, watch} from "vue";
 import {getPlayListDetail} from "@/api/api_playlist.js";
 import ImgCover from "@/components/commons/ImgCover.vue";
 import {useRouter} from "vue-router";
@@ -61,12 +61,12 @@ const getDetailList = async (id) => {
       </div>
       <ul class="right-list font-12">
         <li v-for="(subItem,subIndex) in detailList[index]" :key="subItem.id">
-          <div :class="{hot : subIndex < 3}" class="grey-item">{{ subIndex + 1 }}</div>
-          <div>{{ subItem.name }} <span v-if="subItem.alia.length > 0" class="grey-item">({{ subItem.alia[0] }})</span>
+          <div :class="{hot : subIndex < 3}" class="grey-color">{{ subIndex + 1 }}</div>
+          <div>{{ subItem.name }} <span v-if="subItem.alia.length > 0" class="grey-color">({{ subItem.alia[0] }})</span>
           </div>
-          <div class="sub-right grey-item">{{ subItem.ar[0].name }}</div>
+          <div class="sub-right grey-color">{{ subItem.ar[0].name }}</div>
         </li>
-        <div class="check-all grey-item" @click="viewMore(topItem.id)">
+        <div class="check-all grey-color" @click="viewMore(topItem.id)">
           查看全部
           <svg-icon name="arrow-right" vertical="-0.15"></svg-icon>
         </div>
@@ -135,10 +135,6 @@ const getDetailList = async (id) => {
         }
       }
     }
-  }
-
-  .grey-item {
-    color: @listGrey;
   }
 }
 </style>

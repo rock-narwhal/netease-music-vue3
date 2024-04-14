@@ -65,7 +65,7 @@ const coverStyle =  computed(() =>{
 </script>
 
 <template>
-  <div class="img-cover-wrapper clearfix" :style="coverStyle" @click="emit('clickImg')">
+  <div class="img-cover-wrapper clearfix" :style="coverStyle" @click.stop="emit('clickImg')">
     <img v-lazy="src" :style="{borderRadius: radius}">
     <div class="right-top-area">
       <slot></slot>

@@ -1,8 +1,9 @@
 <script setup>
-import {computed, defineProps, watch, ref,onMounted} from 'vue'
+import {computed, watch, ref,onMounted} from 'vue'
 import {getSuggest} from "@/api/api_other.js";
 import {useRouter} from "vue-router";
 import SuggestList from "@/components/list/SuggestList.vue";
+import emitter from "@/utils/MittBus.js";
 
 const props = defineProps(['keywords'])
 //搜索建议
@@ -51,7 +52,7 @@ const showPlayList = computed(() => {
 const router = useRouter()
 // 播放音乐
 const playMusic = (id) =>{
-
+  emitter.emit('playMusic',id)
 }
 // 跳转到专辑页面
 const toAlbumDetail = (id) =>{
@@ -100,7 +101,7 @@ const toPlayListDetail = (id) =>{
         <div v-for="song in suggestInfo.songs"
              :key="song.id"
              class="item pointer text-hidden"
-             @click="playMusic(song.id)">
+             @click.stop="playMusic(song.id)">
           {{ song.name }} - {{ song.artists[0].name }}
         </div>
       </template>

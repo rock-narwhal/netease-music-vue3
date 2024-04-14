@@ -3,6 +3,7 @@ import {onMounted, ref, watch} from 'vue'
 import {useRoute} from "vue-router";
 import {cloudSearch} from "@/api/api_music.js";
 import MusicList from "@/components/list/MusicList.vue";
+import emitter from '@/utils/MittBus.js'
 
 const isLoading = ref(false)
 const pageInfo = ref({
@@ -41,8 +42,8 @@ const doSearch = async () => {
   isLoading.value = false
 }
 
-const playMusic = (song) => {
-
+const playMusic = (id) => {
+  emitter.emit('playMusic', id)
 }
 
 </script>
@@ -51,7 +52,7 @@ const playMusic = (song) => {
   <div>
     <!--  搜索 单曲页面  {{$route.query}}-->
     <el-skeleton :rows="10" animated v-show="isLoading"></el-skeleton>
-    <MusicList v-show="!isLoading" style="margin:0 30px" :data-list="songList" :dbClick="playMusic"></MusicList>
+    <MusicList v-show="!isLoading" style="margin:0 30px" :data-list="songList" @clickItem="playMusic"></MusicList>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <script setup>
-import {defineProps, computed, defineEmits} from 'vue'
+import { computed} from 'vue'
 import SvgIcon from "@/components/svg/SvgIcon.vue";
 import ImgCover from "@/components/commons/ImgCover.vue";
 
@@ -91,7 +91,8 @@ const picUrl = (item) => {
                    :btn-size="btnSize"
                    @click-img="clickImg(item.id)"
                    @click-btn="clickPlay(item.id)"
-                   :show-type="showPlayBtn ? 'hover' : 'none'">
+                   :show-type="showPlayBtn ? 'hover' : 'none'"
+                   :btn-pos="type === 'album' ? 'center' : 'right-bottom'">
           <div class="video-play-count font-12" v-if="item.playCount">
             <svg-icon name="play-fill" class-name="font-14" vertical="-0.2"></svg-icon>
             {{ playCount(item.playCount) }}
