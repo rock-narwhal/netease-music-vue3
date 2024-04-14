@@ -1,6 +1,7 @@
 <script setup>
-import {defineProps, defineEmits, ref} from 'vue'
+import {ref} from 'vue'
 import {ArrowDownBold, ArrowUpBold, Download, FolderAdd} from "@element-plus/icons-vue";
+import SvgIcon from "@/components/svg/SvgIcon.vue";
 
 defineProps({
   playingInfo: {
@@ -57,11 +58,15 @@ const targetPlayPage = (val) => {
         </button>
       </div>
       <div class="song-info">
-        <div class="song-name font-18">
-          {{ playingInfo.name }}
-          <i class="iconfont icon-aixin"></i>
+        <div class="song-name">
+          <div class="font-16 text-over">
+            {{ playingInfo.name }}
+          </div>
+          <span style="margin-left: 5px;" class="grey-color">
+            <svg-icon name="like" class-name="font-20"></svg-icon>
+          </span>
         </div>
-        <div>
+        <div class="text-over font-12 dark-color">
           {{ playingInfo.artists[0].name }}
         </div>
       </div>
@@ -131,6 +136,18 @@ const targetPlayPage = (val) => {
       &:hover button {
         display: block;
       }
+    }
+
+    .song-name {
+      margin-bottom: 3px;
+      width: 200px;
+      display: flex;
+    }
+
+    .text-over {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 160px;
     }
   }
 
