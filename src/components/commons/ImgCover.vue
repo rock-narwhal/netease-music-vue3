@@ -72,11 +72,11 @@ const coverStyle =  computed(() =>{
     </div>
     <div v-if="props.btnPos === 'center'" class="center-wrapper">
       <div class="btn-wrapper" :class="btnClass" @click.stop="emit('clickBtn')">
-        <svg-icon name="play-fill-red" :class-name="iconStyle.font" :vertical="iconStyle.vertical"></svg-icon>
+        <svg-icon name="play-fill" :class-name="iconStyle.font" :vertical="iconStyle.vertical"></svg-icon>
       </div>
     </div>
     <div v-else class="btn-wrapper" :class="btnClass" @click.stop="emit('clickBtn')">
-      <svg-icon name="play-fill-red" :class-name="iconStyle.font" :vertical="iconStyle.vertical"></svg-icon>
+      <svg-icon name="play-fill" :class-name="iconStyle.font" :vertical="iconStyle.vertical"></svg-icon>
     </div>
   </div>
 </template>
@@ -114,6 +114,7 @@ const coverStyle =  computed(() =>{
     background-color: white;
     text-align: center;
     border-radius: 50%;
+    color: @headRed;
   }
 
   .btn-right-bottom {

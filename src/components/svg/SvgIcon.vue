@@ -46,8 +46,7 @@ const verticalAlign = computed(() => {
 .svg-icon {
   width: 1em;
   height: 1em;
-  //line-height: 30px;
   line-height: 2em;
-  //overflow: hidden;
+  fill: currentColor;
 }
 </style>

@@ -2,6 +2,7 @@
 import {defineProps, computed, defineEmits} from 'vue'
 import {toCNNum} from "@/utils/FormatUtil.js";
 import {timeConvert} from "@/utils/DateUtil.js";
+import SvgIcon from "@/components/svg/SvgIcon.vue";
 
 const props = defineProps({
   list: {
@@ -44,7 +45,7 @@ const load = () => {
         class="pointer">
       <img v-lazy="item.imgurl16v9 + '?param=600y400'" alt="">
       <button class="play-count">
-        <svg-icon name="play-fill-white" class-name="font-18" vertical="-0.2"></svg-icon>
+        <svg-icon name="play-fill" class-name="font-18" vertical="-0.2"></svg-icon>
         {{ toCNNum(item.playCount) }}
       </button>
       <button class="duration">{{ timeConvert(item.duration) }}</button>
@@ -67,6 +68,7 @@ ul {
 
     img {
       border-radius: 5px;
+      width: 314px;
     }
 
     button {

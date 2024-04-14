@@ -63,7 +63,7 @@ const checkVip = computed(() => {
             <!--          按钮-->
             <button class="cir-btn-red pointer font-14" v-show="checkVip"
                     style="background-color: #ec4141; color: white">
-              <svg-icon name="play-fill-white" class-name="font-20" vertical="-0.25"></svg-icon>
+              <svg-icon name="play-fill" class-name="font-20" vertical="-0.25"></svg-icon>
               开通VIP畅听专辑
             </button>
             <button class="cir-btn-white pointer font-14" v-show="!albumInfo.isSub">

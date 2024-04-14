@@ -93,7 +93,7 @@ const picUrl = (item) => {
                    @click-btn="clickPlay(item.id)"
                    :show-type="showPlayBtn ? 'hover' : 'none'">
           <div class="video-play-count font-12" v-if="item.playCount">
-            <svg-icon name="play-fill-white" class-name="font-14" vertical="-0.2"></svg-icon>
+            <svg-icon name="play-fill" class-name="font-14" vertical="-0.2"></svg-icon>
             {{ playCount(item.playCount) }}
           </div>
         </img-cover>

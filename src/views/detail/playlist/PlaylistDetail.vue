@@ -51,7 +51,7 @@ const queryPlaylistInfo = async () => {
         <template v-slot:buttons>
           <div class="button-group">
             <button class="cir-btn-red pointer font-14">
-              <svg-icon name="play-fill-white" class-name="font-20" vertical="-0.25"></svg-icon>
+              <svg-icon name="play-fill" class-name="font-20" vertical="-0.25"></svg-icon>
               播放全部
             </button>
             <button class="cir-btn-white pointer font-14">
