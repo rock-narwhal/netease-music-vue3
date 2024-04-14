@@ -1,5 +1,5 @@
 <script setup>
-import {defineModel, defineProps, defineEmits, ref, reactive, onBeforeMount, watch, computed} from 'vue'
+import {defineModel, ref, reactive, onBeforeMount, watch, computed} from 'vue'
 
 const props = defineProps({
   size: { //进度条长度
@@ -29,14 +29,13 @@ const sliderBtnStyle = reactive({
   bottom:''
 })
 
-const emit = defineEmits(['onChange'])
+const emit = defineEmits(['progressChange'])
 
 const progress = ref(0) //进度
 
 const isActive = ref(false)// 是否在滑动
 
 onBeforeMount(() => {
-  console.log('onBeforeMount')
   if (props.vertical) {
     initVerticalStyle()
   } else {
@@ -75,9 +74,9 @@ const initHorizontalStyle = () => {
   sliderBtnStyle.top = '-17px'
 }
 
-watch(mode, (val) => {
+watch(() => props.modelValue, (val) => {
   if (!isActive.value) {
-    progress.value = val.value
+    progress.value = val
   }
 })
 const sliderSize = computed(() => {
@@ -147,7 +146,7 @@ const onchangeValue = (val) => {
 // 通知父组件 进度改变
 const afterChange = () => {
   if (isActive.value) {
-    emit('onChange', mode.value)
+    emit('progressChange', mode.value)
   }
 }
 </script>
