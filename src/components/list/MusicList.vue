@@ -2,6 +2,7 @@
 import {defineProps, defineEmits} from 'vue'
 import {timeConvert} from "@/utils/DateUtil.js";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
+import SongTag from "@/components/commons/SongTag.vue";
 
 defineProps({
   titles: {
@@ -36,6 +37,16 @@ const emit = defineEmits(['dbClick'])
 const dbClick = (id) => {
   emit('dbClick', id)
 }
+// 音质标签
+const qualityTag = (item) =>{
+  if(item.hr){
+    return 'Hi-Res'
+  }
+  if(item.sq){
+    return 'SQ'
+  }
+  return null
+}
 </script>
 
 <template>
@@ -45,20 +56,27 @@ const dbClick = (id) => {
         {{ val }}
       </li>
     </ul>
-    <ul class="music-list flex-box" v-for="(item,index) in dataList" :key="item.id" @dblclick="dbClick(item.id)">
-      <li :style="styleCfg[0]">
+    <ul class="music-list flex-box hover-list" v-for="(item,index) in dataList" :key="item.id" @dblclick="dbClick(item.id)">
+      <li :style="styleCfg[0]" class="grey-item">
         <span>
           {{ index < 9 ? '0' + (index + 1) : (index + 1) }}
         </span>
       </li>
-      <li :style="styleCfg[1]">
+      <li :style="styleCfg[1]"  class="grey-item">
         <svg-icon name="like" class-name="pointer font-16" style="margin-right: 10px"></svg-icon>
         <svg-icon name="download-one" class-name="pointer font-16"></svg-icon>
       </li>
-      <li :style="styleCfg[2]" class="text-over">{{ item.name }}</li>
-      <li :style="styleCfg[3]" class="text-over">{{ item.ar[0].name }}</li>
-      <li :style="styleCfg[4]" class="text-over">{{ item.al.name }}</li>
-      <li :style="styleCfg[5]" class="text-over">{{ timeConvert(item.dt / 1000) }}</li>
+      <li :style="styleCfg[2]" class="text-over">{{ item.name }}
+        <song-tag tag="VIP" v-if="item.fee === 1" style="margin-right: 5px" color="#FE672E"></song-tag>
+        <song-tag :tag="qualityTag(item)" v-if="qualityTag(item)" style="margin-right: 5px"></song-tag>
+        <song-tag tag="MV" style="margin-right: 5px">
+          <svg-icon name="play-fill" class-name="font-10" vertical="-0.05"></svg-icon>
+        </song-tag>
+        <song-tag v-if="item.originCoverType === 1 || item.originCoverType === 2" :tag="item.originCoverType === 1 ? '原唱' : '翻唱'"></song-tag>
+      </li>
+      <li :style="styleCfg[3]" class="text-over dark-item">{{ item.ar[0].name }}</li>
+      <li :style="styleCfg[4]" class="text-over dark-item">{{ item.al.name }}</li>
+      <li :style="styleCfg[5]" class="text-over grey-item">{{ timeConvert(item.dt / 1000) }}</li>
     </ul>
   </div>
 </template>
@@ -96,9 +114,21 @@ ul {
 }
 .music-list{
   padding-left: 30px;
+  .grey-item{
+    color: @listGrey;
+  }
+  .dark-item{
+    color: @listDark;
+  }
 }
 
 .music-list:nth-child(even) {
-  background: @grey57;
+  background: @listBg;
+}
+
+.hover-list{
+  &:hover{
+    background-color: @listHover;
+  }
 }
 </style>
