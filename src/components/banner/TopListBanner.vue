@@ -3,6 +3,7 @@ import {ref, defineProps, onMounted, watch, defineEmits} from "vue";
 import {getPlayListDetail} from "@/api/api_playlist.js";
 import ImgCover from "@/components/commons/ImgCover.vue";
 import {useRouter} from "vue-router";
+import SvgIcon from "@/components/svg/SvgIcon.vue";
 
 const props = defineProps({
   list: {
@@ -34,10 +35,10 @@ const clickPlay = (id) => {
 }
 
 const router = useRouter()
-const toPlayListDetail = (id) =>{
+const toPlayListDetail = (id) => {
   router.push({
-    name:'PlaylistDetail',
-    query:{id}
+    name: 'PlaylistDetail',
+    query: {id}
   })
 }
 
@@ -53,19 +54,22 @@ const getDetailList = async (id) => {
     <div class="banner-item" v-for="(topItem,index) in list" :key="topItem.id">
       <div class="cover pointer">
         <img-cover :src="topItem.coverImgUrl + '?param=400y400'"
-        btn-pos="center"
-        @click-img="toPlayListDetail(topItem.id)"
-        @click-btn="clickPlay(topItem.id)"></img-cover>
+                   size="160px"
+                   btn-pos="center"
+                   @click-img="toPlayListDetail(topItem.id)"
+                   @click-btn="clickPlay(topItem.id)"></img-cover>
       </div>
-      <ul class="right-list">
+      <ul class="right-list font-12">
         <li v-for="(subItem,subIndex) in detailList[index]" :key="subItem.id">
-          <div :class="{hot : subIndex < 3}">{{ subIndex + 1 }}</div>
-          <div>{{ subItem.name }}</div>
-          <div class="sub-right">{{ subItem.ar[0].name }}</div>
+          <div :class="{hot : subIndex < 3}" class="grey-item">{{ subIndex + 1 }}</div>
+          <div>{{ subItem.name }} <span v-if="subItem.alia.length > 0" class="grey-item">({{ subItem.alia[0] }})</span>
+          </div>
+          <div class="sub-right grey-item">{{ subItem.ar[0].name }}</div>
         </li>
-        <li class="no-btn" @click="viewMore(topItem.id)">
-          查看全部 <i class="el-icon-arrow-right"></i>
-        </li>
+        <div class="check-all grey-item" @click="viewMore(topItem.id)">
+          查看全部
+          <svg-icon name="arrow-right" vertical="-0.15"></svg-icon>
+        </div>
       </ul>
     </div>
   </div>
@@ -82,8 +86,8 @@ const getDetailList = async (id) => {
     margin-bottom: 30px;
 
     .cover {
-      width: 190px;
-      height: 190px;
+      width: 160px;
+      height: 160px;
     }
 
     .right-list {
@@ -103,13 +107,11 @@ const getDetailList = async (id) => {
         }
 
         &:nth-child(odd) {
-          //background-color: #eeeeee;
-          background-color: @greyF2;
+          background-color: @listBg;
         }
 
         &:hover {
-          //background-color: #dadada;
-          background-color: @greyD8;
+          background-color: @listHover;
         }
 
         div {
@@ -122,7 +124,21 @@ const getDetailList = async (id) => {
           margin-right: 10px;
         }
       }
+
+      .check-all {
+        padding-left: 10px;
+        height: 32px;
+        line-height: 32px;
+
+        &:hover {
+          color: #000;
+        }
+      }
     }
+  }
+
+  .grey-item {
+    color: @listGrey;
   }
 }
 </style>
