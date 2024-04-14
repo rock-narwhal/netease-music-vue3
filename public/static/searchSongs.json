@@ -1,0 +1,7420 @@
+{
+  "result": {
+    "searchQcReminder": null,
+    "songs": [
+      {
+        "name": "Cruel Summer",
+        "id": 1382576173,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 26,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 80752440,
+          "name": "Lover",
+          "picUrl": "http://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+          "tns": [],
+          "pic_str": "109951164260234943",
+          "pic": 109951164260234940
+        },
+        "dt": 178426,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 7139831,
+          "vd": -62889,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4283916,
+          "vd": -60308,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 2855959,
+          "vd": -58683,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1043629,
+          "fid": 0,
+          "size": 23276413,
+          "vd": -62878,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 2,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 26,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 0,
+        "publishTime": 0,
+        "privilege": {
+          "id": 1382576173,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Love Story",
+        "id": 19292984,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "600902000007282990",
+        "fee": 1,
+        "v": 132,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 1770438,
+          "name": "Fearless",
+          "picUrl": "http://p1.music.126.net/GZERNplXUdzTPkKqo2F4tA==/109951169217536854.jpg",
+          "tns": [],
+          "pic_str": "109951169217536854",
+          "pic": 109951169217536850
+        },
+        "dt": 236266,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9453236,
+          "vd": -66436,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5671959,
+          "vd": -63921,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3781320,
+          "vd": -62408,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1010592,
+          "fid": 0,
+          "size": 29846159,
+          "vd": -66391,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 3,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 132,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 503185,
+        "publishTime": 1230739200000,
+        "privilege": {
+          "id": 19292984,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Lover",
+        "id": 1382778514,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 26,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 80752440,
+          "name": "Lover",
+          "picUrl": "http://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+          "tns": [],
+          "pic_str": "109951164260234943",
+          "pic": 109951164260234940
+        },
+        "dt": 221306,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8854509,
+          "vd": -33925,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5312723,
+          "vd": -31337,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3541830,
+          "vd": -29655,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 969855,
+          "fid": 0,
+          "size": 26829433,
+          "vd": -33921,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 3,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 26,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 10886105,
+        "publishTime": 0,
+        "privilege": {
+          "id": 1382778514,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Blank Space",
+        "id": 1396305445,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 8,
+        "v": 33,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 82318646,
+          "name": "Gameday Country",
+          "picUrl": "http://p1.music.126.net/JwGZb57tuPsdqmUmUjta0g==/109951169115715677.jpg",
+          "tns": [],
+          "pic_str": "109951169115715677",
+          "pic": 109951169115715680
+        },
+        "dt": 231826,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9275603,
+          "vd": -56561,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5565379,
+          "vd": -54073,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3710267,
+          "vd": -52733,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1018330,
+          "fid": 0,
+          "size": 29509535,
+          "vd": -56847,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 20,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 33,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 363012,
+        "publishTime": 1570723200000,
+        "privilege": {
+          "id": 1396305445,
+          "fee": 8,
+          "payed": 0,
+          "st": 0,
+          "pl": 128000,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 128000,
+          "toast": false,
+          "flag": 196868,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "standard",
+          "dlLevel": "none",
+          "flLevel": "standard",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "exile",
+        "id": 1465114465,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          },
+          {
+            "id": 29337,
+            "name": "Bon Iver",
+            "tns": [],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 20,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 92895788,
+          "name": "folklore (deluxe version)",
+          "picUrl": "http://p1.music.126.net/b_6ZbpOz55g8oB4KR34aFw==/109951168971655174.jpg",
+          "tns": [],
+          "pic_str": "109951168971655174",
+          "pic": 109951168971655170
+        },
+        "dt": 285634,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 11428093,
+          "vd": -51815,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 6856873,
+          "vd": -49192,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 4571263,
+          "vd": -47500,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 934234,
+          "fid": 0,
+          "size": 33356166,
+          "vd": -51813,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 4,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 20,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 10959877,
+        "publishTime": 1597680000000,
+        "privilege": {
+          "id": 1465114465,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Enchanted",
+        "id": 19292852,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "600902000008723970",
+        "fee": 1,
+        "v": 63,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 1770431,
+          "name": "Speak Now (Deluxe Edition)",
+          "picUrl": "http://p1.music.126.net/vJ8Je9OECPODazPzLmRvmQ==/109951169026164541.jpg",
+          "tns": [],
+          "pic_str": "109951169026164541",
+          "pic": 109951169026164540
+        },
+        "dt": 352200,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 14090493,
+          "vd": -70053,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 8454313,
+          "vd": -67566,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 5636223,
+          "vd": -66063,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1031942,
+          "fid": 0,
+          "size": 45431271,
+          "vd": -70060,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 9,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 63,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 0,
+        "publishTime": 1262275200000,
+        "privilege": {
+          "id": 19292852,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "champagne problems",
+        "id": 1803546393,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 17,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 120321112,
+          "name": "evermore (deluxe version)",
+          "picUrl": "http://p1.music.126.net/TphKdZBHStqz-VMQwOCntw==/109951166162858522.jpg",
+          "tns": [],
+          "pic_str": "109951166162858522",
+          "pic": 109951166162858530
+        },
+        "dt": 244000,
+        "h": {
+          "br": 320001,
+          "fid": 0,
+          "size": 9762525,
+          "vd": -44874,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 5857533,
+          "vd": -42238,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128001,
+          "fid": 0,
+          "size": 3905036,
+          "vd": -40453,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 752445,
+          "fid": 0,
+          "size": 22949585,
+          "vd": -44904,
+          "sr": 44100
+        },
+        "hr": {
+          "br": 2492319,
+          "fid": 0,
+          "size": 76015730,
+          "vd": -44833,
+          "sr": 88200
+        },
+        "a": null,
+        "cd": "01",
+        "no": 2,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17718059008,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 17,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14195024,
+        "publishTime": 1607616000000,
+        "privilege": {
+          "id": 1803546393,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 201988,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 1999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "22",
+        "id": 19292804,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 72,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 1770428,
+          "name": "Red",
+          "picUrl": "http://p1.music.126.net/WS5zt4tq5KBONXcAktO2lA==/109951169270236134.jpg",
+          "tns": [],
+          "pic_str": "109951169270236134",
+          "pic": 109951169270236130
+        },
+        "dt": 232120,
+        "h": {
+          "br": 320002,
+          "fid": 0,
+          "size": 9287097,
+          "vd": -45377,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 5572275,
+          "vd": -41484,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128002,
+          "fid": 0,
+          "size": 3714865,
+          "vd": -39977,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1057032,
+          "fid": 0,
+          "size": 30669806,
+          "vd": -56873,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 6,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 72,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 32623,
+        "publishTime": 1356969600004,
+        "privilege": {
+          "id": 19292804,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Wildest Dreams",
+        "id": 29572506,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 97,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 3029801,
+          "name": "1989 (Deluxe)",
+          "picUrl": "http://p1.music.126.net/3KDqQ9XW2Khj5Ia4tRqAAw==/18771962022688349.jpg",
+          "tns": [],
+          "pic_str": "18771962022688349",
+          "pic": 18771962022688348
+        },
+        "dt": 220440,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8820027,
+          "vd": -40198,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5292034,
+          "vd": -37603,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3528037,
+          "vd": -35919,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 911565,
+          "fid": 0,
+          "size": 25118199,
+          "vd": -40612,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 9,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 2,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 97,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 466904,
+        "publishTime": 1414339200007,
+        "privilege": {
+          "id": 29572506,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Style",
+        "id": 29572502,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 97,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 3029801,
+          "name": "1989 (Deluxe)",
+          "picUrl": "http://p1.music.126.net/3KDqQ9XW2Khj5Ia4tRqAAw==/18771962022688349.jpg",
+          "tns": [],
+          "pic_str": "18771962022688349",
+          "pic": 18771962022688348
+        },
+        "dt": 231000,
+        "h": {
+          "br": 320002,
+          "fid": 0,
+          "size": 9242166,
+          "vd": -64287,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 5545317,
+          "vd": -61742,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128002,
+          "fid": 0,
+          "size": 3696893,
+          "vd": -60197,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 980844,
+          "fid": 0,
+          "size": 28321885,
+          "vd": -64417,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 3,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 2,
+        "s_id": 0,
+        "mark": 4503616807510016,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 97,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 384636,
+        "publishTime": 1414339200007,
+        "privilege": {
+          "id": 29572502,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Back To December",
+        "id": 19293014,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "600902000008723946",
+        "fee": 1,
+        "v": 42,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 1770441,
+          "name": "Back To December",
+          "picUrl": "http://p1.music.126.net/1V5SEzMUWB25_j3R0lvfhw==/6668538023378075.jpg",
+          "tns": [],
+          "pic": 6668538023378075
+        },
+        "dt": 295106,
+        "h": {
+          "br": 320001,
+          "fid": 0,
+          "size": 11807391,
+          "vd": -57209,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192001,
+          "fid": 0,
+          "size": 7084452,
+          "vd": -54673,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128001,
+          "fid": 0,
+          "size": 4722982,
+          "vd": -53103,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1011782,
+          "fid": 0,
+          "size": 37322984,
+          "vd": -57473,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 42,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": {
+          "type": 2,
+          "typeDesc": "其它版本可播",
+          "songId": null
+        },
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 32561,
+        "publishTime": 1300550400000,
+        "privilege": {
+          "id": 19293014,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": true,
+          "flag": 1284,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "lossless",
+          "playMaxBrLevel": "lossless",
+          "downloadMaxBrLevel": "lossless",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": true,
+            "userConsumable": true,
+            "listenType": 5,
+            "cannotListenReason": 0
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "ME!",
+        "id": 1382781549,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          },
+          {
+            "id": 28076769,
+            "name": "Brendon Urie",
+            "tns": [],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 19,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 80752440,
+          "name": "Lover",
+          "picUrl": "http://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+          "tns": [],
+          "pic_str": "109951164260234943",
+          "pic": 109951164260234940
+        },
+        "dt": 193000,
+        "h": {
+          "br": 320002,
+          "fid": 0,
+          "size": 7722885,
+          "vd": -65830,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 4633748,
+          "vd": -63349,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128002,
+          "fid": 0,
+          "size": 3089180,
+          "vd": -61974,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1124003,
+          "fid": 0,
+          "size": 27116575,
+          "vd": -65817,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 16,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 19,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 10866251,
+        "publishTime": 0,
+        "privilege": {
+          "id": 1382781549,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Call It What You Want",
+        "id": 516776413,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 549,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 36709029,
+          "name": "reputation",
+          "picUrl": "http://p1.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
+          "tns": [],
+          "pic_str": "109951163054654501",
+          "pic": 109951163054654500
+        },
+        "dt": 201555,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8064566,
+          "vd": -40996,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4838757,
+          "vd": -38378,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3225853,
+          "vd": -36642,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 848170,
+          "fid": 0,
+          "size": 21369176,
+          "vd": -40997,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 14,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 549,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 0,
+        "publishTime": 1510243200007,
+        "privilege": {
+          "id": 516776413,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Shake It Off",
+        "id": 28953033,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 69,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 2957006,
+          "name": "Shake It Off",
+          "picUrl": "http://p1.music.126.net/yGjQrAKIGlO--FJZ5jdOOg==/109951163071997318.jpg",
+          "tns": [],
+          "pic_str": "109951163071997318",
+          "pic": 109951163071997310
+        },
+        "dt": 219200,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8770917,
+          "vd": -57912,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5262568,
+          "vd": -55370,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3508393,
+          "vd": -53899,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1038158,
+          "fid": 0,
+          "size": 28445541,
+          "vd": -57912,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 6,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 4503616807510016,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 69,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": {
+          "type": 2,
+          "typeDesc": "其它版本可播",
+          "songId": null
+        },
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 320005,
+        "publishTime": 1408377600007,
+        "privilege": {
+          "id": 28953033,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": true,
+          "flag": 1284,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "lossless",
+          "playMaxBrLevel": "lossless",
+          "downloadMaxBrLevel": "lossless",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": true,
+            "userConsumable": true,
+            "listenType": 5,
+            "cannotListenReason": 0
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sparks Fly",
+        "id": 19292838,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "600902000008723942",
+        "fee": 1,
+        "v": 74,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 1770431,
+          "name": "Speak Now (Deluxe Edition)",
+          "picUrl": "http://p1.music.126.net/vJ8Je9OECPODazPzLmRvmQ==/109951169026164541.jpg",
+          "tns": [],
+          "pic_str": "109951169026164541",
+          "pic": 109951169026164540
+        },
+        "dt": 260946,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 10440664,
+          "vd": -73255,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 6264416,
+          "vd": -70733,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 4176292,
+          "vd": -69234,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1066821,
+          "fid": 0,
+          "size": 34797941,
+          "vd": -73331,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 2,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 74,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 32576,
+        "publishTime": 1262275200000,
+        "privilege": {
+          "id": 19292838,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Anti-Hero",
+        "id": 1990192694,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 32,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 153345099,
+          "name": "Midnights (3am Edition)",
+          "picUrl": "http://p1.music.126.net/lKhXKmONQahzGsRdhoDR7w==/109951168178695711.jpg",
+          "tns": [],
+          "pic_str": "109951168178695711",
+          "pic": 109951168178695710
+        },
+        "dt": 200690,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8030445,
+          "vd": -54130,
+          "sr": 48000
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4818285,
+          "vd": -51525,
+          "sr": 48000
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3212205,
+          "vd": -49845,
+          "sr": 48000
+        },
+        "sq": {
+          "br": 967411,
+          "fid": 0,
+          "size": 24268743,
+          "vd": -54167,
+          "sr": 48000
+        },
+        "hr": {
+          "br": 1734724,
+          "fid": 0,
+          "size": 43517762,
+          "vd": -54126,
+          "sr": 48000
+        },
+        "a": null,
+        "cd": "01",
+        "no": 3,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17717010432,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 32,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14572194,
+        "publishTime": 1666281600000,
+        "privilege": {
+          "id": 1990192694,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 201988,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 1999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Delicate",
+        "id": 516818336,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 543,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 36709029,
+          "name": "reputation",
+          "picUrl": "http://p1.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
+          "tns": [],
+          "pic_str": "109951163054654501",
+          "pic": 109951163054654500
+        },
+        "dt": 232251,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9292321,
+          "vd": -29199,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5575410,
+          "vd": -26604,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3716955,
+          "vd": -24922,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 855949,
+          "fid": 0,
+          "size": 24849425,
+          "vd": -29074,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 5,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 2,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 543,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 5855046,
+        "publishTime": 1510243200007,
+        "privilege": {
+          "id": 516818336,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Welcome To New York",
+        "id": 29561031,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 102,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 3029801,
+          "name": "1989 (Deluxe)",
+          "picUrl": "http://p1.music.126.net/3KDqQ9XW2Khj5Ia4tRqAAw==/18771962022688349.jpg",
+          "tns": [],
+          "pic_str": "18771962022688349",
+          "pic": 18771962022688348
+        },
+        "dt": 212600,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8506558,
+          "vd": -60406,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5103952,
+          "vd": -57897,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3402649,
+          "vd": -56349,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1033718,
+          "fid": 0,
+          "size": 27471080,
+          "vd": -60506,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 2,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 102,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 372645,
+        "publishTime": 1414339200007,
+        "privilege": {
+          "id": 29561031,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "The Man",
+        "id": 1382781100,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 20,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 80752440,
+          "name": "Lover",
+          "picUrl": "http://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+          "tns": [],
+          "pic_str": "109951164260234943",
+          "pic": 109951164260234940
+        },
+        "dt": 190360,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 7617350,
+          "vd": -58759,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4570427,
+          "vd": -56295,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3046966,
+          "vd": -55017,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1055306,
+          "fid": 0,
+          "size": 25111014,
+          "vd": -58744,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 4,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 20,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 10918079,
+        "publishTime": 0,
+        "privilege": {
+          "id": 1382781100,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "We Are Never Ever Getting Back Together",
+        "id": 1343458283,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 22,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 75404997,
+          "name": "Be My Anti-Valentine",
+          "picUrl": "http://p1.music.126.net/Go36MjrGcG9Ab1Kqrf_Kvg==/109951169115711921.jpg",
+          "tns": [],
+          "pic_str": "109951169115711921",
+          "pic": 109951169115711920
+        },
+        "dt": 193146,
+        "h": {
+          "br": 320002,
+          "fid": 0,
+          "size": 7728109,
+          "vd": -50390,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 4636883,
+          "vd": -47913,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128002,
+          "fid": 0,
+          "size": 3091270,
+          "vd": -46423,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1014740,
+          "fid": 0,
+          "size": 24499220,
+          "vd": -50385,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 22,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 463728,
+        "publishTime": 1548950400000,
+        "privilege": {
+          "id": 1343458283,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Long Live",
+        "id": 19292862,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "600902000008723990",
+        "fee": 1,
+        "v": 71,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 1770431,
+          "name": "Speak Now (Deluxe Edition)",
+          "picUrl": "http://p1.music.126.net/vJ8Je9OECPODazPzLmRvmQ==/109951169026164541.jpg",
+          "tns": [],
+          "pic_str": "109951169026164541",
+          "pic": 109951169026164540
+        },
+        "dt": 317960,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 12720631,
+          "vd": -61281,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 7632396,
+          "vd": -58726,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 5088279,
+          "vd": -57156,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 995766,
+          "fid": 0,
+          "size": 39576720,
+          "vd": -61609,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 14,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 71,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 2719,
+        "publishTime": 1262275200000,
+        "privilege": {
+          "id": 19292862,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "You Belong With Me",
+        "id": 19292987,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "600902000007260046",
+        "fee": 1,
+        "v": 136,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 1770438,
+          "name": "Fearless",
+          "picUrl": "http://p1.music.126.net/GZERNplXUdzTPkKqo2F4tA==/109951169217536854.jpg",
+          "tns": [],
+          "pic_str": "109951169217536854",
+          "pic": 109951169217536850
+        },
+        "dt": 231140,
+        "h": {
+          "br": 320002,
+          "fid": 0,
+          "size": 9247725,
+          "vd": -57365,
+          "sr": 48000
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 5548653,
+          "vd": -54854,
+          "sr": 48000
+        },
+        "l": {
+          "br": 128002,
+          "fid": 0,
+          "size": 3699117,
+          "vd": -53327,
+          "sr": 48000
+        },
+        "sq": {
+          "br": 1012254,
+          "fid": 0,
+          "size": 29246568,
+          "vd": -57531,
+          "sr": 48000
+        },
+        "hr": {
+          "br": 1779806,
+          "fid": 0,
+          "size": 51423072,
+          "vd": -57347,
+          "sr": 48000
+        },
+        "a": null,
+        "cd": "1",
+        "no": 6,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17717010432,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 136,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 5501322,
+        "publishTime": 1225468800000,
+        "privilege": {
+          "id": 19292987,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 201988,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 1999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Miss Americana & The Heartbreak Prince",
+        "id": 1382781399,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 17,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 80752440,
+          "name": "Lover",
+          "picUrl": "http://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+          "tns": [],
+          "pic_str": "109951164260234943",
+          "pic": 109951164260234940
+        },
+        "dt": 234146,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9368599,
+          "vd": -53202,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 5621177,
+          "vd": -50627,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3747466,
+          "vd": -49047,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1033779,
+          "fid": 0,
+          "size": 30256998,
+          "vd": -53195,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 7,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 17,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 0,
+        "publishTime": 0,
+        "privilege": {
+          "id": 1382781399,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Red",
+        "id": 19292800,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 81,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 1770428,
+          "name": "Red",
+          "picUrl": "http://p1.music.126.net/WS5zt4tq5KBONXcAktO2lA==/109951169270236134.jpg",
+          "tns": [],
+          "pic_str": "109951169270236134",
+          "pic": 109951169270236130
+        },
+        "dt": 223093,
+        "h": {
+          "br": 320002,
+          "fid": 0,
+          "size": 8926607,
+          "vd": -59317,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 5355982,
+          "vd": -56753,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128002,
+          "fid": 0,
+          "size": 3570669,
+          "vd": -55184,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 984341,
+          "fid": 0,
+          "size": 27449997,
+          "vd": -59083,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 2,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 81,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 204105,
+        "publishTime": 0,
+        "privilege": {
+          "id": 19292800,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Lavender Haze",
+        "id": 1990192689,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 27,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 153345099,
+          "name": "Midnights (3am Edition)",
+          "picUrl": "http://p1.music.126.net/lKhXKmONQahzGsRdhoDR7w==/109951168178695711.jpg",
+          "tns": [],
+          "pic_str": "109951168178695711",
+          "pic": 109951168178695710
+        },
+        "dt": 202395,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8098003,
+          "vd": -43884,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4858819,
+          "vd": -41257,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3239227,
+          "vd": -39513,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 824364,
+          "fid": 0,
+          "size": 20855975,
+          "vd": -43882,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17181188096,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 27,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14601417,
+        "publishTime": 1666281600000,
+        "privilege": {
+          "id": 1990192689,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "You Belong With Me",
+        "id": 1904168038,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 8,
+        "v": 6,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 137616842,
+          "name": "New Year's Party Country",
+          "picUrl": "http://p1.music.126.net/j0FGZA-gQWE5XYcZBPFOJA==/109951166738055029.jpg",
+          "tns": [],
+          "pic_str": "109951166738055029",
+          "pic": 109951166738055020
+        },
+        "dt": 232120,
+        "h": {
+          "br": 320002,
+          "fid": 0,
+          "size": 9287097,
+          "vd": -57683,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 5572275,
+          "vd": -55153,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128002,
+          "fid": 0,
+          "size": 3714865,
+          "vd": -53632,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 986736,
+          "fid": 0,
+          "size": 28630171,
+          "vd": -57844,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 25,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 6,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 0,
+        "publishTime": 1639670400000,
+        "privilege": {
+          "id": 1904168038,
+          "fee": 8,
+          "payed": 0,
+          "st": 0,
+          "pl": 128000,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 128000,
+          "toast": false,
+          "flag": 196868,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "standard",
+          "dlLevel": "none",
+          "flLevel": "standard",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Getaway Car",
+        "id": 516818337,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 534,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 36709029,
+          "name": "reputation",
+          "picUrl": "http://p1.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
+          "tns": [],
+          "pic_str": "109951163054654501",
+          "pic": 109951163054654500
+        },
+        "dt": 233626,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9347701,
+          "vd": -45560,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5608638,
+          "vd": -42992,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3739106,
+          "vd": -41446,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 946541,
+          "fid": 0,
+          "size": 27642128,
+          "vd": -45629,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 9,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 2,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 534,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 0,
+        "publishTime": 1510243200007,
+        "privilege": {
+          "id": 516818337,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Look What You Made Me Do",
+        "id": 501133611,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 587,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 36709029,
+          "name": "reputation",
+          "picUrl": "http://p1.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
+          "tns": [],
+          "pic_str": "109951163054654501",
+          "pic": 109951163054654500
+        },
+        "dt": 211859,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8477301,
+          "vd": -65269,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5086398,
+          "vd": -62690,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3390946,
+          "vd": -61149,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 965612,
+          "fid": 0,
+          "size": 25571734,
+          "vd": -65330,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 6,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 2,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 587,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 5647227,
+        "publishTime": 1503590400000,
+        "privilege": {
+          "id": 501133611,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "False God",
+        "id": 1382781502,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 17,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 80752440,
+          "name": "Lover",
+          "picUrl": "http://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+          "tns": [],
+          "pic_str": "109951164260234943",
+          "pic": 109951164260234940
+        },
+        "dt": 200306,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8014411,
+          "vd": -39303,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4808664,
+          "vd": -36674,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3205791,
+          "vd": -34925,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 834699,
+          "fid": 0,
+          "size": 20899474,
+          "vd": -39303,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 13,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 17,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 0,
+        "publishTime": 0,
+        "privilege": {
+          "id": 1382781502,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Gorgeous",
+        "id": 514235010,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 546,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 36709029,
+          "name": "reputation",
+          "picUrl": "http://p1.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
+          "tns": [],
+          "pic_str": "109951163054654501",
+          "pic": 109951163054654500
+        },
+        "dt": 208042,
+        "h": {
+          "br": 320002,
+          "fid": 0,
+          "size": 8324746,
+          "vd": -44884,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 4994865,
+          "vd": -42289,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128002,
+          "fid": 0,
+          "size": 3329924,
+          "vd": -40661,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 899922,
+          "fid": 0,
+          "size": 23402783,
+          "vd": -44940,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 8,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 546,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 5701012,
+        "publishTime": 1508428800007,
+        "privilege": {
+          "id": 514235010,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "...Ready For It?",
+        "id": 503207093,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 501,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 36709029,
+          "name": "reputation",
+          "picUrl": "http://p1.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
+          "tns": [],
+          "pic_str": "109951163054654501",
+          "pic": 109951163054654500
+        },
+        "dt": 208198,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8331015,
+          "vd": -57768,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4998626,
+          "vd": -55216,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3332432,
+          "vd": -53599,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 979773,
+          "fid": 0,
+          "size": 25498421,
+          "vd": -57968,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 2,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 501,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 5691016,
+        "publishTime": 1504368000000,
+        "privilege": {
+          "id": 503207093,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Lover (Remix)",
+        "id": 1403250178,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          },
+          {
+            "id": 956238,
+            "name": "Shawn Mendes",
+            "tns": [
+              "肖恩·蒙德兹"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 8,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 83298071,
+          "name": "Lover (Remix)",
+          "picUrl": "http://p1.music.126.net/Kn3_QaCQyCXYzrpYZOV70w==/109951164485490984.jpg",
+          "tns": [],
+          "pic_str": "109951164485490984",
+          "pic": 109951164485490980
+        },
+        "dt": 221355,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8856599,
+          "vd": -36300,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5313977,
+          "vd": -33707,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3542666,
+          "vd": -32031,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1607076,
+          "fid": 0,
+          "size": 44466958,
+          "vd": -36291,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 8,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 10901676,
+        "publishTime": 1573574400000,
+        "privilege": {
+          "id": 1403250178,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "All Too Well (10 Minute Version) (Taylor's Version) (From The Vault)",
+        "id": 1891456146,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 23,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 135521226,
+          "name": "Red (Taylor's Version)",
+          "picUrl": "http://p1.music.126.net/DYGaOqXCdIUjT2Wj7lvsqQ==/109951168852611462.jpg",
+          "tns": [],
+          "pic_str": "109951168852611462",
+          "pic": 109951168852611460
+        },
+        "dt": 613000,
+        "h": {
+          "br": 320001,
+          "fid": 0,
+          "size": 24522754,
+          "vd": -40796,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192001,
+          "fid": 0,
+          "size": 14713670,
+          "vd": -38188,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128001,
+          "fid": 0,
+          "size": 9809128,
+          "vd": -36492,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1596944,
+          "fid": 0,
+          "size": 122365876,
+          "vd": -40789,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 30,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17181188096,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 23,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14474398,
+        "publishTime": 1636646400000,
+        "privilege": {
+          "id": 1891456146,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Blank Space",
+        "id": 29572501,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 98,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 3029801,
+          "name": "1989 (Deluxe)",
+          "picUrl": "http://p1.music.126.net/3KDqQ9XW2Khj5Ia4tRqAAw==/18771962022688349.jpg",
+          "tns": [],
+          "pic_str": "18771962022688349",
+          "pic": 18771962022688348
+        },
+        "dt": 231826,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9275603,
+          "vd": -56567,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5565379,
+          "vd": -54073,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3710267,
+          "vd": -52719,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1020005,
+          "fid": 0,
+          "size": 29558050,
+          "vd": -56617,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 2,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 2,
+        "s_id": 0,
+        "mark": 4503616807510016,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 98,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 361153,
+        "publishTime": 1414339200007,
+        "privilege": {
+          "id": 29572501,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "I Knew You Were Trouble.",
+        "id": 25648017,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 124,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 2265005,
+          "name": "I Knew You Were Trouble.",
+          "picUrl": "http://p1.music.126.net/QtHTu9JysVWTat30lFrXTA==/109951163208497947.jpg",
+          "tns": [],
+          "pic_str": "109951163208497947",
+          "pic": 109951163208497950
+        },
+        "dt": 219720,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8791815,
+          "vd": -38555,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5275106,
+          "vd": -35979,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3516752,
+          "vd": -34327,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 998908,
+          "fid": 0,
+          "size": 27435030,
+          "vd": -38849,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 124,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 2655,
+        "publishTime": 1349712000007,
+        "privilege": {
+          "id": 25648017,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "august",
+        "id": 1465111917,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 18,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 92895788,
+          "name": "folklore (deluxe version)",
+          "picUrl": "http://p1.music.126.net/b_6ZbpOz55g8oB4KR34aFw==/109951168971655174.jpg",
+          "tns": [],
+          "pic_str": "109951168971655174",
+          "pic": 109951168971655170
+        },
+        "dt": 261922,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 10479325,
+          "vd": -43542,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 6287613,
+          "vd": -40940,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 4191756,
+          "vd": -39241,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 947855,
+          "fid": 0,
+          "size": 31033111,
+          "vd": -43537,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 8,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 18,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 0,
+        "publishTime": 1597680000000,
+        "privilege": {
+          "id": 1465111917,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Begin Again",
+        "id": 1343458292,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 15,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 75404997,
+          "name": "Be My Anti-Valentine",
+          "picUrl": "http://p1.music.126.net/Go36MjrGcG9Ab1Kqrf_Kvg==/109951169115711921.jpg",
+          "tns": [],
+          "pic_str": "109951169115711921",
+          "pic": 109951169115711920
+        },
+        "dt": 239426,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9579668,
+          "vd": -30523,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5747818,
+          "vd": -27914,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3831893,
+          "vd": -26228,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 910436,
+          "fid": 0,
+          "size": 27247842,
+          "vd": -31049,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 20,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 15,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14259504,
+        "publishTime": 1548950400000,
+        "privilege": {
+          "id": 1343458292,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "You Need To Calm Down",
+        "id": 1382778973,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 17,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 80752440,
+          "name": "Lover",
+          "picUrl": "http://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+          "tns": [],
+          "pic_str": "109951164260234943",
+          "pic": 109951164260234940
+        },
+        "dt": 171360,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 6856664,
+          "vd": -63883,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4114016,
+          "vd": -61349,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 2742692,
+          "vd": -59905,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1051169,
+          "fid": 0,
+          "size": 22516046,
+          "vd": -63871,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 14,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 17,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 10873182,
+        "publishTime": 0,
+        "privilege": {
+          "id": 1382778973,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cornelia Street (Live From Paris)",
+        "id": 1449110136,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 95,
+        "st": 0,
+        "rt": "",
+        "fee": 8,
+        "v": 10,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 89622346,
+          "name": "Cornelia Street (Live From Paris)",
+          "picUrl": "http://p1.music.126.net/rmkxz6-JqfuAlbBxuTz0_g==/109951164998238716.jpg",
+          "tns": [],
+          "pic_str": "109951164998238716",
+          "pic": 109951164998238720
+        },
+        "dt": 296013,
+        "h": {
+          "br": 320001,
+          "fid": 0,
+          "size": 11842605,
+          "vd": -27923,
+          "sr": 48000
+        },
+        "m": {
+          "br": 192001,
+          "fid": 0,
+          "size": 7105581,
+          "vd": -25324,
+          "sr": 48000
+        },
+        "l": {
+          "br": 128001,
+          "fid": 0,
+          "size": 4737069,
+          "vd": -23649,
+          "sr": 48000
+        },
+        "sq": {
+          "br": 911758,
+          "fid": 0,
+          "size": 33736574,
+          "vd": -27912,
+          "sr": 48000
+        },
+        "hr": {
+          "br": 1681132,
+          "fid": 0,
+          "size": 62204696,
+          "vd": -27767,
+          "sr": 48000
+        },
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17717010432,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 10,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 10944036,
+        "publishTime": 1589731200000,
+        "privilege": {
+          "id": 1449110136,
+          "fee": 8,
+          "payed": 0,
+          "st": 0,
+          "pl": 128000,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 128000,
+          "toast": false,
+          "flag": 200964,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "standard",
+          "dlLevel": "none",
+          "flLevel": "standard",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 1999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "ME!",
+        "id": 1361348080,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          },
+          {
+            "id": 28076769,
+            "name": "Brendon Urie",
+            "tns": [],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 94,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 78780726,
+          "name": "ME! (feat. Brendon Urie of Panic! At The Disco)",
+          "picUrl": "http://p1.music.126.net/ARDzEUlZ8g9rEdrLKoeIMg==/109951164025958391.jpg",
+          "tns": [],
+          "pic_str": "109951164025958391",
+          "pic": 109951164025958380
+        },
+        "dt": 193000,
+        "h": {
+          "br": 320002,
+          "fid": 0,
+          "size": 7722885,
+          "vd": -65833,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192002,
+          "fid": 0,
+          "size": 4633748,
+          "vd": -63354,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128002,
+          "fid": 0,
+          "size": 3089180,
+          "vd": -61978,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1038461,
+          "fid": 0,
+          "size": 25052880,
+          "vd": -66562,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 1,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 94,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 10866251,
+        "publishTime": 1556208000000,
+        "privilege": {
+          "id": 1361348080,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "New Romantics",
+        "id": 29572513,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": null,
+        "fee": 1,
+        "v": 89,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 3029801,
+          "name": "1989 (Deluxe)",
+          "picUrl": "http://p1.music.126.net/3KDqQ9XW2Khj5Ia4tRqAAw==/18771962022688349.jpg",
+          "tns": [],
+          "pic_str": "18771962022688349",
+          "pic": 18771962022688348
+        },
+        "dt": 230466,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9221268,
+          "vd": -61717,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5532778,
+          "vd": -59248,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3688533,
+          "vd": -57910,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1043318,
+          "fid": 0,
+          "size": 30056257,
+          "vd": -61576,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "1",
+        "no": 16,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 2,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 89,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 5305406,
+        "publishTime": 1414339200007,
+        "privilege": {
+          "id": 29572513,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Out Of The Woods (Taylor's Version)",
+        "id": 2092285038,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 95,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 13,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 177237088,
+          "name": "1989 (Taylor's Version)",
+          "picUrl": "http://p1.music.126.net/PA01TRYxcT28W_3B_SoPKw==/109951169026162735.jpg",
+          "tns": [],
+          "pic_str": "109951169026162735",
+          "pic": 109951169026162740
+        },
+        "dt": 235800,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9434427,
+          "vd": -58377,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5660674,
+          "vd": -55822,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3773797,
+          "vd": -54420,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1008382,
+          "fid": 0,
+          "size": 29722081,
+          "vd": -58450,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 4,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 13,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14671666,
+        "publishTime": 1698336000000,
+        "privilege": {
+          "id": 2092285038,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 132356,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jyeffect",
+          "playMaxBrLevel": "jyeffect",
+          "downloadMaxBrLevel": "jyeffect",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Midnight Rain",
+        "id": 1990192000,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 28,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 153345099,
+          "name": "Midnights (3am Edition)",
+          "picUrl": "http://p1.music.126.net/lKhXKmONQahzGsRdhoDR7w==/109951168178695711.jpg",
+          "tns": [],
+          "pic_str": "109951168178695711",
+          "pic": 109951168178695710
+        },
+        "dt": 174782,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 6993645,
+          "vd": -42791,
+          "sr": 48000
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4196205,
+          "vd": -40162,
+          "sr": 48000
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 2797485,
+          "vd": -38414,
+          "sr": 48000
+        },
+        "sq": {
+          "br": 764062,
+          "fid": 0,
+          "size": 16693116,
+          "vd": -42353,
+          "sr": 48000
+        },
+        "hr": {
+          "br": 1515251,
+          "fid": 0,
+          "size": 33104979,
+          "vd": -42789,
+          "sr": 48000
+        },
+        "a": null,
+        "cd": "01",
+        "no": 6,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17717010432,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 28,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14573412,
+        "publishTime": 1666281600000,
+        "privilege": {
+          "id": 1990192000,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 201988,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 1999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "London Boy",
+        "id": 1382781444,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 20,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 80752440,
+          "name": "Lover",
+          "picUrl": "http://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+          "tns": [],
+          "pic_str": "109951164260234943",
+          "pic": 109951164260234940
+        },
+        "dt": 190240,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 7612125,
+          "vd": -53232,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 4567293,
+          "vd": -50638,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3044876,
+          "vd": -48980,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 991062,
+          "fid": 0,
+          "size": 23567469,
+          "vd": -53235,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 11,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 20,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 0,
+        "publishTime": 0,
+        "privilege": {
+          "id": 1382781444,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "New Romantics (Taylor's Version)",
+        "id": 2092285247,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 95,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 13,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 177237088,
+          "name": "1989 (Taylor's Version)",
+          "picUrl": "http://p1.music.126.net/PA01TRYxcT28W_3B_SoPKw==/109951169026162735.jpg",
+          "tns": [],
+          "pic_str": "109951169026162735",
+          "pic": 109951169026162740
+        },
+        "dt": 230177,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9209774,
+          "vd": -60391,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5525882,
+          "vd": -57932,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3683936,
+          "vd": -56697,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1038006,
+          "fid": 0,
+          "size": 29865738,
+          "vd": -60172,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 16,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 13,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14672412,
+        "publishTime": 1698336000000,
+        "privilege": {
+          "id": 2092285247,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 132356,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jyeffect",
+          "playMaxBrLevel": "jyeffect",
+          "downloadMaxBrLevel": "jyeffect",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Need (Demo)",
+        "id": 2026765803,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 95,
+        "st": 0,
+        "rt": "",
+        "fee": 0,
+        "v": 2,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 0,
+          "name": "",
+          "picUrl": "http://p1.music.126.net/yvIqfswtfZv9RAOTTXnRuQ==/109951168436656912.jpg",
+          "tns": [],
+          "pic_str": "109951168436656912",
+          "pic": 109951168436656910
+        },
+        "dt": 191216,
+        "h": {
+          "br": 320002,
+          "fid": 0,
+          "size": 7648697,
+          "vd": -50620,
+          "sr": 44100
+        },
+        "m": null,
+        "l": null,
+        "sq": null,
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 0,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 0,
+        "s_id": 0,
+        "mark": 262144,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 2,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 1,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 617010,
+        "mv": 0,
+        "publishTime": 1546272000000,
+        "privilege": {
+          "id": 2026765803,
+          "fee": 0,
+          "payed": 0,
+          "st": 0,
+          "pl": 320000,
+          "dl": 320000,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 320000,
+          "fl": 320000,
+          "toast": false,
+          "flag": 128,
+          "preSell": false,
+          "playMaxbr": 320000,
+          "downloadMaxbr": 320000,
+          "maxBrLevel": "exhigh",
+          "playMaxBrLevel": "exhigh",
+          "downloadMaxBrLevel": "exhigh",
+          "plLevel": "exhigh",
+          "dlLevel": "exhigh",
+          "flLevel": "exhigh",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 0
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "willow",
+        "id": 1803546869,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 20,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 120321112,
+          "name": "evermore (deluxe version)",
+          "picUrl": "http://p1.music.126.net/TphKdZBHStqz-VMQwOCntw==/109951166162858522.jpg",
+          "tns": [],
+          "pic_str": "109951166162858522",
+          "pic": 109951166162858530
+        },
+        "dt": 214706,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 8591195,
+          "vd": -55420,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5154734,
+          "vd": -52788,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3436504,
+          "vd": -51036,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 894378,
+          "fid": 0,
+          "size": 24003638,
+          "vd": -55618,
+          "sr": 44100
+        },
+        "hr": {
+          "br": 2720452,
+          "fid": 0,
+          "size": 73012419,
+          "vd": -55601,
+          "sr": 88200
+        },
+        "a": null,
+        "cd": "01",
+        "no": 1,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17717010432,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 20,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14191706,
+        "publishTime": 1609948800000,
+        "privilege": {
+          "id": 1803546869,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 201988,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 1999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Long Live (Taylor's Version)",
+        "id": 2059790562,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 11,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 168588248,
+          "name": "Speak Now (Taylor's Version)",
+          "picUrl": "http://p1.music.126.net/3MQls4eG_yJR_HaYXPMWlA==/109951168728387752.jpg",
+          "tns": [],
+          "pic_str": "109951168728387752",
+          "pic": 109951168728387740
+        },
+        "dt": 317960,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 12720631,
+          "vd": -65560,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 7632396,
+          "vd": -63027,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 5088279,
+          "vd": -61510,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 1012275,
+          "fid": 0,
+          "size": 40232892,
+          "vd": -65458,
+          "sr": 44100
+        },
+        "hr": null,
+        "a": null,
+        "cd": "01",
+        "no": 14,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17180139520,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 11,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14640599,
+        "publishTime": 1688659200000,
+        "privilege": {
+          "id": 2059790562,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 197892,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "Begin Again (Taylor's Version)",
+        "id": 1891454353,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 95,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 22,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 135521226,
+          "name": "Red (Taylor's Version)",
+          "picUrl": "http://p1.music.126.net/DYGaOqXCdIUjT2Wj7lvsqQ==/109951168852611462.jpg",
+          "tns": [],
+          "pic_str": "109951168852611462",
+          "pic": 109951168852611460
+        },
+        "dt": 238822,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9554925,
+          "vd": -47092,
+          "sr": 48000
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5732973,
+          "vd": -44500,
+          "sr": 48000
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3821997,
+          "vd": -42845,
+          "sr": 48000
+        },
+        "sq": {
+          "br": 1045431,
+          "fid": 0,
+          "size": 31209068,
+          "vd": -47093,
+          "sr": 48000
+        },
+        "hr": {
+          "br": 3273257,
+          "fid": 0,
+          "size": 97715918,
+          "vd": -47505,
+          "sr": 96000
+        },
+        "a": null,
+        "cd": "01",
+        "no": 16,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17717010432,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 22,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14474288,
+        "publishTime": 1636646400000,
+        "privilege": {
+          "id": 1891454353,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 201988,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 1999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      },
+      {
+        "name": "tolerate it",
+        "id": 1803546870,
+        "pst": 0,
+        "t": 0,
+        "ar": [
+          {
+            "id": 44266,
+            "name": "Taylor Swift",
+            "tns": [
+              "泰勒·斯威夫特"
+            ],
+            "alias": []
+          }
+        ],
+        "alia": [],
+        "pop": 100,
+        "st": 0,
+        "rt": "",
+        "fee": 1,
+        "v": 17,
+        "crbt": null,
+        "cf": "",
+        "al": {
+          "id": 120321112,
+          "name": "evermore (deluxe version)",
+          "picUrl": "http://p1.music.126.net/TphKdZBHStqz-VMQwOCntw==/109951166162858522.jpg",
+          "tns": [],
+          "pic_str": "109951166162858522",
+          "pic": 109951166162858530
+        },
+        "dt": 245440,
+        "h": {
+          "br": 320000,
+          "fid": 0,
+          "size": 9819995,
+          "vd": -46392,
+          "sr": 44100
+        },
+        "m": {
+          "br": 192000,
+          "fid": 0,
+          "size": 5892014,
+          "vd": -43755,
+          "sr": 44100
+        },
+        "l": {
+          "br": 128000,
+          "fid": 0,
+          "size": 3928024,
+          "vd": -42010,
+          "sr": 44100
+        },
+        "sq": {
+          "br": 750269,
+          "fid": 0,
+          "size": 23018260,
+          "vd": -46534,
+          "sr": 44100
+        },
+        "hr": {
+          "br": 2475047,
+          "fid": 0,
+          "size": 75934470,
+          "vd": -46364,
+          "sr": 88200
+        },
+        "a": null,
+        "cd": "01",
+        "no": 5,
+        "rtUrl": null,
+        "ftype": 0,
+        "rtUrls": [],
+        "djId": 0,
+        "copyright": 1,
+        "s_id": 0,
+        "mark": 17718059008,
+        "originCoverType": 0,
+        "originSongSimpleData": null,
+        "tagPicList": null,
+        "resourceState": true,
+        "version": 17,
+        "songJumpInfo": null,
+        "entertainmentTags": null,
+        "single": 0,
+        "noCopyrightRcmd": null,
+        "rtype": 0,
+        "rurl": null,
+        "mst": 9,
+        "cp": 7003,
+        "mv": 14195025,
+        "publishTime": 1609948800000,
+        "privilege": {
+          "id": 1803546870,
+          "fee": 1,
+          "payed": 0,
+          "st": 0,
+          "pl": 0,
+          "dl": 0,
+          "sp": 7,
+          "cp": 1,
+          "subp": 1,
+          "cs": false,
+          "maxbr": 999000,
+          "fl": 0,
+          "toast": false,
+          "flag": 201988,
+          "preSell": false,
+          "playMaxbr": 999000,
+          "downloadMaxbr": 999000,
+          "maxBrLevel": "jymaster",
+          "playMaxBrLevel": "jymaster",
+          "downloadMaxBrLevel": "jymaster",
+          "plLevel": "none",
+          "dlLevel": "none",
+          "flLevel": "none",
+          "rscl": null,
+          "freeTrialPrivilege": {
+            "resConsumable": false,
+            "userConsumable": false,
+            "listenType": 5,
+            "cannotListenReason": 1
+          },
+          "rightSource": 0,
+          "chargeInfoList": [
+            {
+              "rate": 128000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 192000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 320000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            },
+            {
+              "rate": 1999000,
+              "chargeUrl": null,
+              "chargeMessage": null,
+              "chargeType": 1
+            }
+          ]
+        }
+      }
+    ],
+    "songCount": 292
+  },
+  "code": 200
+}
