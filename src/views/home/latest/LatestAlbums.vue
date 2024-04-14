@@ -1,6 +1,8 @@
 <script setup>
 import {ref, onMounted} from 'vue'
 import {getLatestAlbum} from "@/api/api_toplist.js";
+import SelectorMenu from "@/components/menu/SelectorMenu.vue";
+import ImgList from "@/components/list/ImgList.vue";
 
 const menus = ref([
   {name: '全部', type: 'ALL', active: true}, {name: '华语', type: 'ZH', active: false},
@@ -51,7 +53,12 @@ const getAlbumByArea = (area) => {
     </div>
     <ImgList :list="albumList" type="album">
       <template v-slot="{item}">
+        <div class="dark-color" style="margin: 10px 0">
         {{ item.name }}
+        </div>
+        <div class="font-12 grey-color">
+          {{item.artist.name}}
+        </div>
       </template>
     </ImgList>
   </div>
