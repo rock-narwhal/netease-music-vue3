@@ -29,6 +29,7 @@ const toSubPage = (active) => {
 </template>
 
 <style scoped lang="less">
+@import "@/assets/less/lessDefine.less";
 .container {
   .top-btn-wrap {
     width: 100%;
@@ -37,7 +38,7 @@ const toSubPage = (active) => {
       height: 32px;
       width: 202px;
       margin: auto;
-      border: 1px solid #d0d0d0;
+      border: 1px solid @btnGrey;
       box-sizing: border-box;
       border-radius: 16px;
 
@@ -48,12 +49,12 @@ const toSubPage = (active) => {
         box-sizing: border-box;
 
         &:hover {
-          background-color: #e7e7e7;
+          background-color: @btnGreyHover;
         }
       }
 
       button.active-btn {
-        background-color: #d0d0d0;
+        background-color: @btnGrey;
         color: white;
       }
     }

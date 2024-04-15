@@ -29,6 +29,7 @@ function handleError(err) {
 
 export const get = (url, params) => {
     params = params || {}
+    params.timestamp = new Date().getTime()
     return service.get(
         base_url + url, {params}
     ).then(res => res.data)

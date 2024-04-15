@@ -17,7 +17,7 @@ const clickTab = (type) => {
 <template>
   <div class="outer">
     <ul>
-      <li class="pointer"
+      <li class="pointer dark-color"
           :class="{active: item.active}"
           v-for="item in option"
           :key="item.type"
@@ -42,7 +42,8 @@ const clickTab = (type) => {
       padding: 0 10px;
     }
   }
-  .active{
+  li.active{
+    color: black;
     font-weight: bold;
   }
 }

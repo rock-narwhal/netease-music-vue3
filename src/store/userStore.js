@@ -39,18 +39,18 @@ export const userStore = defineStore('user', {
             await this.queryUserDetail()
         },
         async queryUserDetail() {
-            const res = await getUserDetail(this.account.id, new Date().getTime())
+            const res = await getUserDetail(this.account.id)
             if (res.code !== 200) return
             this.info = res
         },
         async queryUserAccount(){
-            const res = await getUserAccountInfo(new Date().getTime())
+            const res = await getUserAccountInfo()
             if(res.code !== 200) return
             this.account = res.account
             this.profile = res.profile || {}
         },
         async checkLogin() {
-            const res = await checkLoginStatus(new Date().getTime())
+            const res = await checkLoginStatus()
             if (!res.data || res.data.code !== 200) {
                 this.clearLogInfo()
                 return

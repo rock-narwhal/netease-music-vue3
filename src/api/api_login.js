@@ -1,10 +1,10 @@
 import {get,post} from './request'
 
-export const getQrKey = (timestamp) => get('/login/qr/key', {timestamp})
+export const getQrKey = () => get('/login/qr/key')
 
-export const qrCreate = (key, qrimg, timestamp) => get('/login/qr/create', {key, qrimg, timestamp})
+export const qrCreate = (key, qrimg) => get('/login/qr/create', {key, qrimg})
 
-export const qrCheck = (key, timestamp) => get('/login/qr/check', {key, timestamp})
+export const qrCheck = (key) => get('/login/qr/check', {key})
 
 export const checkLoginStatus = () => post('/login/status')
 

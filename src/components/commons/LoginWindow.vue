@@ -23,11 +23,11 @@ const qrUrl = ref('') //二维码url
 const qrKey = ref('')
 const qrLogin = async () => {
   if (loginType.value !== 'QR') return
-  let res = await getQrKey(new Date().getTime())
+  let res = await getQrKey()
   if (res.code !== 200) return
   qrKey.value = res.data.unikey
 
-  res = await qrCreate(qrKey.value, true, new Date().getTime())
+  res = await qrCreate(qrKey.value, true)
   if (res.code !== 200) return
   qrUrl.value = res.data.qrimg
   await checkQrLogin()
@@ -49,7 +49,7 @@ const checkQrLogin = async () => {
       window.clearInterval(qrCheckTimer)
       return
     }
-    const res = await qrCheck(qrKey.value, new Date().getTime())
+    const res = await qrCheck(qrKey.value)
     if (res.code === 800) {
       showRefreshQr.value = true
       window.clearInterval(qrCheckTimer)
