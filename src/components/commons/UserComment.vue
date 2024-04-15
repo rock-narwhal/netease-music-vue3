@@ -18,21 +18,21 @@ defineProps({
     <div class="comment-content">
       <div class="content-block"><span style="color: #0077aa">{{ comment.user.nickname }} : </span>{{ comment.content }}
       </div>
-      <div v-if="comment.beReplied && comment.beReplied.length" class="replied-content content-block"><span
+      <div v-if="comment.beReplied && comment.beReplied.length" class="replied-content content-block dark-color"><span
           style="color: #0077aa">@{{ comment.beReplied[0].user.nickname }} : </span>{{ comment.beReplied[0].content }}
       </div>
-      <div class="content-block">
-        <span>{{ dateTimeFormat(comment.time) }}</span>
+      <div class="content-block" style="margin-top: 5px">
+        <span class="grey-color">{{ dateTimeFormat(comment.time) }}</span>
         <div class="button-wrapper">
-          <button>举报</button>
-          <button>
+          <button class="dark-color">举报</button>
+          <button class="dark-color">
             <svg-icon name="thumbs-up"></svg-icon>
             {{ comment.likedCount }}
           </button>
-          <button>
+          <button class="dark-color">
             <svg-icon name="share"></svg-icon>
           </button>
-          <button>
+          <button class="dark-color">
             <svg-icon name="comment"></svg-icon>
           </button>
         </div>
@@ -83,7 +83,7 @@ defineProps({
   }
 
   .content-block {
-    line-height: 20px;
+    line-height: 18px;
   }
 }
 </style>
