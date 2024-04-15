@@ -52,6 +52,7 @@ const infoContent = computed(() => {
 </template>
 
 <style scoped lang="less">
+@import "@/assets/less/lessDefine";
 .info-wrap {
   padding: 0 30px;
 
@@ -66,6 +67,7 @@ const infoContent = computed(() => {
     text-indent: 2em;
     line-height: 200%;
     white-space: pre-wrap;
+    color: @listDark;
   }
 }
 </style>
