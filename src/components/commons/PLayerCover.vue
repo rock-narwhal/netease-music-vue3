@@ -57,7 +57,7 @@ const targetPlayPage = (val) => {
           </el-icon>
         </button>
       </div>
-      <div class="song-info">
+      <div class="song-info pointer">
         <div class="song-name">
           <div class="font-16 text-over">
             {{ playingInfo.name }}
@@ -147,7 +147,7 @@ const targetPlayPage = (val) => {
     .text-over {
       overflow: hidden;
       white-space: nowrap;
-      width: 160px;
+      max-width: 160px;
     }
   }
 

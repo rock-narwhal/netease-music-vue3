@@ -47,12 +47,12 @@ const qualityTag = (item) =>{
 
 <template>
   <div class="music-list-wrapper">
-    <ul class="title-bar flex-box">
+    <ul class="title-bar flex-box default-cursor">
       <li v-for="(val,index) in titles" :key="val" :style="styleCfg[index]">
         {{ val }}
       </li>
     </ul>
-    <ul class="music-list flex-box hover-list" v-for="(item,index) in dataList" :key="item.id" @dblclick.stop="emit('clickItem', item.id)">
+    <ul class="music-list flex-box hover-list default-cursor" v-for="(item,index) in dataList" :key="item.id" @dblclick.stop="emit('clickItem', item.id)">
       <li :style="styleCfg[0]" class="grey-color">
         <span>
           {{ index < 9 ? '0' + (index + 1) : (index + 1) }}

@@ -54,15 +54,15 @@ const queryPlaylistInfo = async () => {
               <svg-icon name="play-fill" class-name="font-20" vertical="-0.25"></svg-icon>
               播放全部
             </button>
-            <button class="cir-btn-white pointer font-14">
+            <button class="cir-btn-white pointer font-14 dark-color">
               <svg-icon name="collection-records" class-name="font-20" vertical="-0.25"></svg-icon>
               收藏
             </button>
-            <button class="cir-btn-white pointer font-14">
+            <button class="cir-btn-white pointer font-14 dark-color">
               <svg-icon name="share" class-name="font-18" vertical="-0.2"></svg-icon>
               分享
             </button>
-            <button class="cir-btn-white pointer font-14">
+            <button class="cir-btn-white pointer font-14 dark-color">
               <svg-icon name="download-one" class-name="font-20" vertical="-0.25"></svg-icon>
               下载全部
             </button>
@@ -70,10 +70,10 @@ const queryPlaylistInfo = async () => {
         </template>
         <template v-slot:others>
           <div class="playlist-other">
-            <div style="margin-bottom: 5px">标签 : <span v-if="playlistInfo.tags">{{ playlistInfo.tags[0] }}</span>
+            <div  v-if="playlistInfo.tags.length > 0" style="margin-bottom: 5px">标签 : <span>{{ playlistInfo.tags[0] }}</span>
             </div>
-            <div style="margin-bottom: 5px">歌曲 : {{ playlistInfo.trackCount }} 播放 :
-              {{ toCNNum(playlistInfo.playCount) }}
+            <div style="margin-bottom: 5px">歌曲 : <span class="dark-color">{{ playlistInfo.trackCount }} </span>
+              播放 : <span class="dark-color">{{ toCNNum(playlistInfo.playCount) }}</span>
             </div>
             <div>简介 :</div>
           </div>

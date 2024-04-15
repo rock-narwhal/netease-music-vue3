@@ -24,7 +24,7 @@ onMounted(async () => {
 
 <template>
 <ul class="subscribers-wrap clearfix">
-  <li v-for="sub in subscribers" :key="sub.userId">
+  <li class="pointer" v-for="sub in subscribers" :key="sub.userId">
     <UserCard :user="sub"></UserCard>
   </li>
 </ul>

@@ -12,14 +12,14 @@ onMounted(async () => {
   imgList.value = res.banners
 })
 
-const recSongList = ref([])
+const recPlaylist = ref([])
 onMounted(async (limit) => {
   const res = await getPersonalized(limit)
   if (res.code !== 200) return
-  recSongList.value = res.result
+  recPlaylist.value = res.result
 })
-// 播放选中的歌曲
-const playRecSong = (id) => {
+// 播放歌单
+const playlistAll = (id) => {
 
 }
 
@@ -77,13 +77,13 @@ const toPlayListDetail = (id) => {
       </el-carousel>
     </div>
     <div class="play-list">
-      <h2 class="font-20 font-bold pointer" @click="toPlayList" v-show="recSongList.length > 0">
+      <h2 class="font-20 font-bold pointer" @click="toPlayList" v-show="recPlaylist.length > 0">
         热门推荐 <i class="iconfont icon-arrow-right"></i>
       </h2>
       <ImgList type="playlist"
-               @clickPlay="playRecSong"
+               @clickPlay="playlistAll"
                @clickImg="toPlayListDetail"
-               :list="recSongList"
+               :list="recPlaylist"
                btn-size="middle">
         <template v-slot="{item}">
           <div class="text-hidden"></div>
@@ -96,7 +96,7 @@ const toPlayListDetail = (id) => {
         推荐歌单 <i class="iconfont icon-arrow-right"></i>
       </h2>
       <ImgList type="playlist"
-               @clickPlay="playRecommend"
+               @clickPlay="playlistAll"
                @clickImg="toPlayListDetail"
                :list="recommendList">
         <template v-slot="{item}">

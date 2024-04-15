@@ -60,13 +60,13 @@ const getDetailList = async (id) => {
                    @click-btn="clickPlay(topItem.id)"></img-cover>
       </div>
       <ul class="right-list font-12">
-        <li v-for="(subItem,subIndex) in detailList[index]" :key="subItem.id">
+        <li class="default-cursor" v-for="(subItem,subIndex) in detailList[index]" :key="subItem.id">
           <div :class="{hot : subIndex < 3}" class="grey-color">{{ subIndex + 1 }}</div>
           <div>{{ subItem.name }} <span v-if="subItem.alia.length > 0" class="grey-color">({{ subItem.alia[0] }})</span>
           </div>
           <div class="sub-right grey-color">{{ subItem.ar[0].name }}</div>
         </li>
-        <div class="check-all grey-color" @click="viewMore(topItem.id)">
+        <div class="check-all grey-color pointer" @click="viewMore(topItem.id)">
           查看全部
           <svg-icon name="arrow-right" vertical="-0.15"></svg-icon>
         </div>

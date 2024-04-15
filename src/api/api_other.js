@@ -1,5 +1,5 @@
 import {get} from './request'
-import {post} from "axios";
+import {post} from "./request.js";
 // 获取搜索结果
 export const getSuggest = ({type, keywords}) => get('/search/suggest', {type, keywords})
 // 获取热搜榜

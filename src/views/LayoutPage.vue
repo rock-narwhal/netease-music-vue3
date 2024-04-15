@@ -1,5 +1,5 @@
 <script setup>
-import {ref, onMounted, watch, onUnmounted} from 'vue'
+import {ref, onMounted, watch, onUnmounted, onBeforeMount} from 'vue'
 import emitter from '@/utils/MittBus.js'
 import {useRoute} from "vue-router";
 import HeaderBar from "@/components/layout/HeaderBar.vue";
@@ -10,11 +10,14 @@ import {userStore} from "@/store/userStore.js";
 
 const contentRef = ref(null)
 const user = userStore()
+
+onBeforeMount(() => {
+  user.checkLogin()
+})
 onMounted(() => {
   emitter.on('contentScrollTop', () => {
     contentRef.value.scrollTop || (contentRef.value.scrollTop = 0)
   })
-  user.checkLogin()
 })
 
 onUnmounted(() => {
