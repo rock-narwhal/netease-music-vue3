@@ -14,7 +14,7 @@ const menu = reactive([
   {name: 'PlaylistSubscribers', path: '/detail/playlist/subscribers', title: '收藏者'}
 ])
 
-const playlistInfo = ref({})
+const playlistInfo = ref({id: ''})
 
 const creator = ref({})
 
@@ -25,6 +25,7 @@ onMounted(() => {
 })
 
 watch(() => route.query, (val) => {
+  if (playlistInfo.value.id === val.id) return
   playlistInfo.value.id = val.id
   queryPlaylistInfo()
 })
@@ -70,7 +71,8 @@ const queryPlaylistInfo = async () => {
         </template>
         <template v-slot:others>
           <div class="playlist-other">
-            <div  v-if="playlistInfo.tags && playlistInfo.tags.length > 0" style="margin-bottom: 5px">标签 : <span>{{ playlistInfo.tags[0] }}</span>
+            <div v-if="playlistInfo.tags && playlistInfo.tags.length > 0" style="margin-bottom: 5px">标签 :
+              <span>{{ playlistInfo.tags[0] }}</span>
             </div>
             <div style="margin-bottom: 5px">歌曲 : <span class="dark-color">{{ playlistInfo.trackCount }} </span>
               播放 : <span class="dark-color">{{ toCNNum(playlistInfo.playCount) }}</span>

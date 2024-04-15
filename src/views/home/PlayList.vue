@@ -92,7 +92,7 @@ const pageInfo = ref({
   currentPage: 1
 })
 const onPageChange = (page) => {
-  if (page < 1 || page > pageInfo.value.total || page === pageInfo.value.currentPage) return
+  if (page === pageInfo.value.currentPage) return
   pageInfo.value.currentPage = page
   queryInfo.value.offset = (page - 1) * queryInfo.value.limit
   queryPlayList()
@@ -167,6 +167,8 @@ const toPlaylistDetail = (id) => {
     <div class="pagination" v-show="playList.length > 0">
       <el-pagination
           background
+          :small="true"
+          :page-size="50"
           layout="prev, pager, next"
           :total="pageInfo.total"
           @current-change="onPageChange"

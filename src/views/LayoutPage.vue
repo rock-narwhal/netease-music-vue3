@@ -16,7 +16,9 @@ onBeforeMount(() => {
 })
 onMounted(() => {
   emitter.on('contentScrollTop', () => {
-    contentRef.value.scrollTop || (contentRef.value.scrollTop = 0)
+    if (contentRef.value.scrollTop > 0) {
+      contentRef.value.scrollTop = 0
+    }
   })
 })
 
@@ -27,7 +29,9 @@ onUnmounted(() => {
 //监听路由，通知leftAside
 const route = useRoute()
 watch(() => route.path, val => {
-  contentRef.value.scrollTop || (contentRef.value.scrollTop = 0)
+  if (contentRef.value.scrollTop > 0) {
+    contentRef.value.scrollTop = 0
+  }
   emitter.emit('activeManuChange', val)
 })
 </script>
@@ -45,7 +49,7 @@ watch(() => route.path, val => {
         <LeftAside></LeftAside>
       </div>
       <!--    中间内容区-->
-      <div class="content" ref="contentRef">
+      <div id="content" class="content" ref="contentRef">
         <router-view v-slot="{Component}">
           <transition name="el-fade-in">
             <component :is="Component"></component>
