@@ -4,6 +4,9 @@ import {getPersonalized, getRecommend} from "@/api/api_playlist.js";
 import {getBanner} from "@/api/api_other.js";
 import {useRouter} from "vue-router";
 import ImgList from '@/components/list/ImgList.vue'
+import SvgIcon from "@/components/svg/SvgIcon.vue";
+import {getRecNewSong} from "@/api/api_music.js";
+import MusicCard from "@/components/card/MusicCard.vue";
 
 const imgList = ref([])
 onMounted(async () => {
@@ -12,9 +15,14 @@ onMounted(async () => {
   imgList.value = res.banners
 })
 
+const bannerHeight = ref(200)
+const clickImage = (item) => {
+  console.log('click Banner Img ', item)
+}
+
 const recPlaylist = ref([])
-onMounted(async (limit) => {
-  const res = await getPersonalized(limit)
+onMounted(async () => {
+  const res = await getPersonalized(10)
   if (res.code !== 200) return
   recPlaylist.value = res.result
 })
@@ -28,17 +36,11 @@ const recommendList = ref([])
 onMounted(async () => {
   const res = await getRecommend()
   if (res.code !== 200) return
-  recommendList.value = res.recommend
+  recommendList.value = res.recommend.splice(0, 10)
 })
 // 播放选中的专辑
 const playRecommend = (id) => {
 
-}
-
-const bannerHeight = ref(200)
-
-const clickImage = (item) => {
-  console.log('click Banner Img ', item)
 }
 
 const router = useRouter()
@@ -58,6 +60,17 @@ const toPlayListDetail = (id) => {
     }
   })
 }
+
+const recNewSongs = ref([])
+onMounted(async () => {
+  const res = await getRecNewSong(12)
+  if (res.code !== 200) return
+  recNewSongs.value = res.result
+})
+
+const toLatestSongs = () => {
+  router.push({name:'LatestSongs'})
+}
 </script>
 
 <template>
@@ -76,9 +89,10 @@ const toPlayListDetail = (id) => {
         </el-carousel-item>
       </el-carousel>
     </div>
-    <div class="play-list">
+    <div class="play-list mar-top-30">
       <h2 class="font-20 font-bold pointer" @click="toPlayList" v-show="recPlaylist.length > 0">
-        热门推荐 <i class="iconfont icon-arrow-right"></i>
+        热门推荐
+        <svg-icon name="arrow-right"></svg-icon>
       </h2>
       <ImgList type="playlist"
                @clickPlay="playlistAll"
@@ -91,9 +105,10 @@ const toPlayListDetail = (id) => {
         </template>
       </ImgList>
     </div>
-    <div class="play-list">
+    <div class="play-list  mar-top-20">
       <h2 class="font-20 font-bold pointer" @click="toPlayList" v-show="recommendList.length > 0">
-        推荐歌单 <i class="iconfont icon-arrow-right"></i>
+        推荐歌单
+        <svg-icon name="arrow-right"></svg-icon>
       </h2>
       <ImgList type="playlist"
                @clickPlay="playlistAll"
@@ -104,6 +119,19 @@ const toPlayListDetail = (id) => {
           {{ item.name }}
         </template>
       </ImgList>
+    </div>
+    <div class="play-list  mar-top-20">
+      <h2 class="font-20 font-bold pointer" @click="toLatestSongs" v-show="recNewSongs.length > 0">
+        最新音乐
+        <svg-icon name="arrow-right"></svg-icon>
+      </h2>
+      <div class="music-card-list">
+        <music-card v-for="item in recNewSongs"
+                    :key="item.id"
+                    :song="item"
+                    class="mar-bot-15">
+        </music-card>
+      </div>
     </div>
   </div>
 </template>
@@ -117,6 +145,12 @@ const toPlayListDetail = (id) => {
   .play-list {
     h2 {
       margin-bottom: 10px;
+    }
+
+    .music-card-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 }

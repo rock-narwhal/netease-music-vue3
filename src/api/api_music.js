@@ -11,3 +11,5 @@ export const songDetail = (ids) => get('/song/detail',{ids})
 export const albumDetail = (id) => get('/album', {id})
 
 export const albumDetailDynamic = (id) => get('/album/detail/dynamic', {id})
+
+export const getRecNewSong = (limit) => get('/personalized/newsong', {limit})
