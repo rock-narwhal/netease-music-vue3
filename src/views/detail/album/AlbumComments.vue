@@ -3,6 +3,7 @@ import {ref, reactive, onMounted} from "vue"
 import {useRoute} from "vue-router";
 import {albumComment} from "@/api/api_other.js";
 import UserComment from "@/components/commons/UserComment.vue";
+import CommentInput from "@/components/commons/CommentInput.vue";
 
 const hotComments = ref([])
 
@@ -36,16 +37,43 @@ onMounted(async () => {
   isLoading.value = false
 })
 
+const commentObj = reactive({
+  send: 1,
+  commentType: 3,
+  id: queryInfo.id,
+  commentId: '',
+  replyPrefix: ''
+})
+
+const cancelReplay = () => {
+  commentObj.send = 1
+  commentObj.commentId = ''
+  commentObj.replyPrefix = ''
+}
+
+const doReply = (item) => {
+  commentObj.send = 2
+  commentObj.commentId = item.id
+  commentObj.replyPrefix = '@' + item.user.nickname + ': '
+}
 </script>
 
 <template>
   <div class="album-comment-wrapper">
-    <div>假装是一个输入框</div>
+    <comment-input :send="commentObj.send"
+                   :comment-type="commentObj.commentType"
+                   :id="commentObj.id"
+                   :comment-id="commentObj.commentId"
+                   :reply-prefix="commentObj.replyPrefix"
+                   @replay-cancel="cancelReplay">
+    </comment-input>
     <div style="margin-top: 10px; margin-bottom: 50px" v-show="hotComments.length > 0">
       <span class="title">精彩评论</span>
       <ul>
         <li v-for="item in hotComments" :key="item.commentId">
-          <user-comment :comment="item"></user-comment>
+          <user-comment :comment="item"
+                        @click-reply="doReply(item)">
+          </user-comment>
         </li>
       </ul>
     </div>
@@ -53,7 +81,9 @@ onMounted(async () => {
       <span class="title">最新评论({{ pageInfo.total }})</span>
       <ul>
         <li v-for="item in comments" :key="item.commentId">
-          <user-comment :comment="item"></user-comment>
+          <user-comment :comment="item"
+                        @click-reply="doReply(item)">
+          </user-comment>
         </li>
       </ul>
     </div>

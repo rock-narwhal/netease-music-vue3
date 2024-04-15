@@ -1,0 +1,1442 @@
+{
+  "resourceState": true,
+  "songs": [
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 6731,
+          "name": "赵雷",
+          "alia": [
+            "雷子"
+          ]
+        }
+      ],
+      "al": {
+        "id": 150127127,
+        "name": "署前街少年",
+        "picUrl": "https://p2.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+        "pic_str": "109951169213377336",
+        "pic": 109951169213377340
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "t": 0,
+      "v": 9,
+      "cd": "01",
+      "djId": 0,
+      "no": 1,
+      "fee": 8,
+      "mv": 0,
+      "l": {
+        "br": 128001,
+        "fid": 0,
+        "size": 5137180,
+        "vd": -37729,
+        "sr": 44100
+      },
+      "rtUrl": null,
+      "ftype": 0,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 100,
+      "rt": "",
+      "mst": 9,
+      "cp": 22036,
+      "crbt": null,
+      "cf": "",
+      "dt": 321000,
+      "h": {
+        "br": 320001,
+        "fid": 0,
+        "size": 12842885,
+        "vd": -42010,
+        "sr": 44100
+      },
+      "sq": {
+        "br": 1550809,
+        "fid": 0,
+        "size": 62226228,
+        "vd": -42005,
+        "sr": 44100
+      },
+      "hr": null,
+      "a": null,
+      "m": {
+        "br": 192001,
+        "fid": 0,
+        "size": 7705748,
+        "vd": -39420,
+        "sr": 44100
+      },
+      "name": "阿卜杜拉",
+      "id": 1974443811,
+      "privilege": {
+        "id": 1974443811,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null,
+          "playReason": null
+        },
+        "rightSource": 0,
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 6731,
+          "name": "赵雷",
+          "alia": [
+            "雷子"
+          ]
+        }
+      ],
+      "al": {
+        "id": 150127127,
+        "name": "署前街少年",
+        "picUrl": "https://p1.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+        "pic_str": "109951169213377336",
+        "pic": 109951169213377340
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "t": 0,
+      "v": 9,
+      "cd": "01",
+      "djId": 0,
+      "no": 2,
+      "fee": 8,
+      "mv": 0,
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 5043975,
+        "vd": -40981,
+        "sr": 44100
+      },
+      "rtUrl": null,
+      "ftype": 0,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 100,
+      "rt": "",
+      "mst": 9,
+      "cp": 22036,
+      "crbt": null,
+      "cf": "",
+      "dt": 315180,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 12609872,
+        "vd": -45319,
+        "sr": 44100
+      },
+      "sq": {
+        "br": 1519381,
+        "fid": 0,
+        "size": 59859990,
+        "vd": -45316,
+        "sr": 44100
+      },
+      "hr": null,
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 7565941,
+        "vd": -42692,
+        "sr": 44100
+      },
+      "name": "小雨中",
+      "id": 1974443812,
+      "privilege": {
+        "id": 1974443812,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null,
+          "playReason": null
+        },
+        "rightSource": 0,
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 6731,
+          "name": "赵雷",
+          "alia": [
+            "雷子"
+          ]
+        }
+      ],
+      "al": {
+        "id": 150127127,
+        "name": "署前街少年",
+        "picUrl": "https://p1.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+        "pic_str": "109951169213377336",
+        "pic": 109951169213377340
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "t": 0,
+      "v": 9,
+      "cd": "01",
+      "djId": 0,
+      "no": 3,
+      "fee": 8,
+      "mv": 0,
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 3999913,
+        "vd": -31060,
+        "sr": 44100
+      },
+      "rtUrl": null,
+      "ftype": 0,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 100,
+      "rt": "",
+      "mst": 9,
+      "cp": 22036,
+      "crbt": null,
+      "cf": "",
+      "dt": 249915,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 9999717,
+        "vd": -35455,
+        "sr": 44100
+      },
+      "sq": {
+        "br": 1430116,
+        "fid": 0,
+        "size": 44675963,
+        "vd": -35453,
+        "sr": 44100
+      },
+      "hr": null,
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 5999848,
+        "vd": -32818,
+        "sr": 44100
+      },
+      "name": "少女",
+      "id": 1974444806,
+      "privilege": {
+        "id": 1974444806,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null,
+          "playReason": null
+        },
+        "rightSource": 0,
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 6731,
+          "name": "赵雷",
+          "alia": [
+            "雷子"
+          ]
+        }
+      ],
+      "al": {
+        "id": 150127127,
+        "name": "署前街少年",
+        "picUrl": "https://p2.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+        "pic_str": "109951169213377336",
+        "pic": 109951169213377340
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "t": 0,
+      "v": 9,
+      "cd": "01",
+      "djId": 0,
+      "no": 4,
+      "fee": 8,
+      "mv": 0,
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 4039619,
+        "vd": -49574,
+        "sr": 44100
+      },
+      "rtUrl": null,
+      "ftype": 0,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 100,
+      "rt": "",
+      "mst": 9,
+      "cp": 22036,
+      "crbt": null,
+      "cf": "",
+      "dt": 252416,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 10098982,
+        "vd": -53943,
+        "sr": 44100
+      },
+      "sq": {
+        "br": 1608222,
+        "fid": 0,
+        "size": 50742634,
+        "vd": -53938,
+        "sr": 44100
+      },
+      "hr": null,
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 6059407,
+        "vd": -51326,
+        "sr": 44100
+      },
+      "name": "凌晨计程车",
+      "id": 1974443813,
+      "privilege": {
+        "id": 1974443813,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null,
+          "playReason": null
+        },
+        "rightSource": 0,
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 6731,
+          "name": "赵雷",
+          "alia": [
+            "雷子"
+          ]
+        }
+      ],
+      "al": {
+        "id": 150127127,
+        "name": "署前街少年",
+        "picUrl": "https://p2.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+        "pic_str": "109951169213377336",
+        "pic": 109951169213377340
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "t": 0,
+      "v": 10,
+      "cd": "01",
+      "djId": 0,
+      "no": 5,
+      "fee": 8,
+      "mv": 14688453,
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 5279286,
+        "vd": -45763,
+        "sr": 44100
+      },
+      "rtUrl": null,
+      "ftype": 0,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 100,
+      "rt": "",
+      "mst": 9,
+      "cp": 22036,
+      "crbt": null,
+      "cf": "",
+      "dt": 329891,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 13198150,
+        "vd": -50155,
+        "sr": 44100
+      },
+      "sq": {
+        "br": 1581400,
+        "fid": 0,
+        "size": 65211331,
+        "vd": -50153,
+        "sr": 44100
+      },
+      "hr": null,
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 7918907,
+        "vd": -47545,
+        "sr": 44100
+      },
+      "name": "我记得",
+      "id": 1974443814,
+      "privilege": {
+        "id": 1974443814,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null,
+          "playReason": null
+        },
+        "rightSource": 0,
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 6731,
+          "name": "赵雷",
+          "alia": [
+            "雷子"
+          ]
+        }
+      ],
+      "al": {
+        "id": 150127127,
+        "name": "署前街少年",
+        "picUrl": "https://p1.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+        "pic_str": "109951169213377336",
+        "pic": 109951169213377340
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "t": 0,
+      "v": 9,
+      "cd": "01",
+      "djId": 0,
+      "no": 6,
+      "fee": 8,
+      "mv": 0,
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 5616161,
+        "vd": -42061,
+        "sr": 44100
+      },
+      "rtUrl": null,
+      "ftype": 0,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 100,
+      "rt": "",
+      "mst": 9,
+      "cp": 22036,
+      "crbt": null,
+      "cf": "",
+      "dt": 350931,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 14040338,
+        "vd": -46413,
+        "sr": 44100
+      },
+      "sq": {
+        "br": 1557834,
+        "fid": 0,
+        "size": 68336579,
+        "vd": -46408,
+        "sr": 44100
+      },
+      "hr": null,
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 8424220,
+        "vd": -43793,
+        "sr": 44100
+      },
+      "name": "船长",
+      "id": 1974444807,
+      "privilege": {
+        "id": 1974444807,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null,
+          "playReason": null
+        },
+        "rightSource": 0,
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 6731,
+          "name": "赵雷",
+          "alia": [
+            "雷子"
+          ]
+        }
+      ],
+      "al": {
+        "id": 150127127,
+        "name": "署前街少年",
+        "picUrl": "https://p1.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+        "pic_str": "109951169213377336",
+        "pic": 109951169213377340
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "t": 0,
+      "v": 9,
+      "cd": "01",
+      "djId": 0,
+      "no": 7,
+      "fee": 8,
+      "mv": 0,
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 4807410,
+        "vd": -20868,
+        "sr": 44100
+      },
+      "rtUrl": null,
+      "ftype": 0,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 100,
+      "rt": "",
+      "mst": 9,
+      "cp": 22036,
+      "crbt": null,
+      "cf": "",
+      "dt": 300394,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 12018460,
+        "vd": -25252,
+        "sr": 44100
+      },
+      "sq": {
+        "br": 1447419,
+        "fid": 0,
+        "size": 54349640,
+        "vd": -25248,
+        "sr": 44100
+      },
+      "hr": null,
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 7211093,
+        "vd": -22640,
+        "sr": 44100
+      },
+      "name": "程艾影",
+      "id": 1974443815,
+      "privilege": {
+        "id": 1974443815,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null,
+          "playReason": null
+        },
+        "rightSource": 0,
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 6731,
+          "name": "赵雷",
+          "alia": [
+            "雷子"
+          ]
+        }
+      ],
+      "al": {
+        "id": 150127127,
+        "name": "署前街少年",
+        "picUrl": "https://p1.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+        "pic_str": "109951169213377336",
+        "pic": 109951169213377340
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "t": 0,
+      "v": 9,
+      "cd": "01",
+      "djId": 0,
+      "no": 8,
+      "fee": 8,
+      "mv": 0,
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 4440860,
+        "vd": -32547,
+        "sr": 44100
+      },
+      "rtUrl": null,
+      "ftype": 0,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 100,
+      "rt": "",
+      "mst": 9,
+      "cp": 22036,
+      "crbt": null,
+      "cf": "",
+      "dt": 277493,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 11102085,
+        "vd": -36879,
+        "sr": 44100
+      },
+      "sq": {
+        "br": 1583128,
+        "fid": 0,
+        "size": 54913459,
+        "vd": -36874,
+        "sr": 44100
+      },
+      "hr": null,
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 6661268,
+        "vd": -34265,
+        "sr": 44100
+      },
+      "name": "小行迹",
+      "id": 1974444808,
+      "privilege": {
+        "id": 1974444808,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null,
+          "playReason": null
+        },
+        "rightSource": 0,
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 6731,
+          "name": "赵雷",
+          "alia": [
+            "雷子"
+          ]
+        }
+      ],
+      "al": {
+        "id": 150127127,
+        "name": "署前街少年",
+        "picUrl": "https://p2.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+        "pic_str": "109951169213377336",
+        "pic": 109951169213377340
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "t": 0,
+      "v": 9,
+      "cd": "01",
+      "djId": 0,
+      "no": 9,
+      "fee": 8,
+      "mv": 0,
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 4934052,
+        "vd": -44327,
+        "sr": 44100
+      },
+      "rtUrl": null,
+      "ftype": 0,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 100,
+      "rt": "",
+      "mst": 9,
+      "cp": 22036,
+      "crbt": null,
+      "cf": "",
+      "dt": 308313,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 12335064,
+        "vd": -48662,
+        "sr": 44100
+      },
+      "sq": {
+        "br": 1550104,
+        "fid": 0,
+        "size": 59739701,
+        "vd": -48657,
+        "sr": 44100
+      },
+      "hr": null,
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 7401056,
+        "vd": -46051,
+        "sr": 44100
+      },
+      "name": "三里屯的夜",
+      "id": 1974443816,
+      "privilege": {
+        "id": 1974443816,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null,
+          "playReason": null
+        },
+        "rightSource": 0,
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    },
+    {
+      "rtUrls": [],
+      "ar": [
+        {
+          "id": 6731,
+          "name": "赵雷",
+          "alia": [
+            "雷子"
+          ]
+        }
+      ],
+      "al": {
+        "id": 150127127,
+        "name": "署前街少年",
+        "picUrl": "https://p2.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+        "pic_str": "109951169213377336",
+        "pic": 109951169213377340
+      },
+      "st": 1,
+      "noCopyrightRcmd": null,
+      "songJumpInfo": null,
+      "t": 0,
+      "v": 9,
+      "cd": "01",
+      "djId": 0,
+      "no": 10,
+      "fee": 8,
+      "mv": 0,
+      "l": {
+        "br": 128000,
+        "fid": 0,
+        "size": 4860073,
+        "vd": -38385,
+        "sr": 44100
+      },
+      "rtUrl": null,
+      "ftype": 0,
+      "rtype": 0,
+      "rurl": null,
+      "pst": 0,
+      "alia": [],
+      "pop": 100,
+      "rt": "",
+      "mst": 9,
+      "cp": 22036,
+      "crbt": null,
+      "cf": "",
+      "dt": 303692,
+      "h": {
+        "br": 320000,
+        "fid": 0,
+        "size": 12150117,
+        "vd": -42680,
+        "sr": 44100
+      },
+      "sq": {
+        "br": 1512177,
+        "fid": 0,
+        "size": 57404592,
+        "vd": -42680,
+        "sr": 44100
+      },
+      "hr": null,
+      "a": null,
+      "m": {
+        "br": 192000,
+        "fid": 0,
+        "size": 7290088,
+        "vd": -40076,
+        "sr": 44100
+      },
+      "name": "署前街少年",
+      "id": 1974443817,
+      "privilege": {
+        "id": 1974443817,
+        "fee": 8,
+        "payed": 0,
+        "st": 0,
+        "pl": 128000,
+        "dl": 0,
+        "sp": 7,
+        "cp": 1,
+        "subp": 1,
+        "cs": false,
+        "maxbr": 999000,
+        "fl": 320000,
+        "toast": false,
+        "flag": 260,
+        "preSell": false,
+        "playMaxbr": 999000,
+        "downloadMaxbr": 999000,
+        "maxBrLevel": "lossless",
+        "playMaxBrLevel": "lossless",
+        "downloadMaxBrLevel": "lossless",
+        "plLevel": "standard",
+        "dlLevel": "none",
+        "flLevel": "exhigh",
+        "rscl": null,
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null,
+          "playReason": null
+        },
+        "rightSource": 0,
+        "chargeInfoList": [
+          {
+            "rate": 128000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 192000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 320000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 0
+          },
+          {
+            "rate": 999000,
+            "chargeUrl": null,
+            "chargeMessage": null,
+            "chargeType": 1
+          }
+        ]
+      }
+    }
+  ],
+  "code": 200,
+  "album": {
+    "songs": [],
+    "paid": false,
+    "onSale": false,
+    "mark": 8192,
+    "awardTags": null,
+    "picId": 109951169213377340,
+    "artist": {
+      "img1v1Id": 18806046882229308,
+      "topicPerson": 0,
+      "picId": 3300733912483912,
+      "followed": false,
+      "img1v1Url": "https://p1.music.126.net/w_UWOls2uCkFN_U62788Xg==/18806046882229308.jpg",
+      "briefDesc": "",
+      "musicSize": 96,
+      "albumSize": 14,
+      "picUrl": "https://p1.music.126.net/j6KWzSdlRKzZUwJnQx3vBA==/3300733912483912.jpg",
+      "trans": "",
+      "alias": [
+        "雷子"
+      ],
+      "name": "赵雷",
+      "id": 6731,
+      "img1v1Id_str": "18806046882229308"
+    },
+    "commentThreadId": "R_AL_3_150127127",
+    "artists": [
+      {
+        "img1v1Id": 18686200114669624,
+        "topicPerson": 0,
+        "picId": 0,
+        "followed": false,
+        "img1v1Url": "https://p1.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg",
+        "briefDesc": "",
+        "musicSize": 0,
+        "albumSize": 0,
+        "picUrl": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+        "trans": "",
+        "alias": [],
+        "name": "赵雷",
+        "id": 6731,
+        "img1v1Id_str": "18686200114669622"
+      }
+    ],
+    "copyrightId": 22036,
+    "publishTime": 1661702400000,
+    "company": "华宇世博",
+    "briefDesc": "",
+    "picUrl": "https://p1.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+    "blurPicUrl": "https://p1.music.126.net/ykR7CGYNj_a6wcn_8u0t5g==/109951169213377336.jpg",
+    "companyId": 0,
+    "pic": 109951169213377340,
+    "status": 1,
+    "subType": "录音室版",
+    "description": "我是渠边偷偷抽烟枪已上了膛的少年\n我要代表恐惧和这世界的阴暗谈一谈\n两面都是高墙只有一条路能穿过黑暗\n可我没有金钱也没有得到金钱的答案\n\n他妈坐在红灯区里对经过的男人挤眼\n他却笑话我父亲是身上沾满泥的商贩\n一块石头也可以从刀子那里要回尊严\n我是脸上沾满血却不需要安慰的少年\n\n只有离开才能改写这命运\n我才不是无药可救的少年\n只有房顶知道远方的遥远\n可我是个弱不经风的少年\n\n\n制作人：赵雷\n\n",
+    "tags": "",
+    "alias": [],
+    "name": "署前街少年",
+    "id": 150127127,
+    "type": "专辑",
+    "size": 10,
+    "picId_str": "109951169213377336",
+    "info": {
+      "commentThread": {
+        "id": "R_AL_3_150127127",
+        "resourceInfo": {
+          "id": 150127127,
+          "userId": -1,
+          "name": "署前街少年",
+          "imgUrl": "http://p3.music.126.net/FCWD6ibS2JK2B3QAnXuzwQ==/109951167805892385.jpg",
+          "creator": null,
+          "encodedId": null,
+          "subTitle": null,
+          "webUrl": null
+        },
+        "resourceType": 3,
+        "commentCount": 6946,
+        "likedCount": 0,
+        "shareCount": 33991,
+        "hotCount": 102,
+        "latestLikedUsers": null,
+        "resourceId": 150127127,
+        "resourceOwnerId": -1,
+        "resourceTitle": "署前街少年"
+      },
+      "latestLikedUsers": null,
+      "liked": false,
+      "comments": null,
+      "resourceType": 3,
+      "resourceId": 150127127,
+      "commentCount": 6946,
+      "likedCount": 0,
+      "shareCount": 33991,
+      "threadId": "R_AL_3_150127127"
+    }
+  }
+}

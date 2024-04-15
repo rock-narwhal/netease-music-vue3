@@ -9,7 +9,7 @@ defineProps({
   }
 })
 
-
+const emit = defineEmits(['clickReport', 'clickLike','clickShear','clickReply'])
 </script>
 
 <template>
@@ -24,15 +24,15 @@ defineProps({
       <div class="content-block" style="margin-top: 5px">
         <span class="grey-color">{{ dateTimeFormat(comment.time) }}</span>
         <div class="button-wrapper">
-          <button class="dark-color">举报</button>
-          <button class="dark-color">
+          <button class="dark-color" @click.stop="emit('clickReport')">举报</button>
+          <button class="dark-color" @click.stop="emit('clickLike')">
             <svg-icon name="thumbs-up"></svg-icon>
             {{ comment.likedCount }}
           </button>
           <button class="dark-color">
-            <svg-icon name="share"></svg-icon>
+            <svg-icon name="share" @click.stop="emit('clickShear')"></svg-icon>
           </button>
-          <button class="dark-color">
+          <button class="dark-color" @click.stop="emit('clickReply')">
             <svg-icon name="comment"></svg-icon>
           </button>
         </div>
