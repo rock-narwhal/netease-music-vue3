@@ -210,11 +210,9 @@ onUnmounted(() => {
   <div class="control-bar clearfix">
     <div class="control-btn">
       <button class="ctl-btn pointer" @click="switchMode">
-        <!--        <i class="iconfont" :class="playModeIcon"></i>-->
         <svg-icon :name="playModeIcon"></svg-icon>
       </button>
       <button class="ctl-btn pointer">
-        <!--        <i class="iconfont icon-shangyishou"></i>-->
         <svg-icon name="play-pre" class-name="font-16" vertical="-0.15"></svg-icon>
       </button>
       <button class="pause-btn" @click="playOrPause">

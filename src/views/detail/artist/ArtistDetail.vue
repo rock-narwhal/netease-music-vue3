@@ -12,9 +12,10 @@ const menu = ref([
   {name: 'SimilarArtist', path: '/detail/artist/similar', title: '相似歌手'}
 ])
 
-const artist = ref({})
+const artist = ref({id:''})
 const route = useRoute()
 watch(() => route.query, (val) => {
+  if(val.id === artist.value.id) return
   artist.value.id = val.id
   getArtistDetail()
 })

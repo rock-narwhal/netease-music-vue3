@@ -39,6 +39,7 @@ onMounted(() => {
 })
 
 watch(() => route.query, (val) => {
+  if(queryInfo.value.keywords === val.keywords) return
   queryInfo.value.keywords = val.keywords
   searchPlaylist()
 })

@@ -13,7 +13,7 @@ const menu = reactive([
   {name: 'AlbumInfo', path: '/detail/album/info', title: '专辑详情'}
 ])
 
-const album = ref({})
+const album = ref({id:''})
 
 const songs = ref([])
 
