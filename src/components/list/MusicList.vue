@@ -47,7 +47,7 @@ const qualityTag = (item) =>{
 
 <template>
   <div class="music-list-wrapper">
-    <ul class="title-bar flex-box default-cursor">
+    <ul class="title-bar grey-color flex-box default-cursor">
       <li v-for="(val,index) in titles" :key="val" :style="styleCfg[index]">
         {{ val }}
       </li>

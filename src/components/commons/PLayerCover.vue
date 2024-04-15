@@ -145,8 +145,6 @@ const targetPlayPage = (val) => {
     }
 
     .text-over {
-      overflow: hidden;
-      white-space: nowrap;
       max-width: 160px;
     }
   }

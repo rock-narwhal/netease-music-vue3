@@ -17,7 +17,7 @@ defineProps({
       <div>{{ user.nickname }}
         <svg-icon :name="user.gender === 1 ? 'male' : 'female'"></svg-icon>
       </div>
-      <div class="user-signature font-12" v-if="user.signature">{{ user.signature }}</div>
+      <div class="user-signature text-over font-12" v-if="user.signature">{{ user.signature }}</div>
     </div>
   </div>
 </template>
@@ -48,9 +48,6 @@ defineProps({
 
     .user-signature {
       margin-top: 10px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
     }
   }
 }

@@ -2,7 +2,7 @@
 import {ref, reactive, onMounted} from 'vue'
 import {useRoute} from "vue-router";
 import {playlistSubscribers} from "@/api/api_playlist.js";
-import UserCard from "@/components/commons/UserCard.vue";
+import UserCard from "@/components/card/UserCard.vue";
 
 const queryInfo = reactive({
   id: '',

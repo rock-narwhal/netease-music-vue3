@@ -36,7 +36,6 @@ const styleObj = computed(() => {
 
 <style scoped lang="less">
 .song-tag-wrapper{
-  cursor: default;
   outline: 0;
   background-color: #ffffff;
   box-sizing: border-box;

@@ -22,8 +22,8 @@ const clickPlayList = (id)=>{
   <div @click="clickPlayList" class="pointer banner-content" v-if="playlist">
     <img v-lazy="playlist.coverImgUrl + '?param=100y100'" alt="">
     <div class="banner-info">
-      <div style="text-overflow: ellipsis">歌单: {{ playlist.name }}</div>
-      <div>歌曲:{{ playlist.trackCount }}，播放{{ toCNNum(playlist.playCount) }}</div>
+      <div class="text-over">歌单: {{ playlist.name }}</div>
+      <div class="text-over grey-color font-12">歌曲: {{ playlist.trackCount }}，播放{{ toCNNum(playlist.playCount) }}</div>
     </div>
   </div>
 </template>
