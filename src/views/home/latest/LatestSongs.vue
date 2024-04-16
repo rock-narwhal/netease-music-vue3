@@ -113,7 +113,7 @@ const qualityTag = (item) =>{
     margin-left: 10px;
     height: 24px;
     width: 90px;
-    line-height: 24px;
+    line-height: 22px;
     border-radius: 12px;
     border: 1px solid #c2c2c2;
   }
