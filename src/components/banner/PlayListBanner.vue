@@ -2,7 +2,7 @@
 import {toCNNum} from "@/utils/FormatUtil.js";
 import {useRouter} from "vue-router";
 
-defineProps({
+const props = defineProps({
   playlist: {
     type: Object,
     require: true
@@ -10,10 +10,10 @@ defineProps({
 })
 
 const router = useRouter()
-const clickPlayList = (id)=>{
+const clickPlayList = ()=>{
   router.push({
     name:'PlaylistDetail',
-    query:{id}
+    query:{id : props.playlist.id}
   })
 }
 </script>

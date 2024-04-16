@@ -7,6 +7,7 @@ import {useRoute} from "vue-router";
 import DetailBanner from "@/components/banner/DetailBanner.vue";
 import TabMenu from "@/components/menu/TabMenu.vue";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
+import SongTag from "@/components/commons/SongTag.vue";
 
 const menu = reactive([
   {name: 'PlaylistSongs', path: '/detail/playlist/songs', title: '歌曲列表'},
@@ -42,6 +43,7 @@ const queryPlaylistInfo = async () => {
     <div class="playlist-banner">
       <detail-banner :avatar="playlistInfo.coverImgUrl + '?param=400y400'" v-show="playlistInfo.coverImgUrl">
         <template v-slot:title>
+          <song-tag tag="歌单" size="large" style="float: left;margin-top: 5px; margin-right: 8px"></song-tag>
           <div class="playlist-title">{{ playlistInfo.name }}</div>
           <div class="creator-info">
             <img v-lazy="creator.avatarUrl" class="pointer">
@@ -109,6 +111,8 @@ const queryPlaylistInfo = async () => {
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 5px;
+      height: 32px;
+      line-height: 32px;
     }
 
     .button-group {

@@ -47,10 +47,8 @@ watch(() => route.query, (val) => {
 
 <template>
   <div class="container">
-    <div class="font-20 margin-30 search-title" style="font-weight: bold">搜索 : {{ decodeURIComponent($route.query.keywords) }}</div>
-    <!--  你可能感兴趣-->
-    <!--      <svg-icon class="font-18" icon-class="music"></svg-icon>-->
-    <div class="margin-30" style="margin-bottom: 10px">你可能感兴趣</div>
+    <div class="font-20 margin-30 search-title" style="font-weight: bold">搜索: {{ decodeURIComponent($route.query.keywords) }}</div>
+    <div class="margin-30 font-12 dark-color" style="margin-bottom: 10px">你可能感兴趣</div>
     <PlayListBanner class="margin-30" :playlist="suggest" v-show="suggest.id"></PlayListBanner>
     <TabMenu class="margin-30" :menu-list="menu" mode="route" :query="$route.query"></TabMenu>
     <router-view v-slot="{Component}">
@@ -67,7 +65,7 @@ watch(() => route.query, (val) => {
 }
 
 .search-title {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 </style>

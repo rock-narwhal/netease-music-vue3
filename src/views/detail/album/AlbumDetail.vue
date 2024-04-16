@@ -6,6 +6,7 @@ import {format} from '@/utils/DateUtil.js'
 import TabMenu from "@/components/menu/TabMenu.vue";
 import DetailBanner from "@/components/banner/DetailBanner.vue";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
+import SongTag from "@/components/commons/SongTag.vue";
 
 const menu = reactive([
   {name: 'AlbumSongs', path: '/detail/album/songs', title: '歌曲列表'},
@@ -56,7 +57,8 @@ const checkVip = computed(() => {
     <div class="album-banner">
       <detail-banner :avatar="album.picUrl + '?param=400y400'" v-show="album.picUrl">
         <template v-slot:title>
-          <div class="font-24" style="font-weight: bold">{{ album.name }}</div>
+          <song-tag tag="专辑" size="large" style="float: left;margin-top: 5px; margin-right: 8px"></song-tag>
+          <div class="album-title">{{ album.name }}</div>
         </template>
         <template v-slot:buttons>
           <div class="button-group">
@@ -97,6 +99,14 @@ const checkVip = computed(() => {
 
   .album-banner {
     margin: 0 30px 20px;
+
+    .album-title{
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      height: 32px;
+      line-height: 32px;
+    }
 
     .button-group {
       margin: 10px 0;
