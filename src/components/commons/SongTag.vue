@@ -2,43 +2,64 @@
 import {computed} from 'vue'
 
 const props = defineProps({
-  tag:{
+  tag: {
     type: String,
     required: true
   },
-  color:{
+  color: {
     type: String,
     default: '#ec4141'
   },
-  height:{
+  size: {
     type: String,
-    default: '12px'
+    default: 'small',
+    validator: (val) => ['small', 'middle', 'large'].includes(val)
   }
 })
 
 const styleObj = computed(() => {
-  return{
-    height: props.height,
-    lineHeight: props.height,
-    color: props.color,
-    border: '1px solid ' + props.color,
-    fontSize: '10px',
-    padding: '0 1px',
+  if(props.size === 'small'){
+    return {
+      lineHeight: '12px',
+      color: props.color,
+      border: '1px solid ' + props.color,
+      fontSize: '10px',
+      padding: '0 2px',
+      borderRadius: '3px'
+    }
+  }else if(props.size === 'middle'){
+    return {
+      lineHeight: '12px',
+      color: props.color,
+      border: '1px solid ' + props.color,
+      fontSize: '10px',
+      padding: '0 2px',
+      borderRadius: '3px'
+    }
+  }else{
+    return {
+      lineHeight: '18px',
+      color: props.color,
+      border: '1px solid ' + props.color,
+      fontSize: '14px',
+      padding: '0 4px',
+      borderRadius: '3px'
+    }
   }
 })
 </script>
 
 <template>
-<button class="song-tag-wrapper" :style="styleObj">
-  {{tag}}<slot></slot>
-</button>
+  <div class="song-tag-wrapper" :style="styleObj">
+    {{ tag }}<slot></slot>
+  </div>
 </template>
 
 <style scoped lang="less">
-.song-tag-wrapper{
+.song-tag-wrapper {
   outline: 0;
   background-color: #ffffff;
   box-sizing: border-box;
-  border-radius: 3px;
+  display: inline-block;
 }
 </style>

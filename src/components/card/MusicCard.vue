@@ -51,7 +51,7 @@ const playMusic = () => {
       <p class="font-12 text-over pointer">
         <song-tag class="mar-ri-5" v-if="qualityTag" :tag="qualityTag"></song-tag>
         <song-tag class="mar-ri-5 pointer" v-if="song.song.mvid > 0" tag="MV">
-          <svg-icon name="play-fill" class-name="font-10" vertical="-0.05"></svg-icon>
+          <svg-icon name="play-fill" class-name="font-10" vertical="-0.13"></svg-icon>
         </song-tag>
         <span class="grey-color artist-name">{{ song.song.artists[0].name }}</span>
       </p>

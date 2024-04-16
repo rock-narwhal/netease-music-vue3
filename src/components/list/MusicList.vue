@@ -66,7 +66,7 @@ const qualityTag = (item) =>{
         <song-tag tag="VIP" v-if="item.fee === 1" style="margin-right: 5px" color="#FE672E"></song-tag>
         <song-tag :tag="qualityTag(item)" v-if="qualityTag(item)" style="margin-right: 5px"></song-tag>
         <song-tag tag="MV" style="margin-right: 5px">
-          <svg-icon name="play-fill" class-name="font-10" vertical="-0.05"></svg-icon>
+          <svg-icon name="play-fill" class-name="font-10" vertical="-0.13"></svg-icon>
         </song-tag>
         <song-tag v-if="item.originCoverType === 1 || item.originCoverType === 2" :tag="item.originCoverType === 1 ? '原唱' : '翻唱'"></song-tag>
       </li>
