@@ -1,8 +1,9 @@
 <script setup>
-import {ref, reactive, onMounted, watch} from "vue"
+import {ref, onMounted, watch} from "vue"
 import {playlistSongs} from "@/api/api_playlist.js";
 import {useRoute} from "vue-router";
 import MusicList from "@/components/list/MusicList.vue";
+import emitter from '@/utils/MittBus.js'
 
 const songs = ref([])
 
@@ -29,12 +30,16 @@ const queryPlaylistSongs = async () => {
   songs.value = res.songs
   isLoading.value = false
 }
+
+const playMusic = (id) =>{
+  emitter.emit('playMusic', id)
+}
 </script>
 
 <template>
   <div class="playlist-wrapper">
     <el-skeleton :rows="10" animated v-show="isLoading"></el-skeleton>
-    <MusicList v-show="!isLoading" :data-list="songs"></MusicList>
+    <MusicList v-show="!isLoading" :data-list="songs" @click-item="playMusic"></MusicList>
   </div>
 </template>
 
