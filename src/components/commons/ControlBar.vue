@@ -53,18 +53,44 @@ const playFinish = async () => {
     next = playS.getNextInList
   }
   if (next) {
-    if (!next.src) {
-      await songSrc(next.id)
-      if (songData.value) {
-        songData.value[0].url
-      }
+    await getSrcAndPlay(next)
+  }
+}
+// 查询歌曲src并播放
+const getSrcAndPlay = async (song) => {
+  if (!song.src) {
+    await getSongData(song.id)
+    if (songData.value.length > 0) {
+      song.src = songData.value[0].url
+      song.data = songData.value
+    } else {
+      window.setTimeout(() => {
+        playFinish()
+      }, 3000)
+      return
     }
-    next.playing = false
-    playS.updatePlayingInfo(next)
-    await nextTick(() => {
-      progress.value = 0
-      playS.updatePlaying(true)
-    })
+  }
+  song.playing = false
+  playS.updatePlayingInfo(song)
+  await nextTick(() => {
+    progress.value = 0
+    playS.updatePlaying(true)
+  })
+}
+// flag:1 播放下一首  flag:-1 播放上一首
+const playNext = async (flag) => {
+  let next
+  if (mode.value === 2) {
+    next = playS.getRandom
+  } else {
+    if (flag === 1) {
+      next = playS.getNext
+    } else {
+      next = playS.getPre
+    }
+  }
+  if (next) {
+    await getSrcAndPlay(next)
   }
 }
 
@@ -86,7 +112,6 @@ const playingInfo = playS.playingInfo
 // const playList = playS.playlist
 // 播放音乐
 const playMusic = async (id) => {
-  console.log('ControlBar playMusic', id)
   if (playingInfo.id === id) {
     if (!playingInfo.playing) {
       playS.updatePlaying(true)
@@ -94,8 +119,7 @@ const playMusic = async (id) => {
   } else { // 切换歌曲
     playS.updatePlaying(false)
     let s = playS.getSongById(id);
-    console.log('getSongById ',s)
-    if (s &&s.length && s[0].src) {
+    if (s && s.length && s[0].src) {
       playS.updatePlayingInfo(s[0])
       await nextTick(() => {
         progress.value = 0
@@ -103,22 +127,11 @@ const playMusic = async (id) => {
       })
       return
     }
-    await songSrc(id)
-    console.log('playMusic songSrc data : ', songData.value)
-    if (!songData.value) return
 
-    let src = songData.value[0].url
-    if (!src) {
-      ElMessage("当前歌曲暂无音源")
-      window.setTimeout(() => {
-        playFinish()
-      }, 3000)
-      return
-    }
     let res = await songDetail(id)
     if (res.code !== 200 || res.songs.length === 0) return
     let song = res.songs[0]
-    playS.updatePlayingInfo({
+    await getSrcAndPlay({
       id: song.id,
       duration: song.dt,
       current: 0,
@@ -126,21 +139,19 @@ const playMusic = async (id) => {
       coverUrl: song.al.picUrl,
       album: song.al,
       artists: song.ar,
-      src: src,
-      data: songData.value,
-    })
-    await nextTick(() => {
-      progress.value = 0
-      playS.updatePlaying(true)
     })
   }
 }
 
 let songData = ref([])
-const songSrc = async (id) => {
+const getSongData = async (id) => {
   const res = await getSongUrl(id)
-  if (res.code !== 200) return
+  if (res.code !== 200) {
+    songData.value = []
+    return
+  }
   if (!res.data || res.data.length === 0) {
+    songData.value = []
     ElMessage("当前歌曲暂无音源")
     return null
   }
@@ -163,24 +174,24 @@ watch(() => playingInfo.src, val => {
   }
 })
 const doPlayMusic = () => {
-  console.log('doPlayMusic')
   if (!playingInfo.src) return
-  console.log('doPlayMusic 1111')
   if (!audioRef.value.play) {
     console.log('audioRef 有问题？？？')
     return
   }
-  audioRef.value.load()
+
   audioRef.value.play().catch(e => {
     ElMessage('播放错误！')
     playS.updatePlaying(false)
     console.log(e)
+    setTimeout(()=>{
+      playFinish()
+    }, 3000)
   })
   // }
 }
 
 const doPause = () => {
-  console.log('doPause')
   if (!audioRef.value.pause) {
     console.log('audioRef 有问题？？？')
     return
@@ -193,9 +204,16 @@ const playAll = (list) => {
 }
 
 onMounted(() => {
-  console.log('Control Bar mounted')
   playS.updatePlaying(false)
-  playS.updateCurrent(0)
+  if (playingInfo.src && playingInfo.id && playingInfo.current > 0) {
+    progress.value = Math.floor(playingInfo.current * 100000 / playingInfo.duration)
+    if (audioRef.value) {
+      audioRef.value.load()
+      audioRef.value.currentTime = playingInfo.current
+    }
+  } else {
+    playS.updateCurrent(0)
+  }
   emitter.on('playMusic', playMusic)
   emitter.on('playAll', playAll)
 })
@@ -212,14 +230,14 @@ onUnmounted(() => {
       <button class="ctl-btn pointer" @click="switchMode">
         <svg-icon :name="playModeIcon"></svg-icon>
       </button>
-      <button class="ctl-btn pointer">
+      <button class="ctl-btn pointer" @click.stop="playNext(-1)">
         <svg-icon name="play-pre" class-name="font-16" vertical="-0.15"></svg-icon>
       </button>
       <button class="pause-btn" @click="playOrPause">
         <svg-icon name="pause" class-name="font-22" vertical="-0.25" v-if="playingInfo.playing"></svg-icon>
         <svg-icon name="play-fill" class-name="font-22" vertical="-0.25" v-else></svg-icon>
       </button>
-      <button class="ctl-btn pointer">
+      <button class="ctl-btn pointer" @click.stop="playNext(1)">
         <svg-icon name="play-next" class-name="font-16" vertical="-0.15"></svg-icon>
       </button>
       <button class="ctl-btn pointer" style="vertical-align: 0.1em">词</button>

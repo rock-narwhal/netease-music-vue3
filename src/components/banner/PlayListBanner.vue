@@ -47,5 +47,9 @@ const clickPlayList = (id)=>{
   .banner-info {
     margin-left: 10px;
   }
+
+  .text-over{
+    max-width: 240px;
+  }
 }
 </style>

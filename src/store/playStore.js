@@ -36,37 +36,47 @@ export const playStore = defineStore('play', {
             let index = this.playlist.findIndex(item => item.id === this.playingInfo.id)
             return this.playlist[(index + 1) % this.playlist.length]
         },
+        getPre() {
+            if (this.playlist.length === 0) {
+                return null
+            }
+            if (this.playingInfo.id === 0) {
+                return this.playlist[0]
+            }
+            let index = this.playlist.findIndex(item => item.id === this.playingInfo.id)
+            return this.playlist[(index - 1 + this.playlist.length) % this.playlist.length]
+        },
         getRandom() {
             if (this.playlist.length === 0) {
                 return null
             }
-            if(this.playlist.length === 1){ //playList只有一首歌
-                if(this.playlist[0].id === this.playingInfo.id){
+            if (this.playlist.length === 1) { //playList只有一首歌
+                if (this.playlist[0].id === this.playingInfo.id) {
                     return null
-                }else{
+                } else {
                     return this.playlist[0]
                 }
-            }else{
+            } else {
                 let index = this.playlist.findIndex(item => item.id === this.playingInfo.id)
-                while (true){
+                while (true) {
                     let next = Math.floor(Math.random() * this.playlist.length)
-                    if(next !== index){
+                    if (next !== index) {
                         return this.playlist[next]
                     }
                 }
             }
         },
-        getNextInList(){
+        getNextInList() {
             if (this.playlist.length === 0) {
                 return null
             }
             let index = this.playlist.findIndex(item => item.id === this.playingInfo.id)
-            if(index === this.playlist.length -1) return null
+            if (index === this.playlist.length - 1) return null
             return this.playlist[index + 1]
         }
     },
     actions: {
-        updatePlayingInfo({id,duration,current,name,coverUrl,album,artists,src,data,playing }) {
+        updatePlayingInfo({id, duration, current, name, coverUrl, album, artists, src, data, playing}) {
             console.log('updatePlayingInfo', id)
 
             this.playingInfo.id = id
@@ -79,7 +89,7 @@ export const playStore = defineStore('play', {
             this.playingInfo.artists = artists
             this.playingInfo.data = data
             this.playingInfo.playing = playing
-            this.updatePlayList({id,duration,current,name,coverUrl,album,artists,src,data,playing:false})
+            this.updatePlayList({id, duration, current, name, coverUrl, album, artists, src, data, playing: false})
         },
         updatePlayList(song) {
             console.log('updatePlayList')
@@ -99,7 +109,7 @@ export const playStore = defineStore('play', {
         updateCurrent(val) {
             this.playingInfo.current = val
         },
-        getSongById(id){
+        getSongById(id) {
             return this.playlist.filter(item => item.id === id)
         }
     },
