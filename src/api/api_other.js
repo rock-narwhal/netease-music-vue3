@@ -10,3 +10,7 @@ export const getBanner = () => get('/banner')
 export const albumComment = ({id, offset, limit, before}) => get('/comment/album', {id, offset, limit, before})
 // 发布/删除 评论
 export const doComment = ({t, type, id, content, commentId}) => post('/comment', {t, type, id, content, commentId})
+//独家放送 首页
+export const privateContent = () => get('/personalized/privatecontent')
+
+export const priContentList = ({limit,offset}) => get('/personalized/privatecontent/list',{limit, offset})

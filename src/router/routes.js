@@ -197,6 +197,11 @@ export default [
                         ]
                     }
                 ]
+            },
+            {
+                name: 'PrivateContentPage',
+                path: 'pricontent',
+                component: () => import('@/views/privateContent/PriContentPage.vue')
             }
         ]
     }

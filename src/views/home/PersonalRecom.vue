@@ -1,12 +1,13 @@
 <script setup>
 import {ref, onMounted} from 'vue'
 import {getPersonalized, getRecommend} from "@/api/api_playlist.js";
-import {getBanner} from "@/api/api_other.js";
+import {getBanner, privateContent} from "@/api/api_other.js";
 import {useRouter} from "vue-router";
 import ImgList from '@/components/list/ImgList.vue'
 import SvgIcon from "@/components/svg/SvgIcon.vue";
 import {getRecNewSong} from "@/api/api_music.js";
 import MusicCard from "@/components/card/MusicCard.vue";
+import PrivateMvList from "@/components/list/PrivateMvList.vue";
 
 const imgList = ref([])
 onMounted(async () => {
@@ -69,7 +70,18 @@ onMounted(async () => {
 })
 
 const toLatestSongs = () => {
-  router.push({name:'LatestSongs'})
+  router.push({name: 'LatestSongs'})
+}
+
+const priMvList = ref([])
+onMounted(async () => {
+  const res = await privateContent()
+  if (res.code !== 200) return
+  priMvList.value = res.result
+})
+// 跳转独家放送
+const toPrivateMv = () => {
+  router.push({name: 'PrivateContentPage'})
 }
 </script>
 
@@ -119,6 +131,13 @@ const toLatestSongs = () => {
           {{ item.name }}
         </template>
       </ImgList>
+    </div>
+    <div class="play-list  mar-top-20">
+      <h2 class="font-20 font-bold pointer" @click="toPrivateMv" v-show="priMvList.length > 0">
+        独家放送
+        <svg-icon name="arrow-right"></svg-icon>
+      </h2>
+      <private-mv-list :list="priMvList"></private-mv-list>
     </div>
     <div class="play-list  mar-top-20">
       <h2 class="font-20 font-bold pointer" @click="toLatestSongs" v-show="recNewSongs.length > 0">
