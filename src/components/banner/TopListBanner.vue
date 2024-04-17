@@ -86,8 +86,8 @@ const getDetailList = async (id) => {
     margin-bottom: 30px;
 
     .cover {
-      width: 160px;
-      height: 160px;
+      width: 220px;
+      height: 220px;
     }
 
     .right-list {
@@ -97,9 +97,9 @@ const getDetailList = async (id) => {
       flex-direction: column;
 
       li {
-        height: 32px;
+        height: 35px;
         width: 100%;
-        line-height: 32px;
+        line-height: 35px;
         border-radius: 3px;
 
         .hot {
