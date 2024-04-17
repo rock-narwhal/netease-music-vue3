@@ -86,18 +86,20 @@ const picUrl = (item) => {
         :infinite-scroll-disabled="disabled"
         infinite-scroll-delay="300"
     >
-      <li class="img-li" v-for="item in list" :key="item.id">
-        <img-cover :src="picUrl(item)"
-                   :btn-size="btnSize"
-                   @click-img="clickImg(item.id)"
-                   @click-btn="clickPlay(item.id)"
-                   :show-type="showPlayBtn ? 'hover' : 'none'"
-                   :btn-pos="type === 'album' ? 'center' : 'right-bottom'">
-          <div class="video-play-count font-12" v-if="item.playCount">
-            <svg-icon name="play-fill" class-name="font-14" vertical="-0.2"></svg-icon>
-            {{ playCount(item.playCount) }}
-          </div>
-        </img-cover>
+      <li class="img-li mar-bot-20" v-for="item in list" :key="item.id">
+        <div class="mar-bot-10">
+          <img-cover :src="picUrl(item)"
+                     :btn-size="btnSize"
+                     @click-img="clickImg(item.id)"
+                     @click-btn="clickPlay(item.id)"
+                     :show-type="showPlayBtn ? 'hover' : 'none'"
+                     :btn-pos="type === 'album' ? 'center' : 'right-bottom'">
+            <div class="video-play-count font-12" v-if="item.playCount">
+              <svg-icon name="play-fill" class-name="font-14" vertical="-0.2"></svg-icon>
+              {{ playCount(item.playCount) }}
+            </div>
+          </img-cover>
+        </div>
         <slot :item="item"></slot>
       </li>
     </ul>
@@ -117,7 +119,6 @@ const picUrl = (item) => {
   justify-content: space-between;
 
   .img-li {
-    margin-bottom: 30px;
     width: 18%;
   }
 }

@@ -36,12 +36,15 @@ const playMusic = () => {
 
 <template>
   <div class="card-wrapper" :style="{height,width}">
-    <img-cover :src="song.picUrl + '?param=100y100'"
-               size="50px"
-               btn-size="small"
-               btn-pos="center"
-               show-type="always"
-               @click-btn="playMusic"></img-cover>
+    <div style="width: 50px; height: 50px">
+      <img-cover :src="song.picUrl + '?param=100y100'"
+                 size="50px"
+                 btn-size="small"
+                 btn-pos="center"
+                 show-type="always"
+                 @click-btn="playMusic"></img-cover>
+    </div>
+
     <div class="card-info">
       <p class="text-over default-cursor">
         {{ song.name }}

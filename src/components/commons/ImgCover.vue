@@ -65,7 +65,7 @@ const coverStyle =  computed(() =>{
 </script>
 
 <template>
-  <div class="img-cover-wrapper pointer clearfix" :style="coverStyle" @click.stop="emit('clickImg')">
+  <div class="img-cover-wrapper pointer" @click.stop="emit('clickImg')">
     <img v-lazy="src" :style="{borderRadius: radius}">
     <div class="right-top-area">
       <slot></slot>
@@ -85,10 +85,10 @@ const coverStyle =  computed(() =>{
 @import "@/assets/less/lessDefine.less";
 .img-cover-wrapper {
   position: relative;
+  height: 100%;
+  width: 100%;
 
   img {
-    height: 100%;
-    width: 100%;
     border: 1px solid @greyEF;
   }
 
