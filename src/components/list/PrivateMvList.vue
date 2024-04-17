@@ -42,15 +42,15 @@ const loadMore = () => {
          infinite-scroll-delay="300"
          class="mar-bot-20">
       <private-mv-card :mv-data="item" @click-card="emit('clickMv', item.id)"></private-mv-card>
-      <div class="font-12 dark-color mar-top-10 text-over" style="width: 350px">{{ item.name }}</div>
+      <div class="dark-color mar-top-10">{{ item.name }}</div>
     </div>
   </div>
 </template>
 
 <style scoped lang="less">
 .mv-list-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
 }
 </style>

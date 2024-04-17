@@ -5,14 +5,6 @@ defineProps({
   mvData: {
     type: Object,
     required: true
-  },
-  width: {
-    type: String,
-    default: '350px'
-  },
-  height: {
-    type: String,
-    default: '200px'
   }
 })
 
@@ -20,9 +12,8 @@ const emit = defineEmits(['clickCard'])
 </script>
 
 <template>
-  <div class="card-wrapper" :style="{width,height}" @click="emit('clickCard')">
+  <div class="card-wrapper" @click="emit('clickCard')">
     <img :src="`${mvData.picUrl}`" alt="">
-    <!--    <div class="img-cover" :style="{backgroundImage: `url(${mvData.picUrl}?param=520y300)`}"></div>-->
     <div class="card-btn">
       <svg-icon name="play-fill"></svg-icon>
     </div>
@@ -32,11 +23,11 @@ const emit = defineEmits(['clickCard'])
 <style scoped lang="less">
 .card-wrapper {
   position: relative;
+  width: 100%;
 
   img {
-    height: 100%;
-    object-fit: cover;
     border-radius: 5px;
+    display: block;
   }
 
   .card-btn {

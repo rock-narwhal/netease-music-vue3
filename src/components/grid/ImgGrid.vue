@@ -1,5 +1,6 @@
 <script setup>
-import {computed} from 'vue'
+
+import {computed} from "vue";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
 import ImgCover from "@/components/commons/ImgCover.vue";
 
@@ -80,50 +81,39 @@ const picUrl = (item) => {
 </script>
 
 <template>
-  <div class="img-list">
-    <ul class="img-ul"
-        v-infinite-scroll="load"
-        :infinite-scroll-disabled="disabled"
-        infinite-scroll-delay="300"
-    >
-      <li class="img-li mar-bot-20" v-for="item in list" :key="item.id">
-        <img-cover :src="picUrl(item)"
-                   :btn-size="btnSize"
-                   @click-img="clickImg(item.id)"
-                   @click-btn="clickPlay(item.id)"
-                   :show-type="showPlayBtn ? 'hover' : 'none'"
-                   :btn-pos="type === 'album' ? 'center' : 'right-bottom'"
-                   class="mar-bot-10">
-          <div class="video-play-count font-12" v-if="item.playCount">
-            <svg-icon name="play-fill" class-name="font-14" vertical="-0.2"></svg-icon>
-            {{ playCount(item.playCount) }}
-          </div>
-        </img-cover>
-        <slot :item="item"></slot>
-      </li>
-    </ul>
-    <div class="loading-wrap" v-show="isLoading">
-      <i class="el-icon-loading"></i>加载中
-    </div>
-    <div class="loading-wrap" v-if="infinite && !hasMore">没有更多了</div>
+
+  <ul class="img-ul"
+      v-infinite-scroll="load"
+      :infinite-scroll-disabled="disabled"
+      infinite-scroll-delay="300">
+    <li class="img-li mar-bot-20" v-for="item in list" :key="item.id">
+      <img-cover :src="picUrl(item)"
+                 :btn-size="btnSize"
+                 @click-img="clickImg(item.id)"
+                 @click-btn="clickPlay(item.id)"
+                 :show-type="showPlayBtn ? 'hover' : 'none'"
+                 :btn-pos="type === 'album' ? 'center' : 'right-bottom'">
+        <div class="video-play-count font-12" v-if="item.playCount">
+          <svg-icon name="play-fill" class-name="font-14" vertical="-0.2"></svg-icon>
+          {{ playCount(item.playCount) }}
+        </div>
+      </img-cover>
+      <slot :item="item"></slot>
+    </li>
+  </ul>
+  <div class="loading-wrap" v-show="isLoading">
+    <i class="el-icon-loading"></i>加载中
   </div>
+  <div class="loading-wrap" v-if="infinite && !hasMore">没有更多了</div>
+
 </template>
 
 <style scoped lang="less">
-@import "@/assets/less/lessDefine.less";
-
 .img-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  .img-li {
-    width: 18%;
-
-    .cover-container {
-      max-height: 198px;
-    }
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 25px;
 }
 
 .video-play-count {

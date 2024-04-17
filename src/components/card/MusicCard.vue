@@ -35,7 +35,7 @@ const playMusic = () => {
 </script>
 
 <template>
-  <div class="card-wrapper" :style="{height,width}">
+  <div class="card-wrapper">
     <div style="width: 50px; height: 50px">
       <img-cover :src="song.picUrl + '?param=100y100'"
                  size="50px"
@@ -48,7 +48,7 @@ const playMusic = () => {
     <div class="card-info">
       <p class="text-over default-cursor">
         {{ song.name }}
-        <span class="grey-color" v-if="song.song.alias && song.song.alias.length > 0"> ({{ song.song.alias[0] }})
+        <span class="grey-color text-over" v-if="song.song.alias && song.song.alias.length > 0"> ({{ song.song.alias[0] }})
         </span>
       </p>
       <p class="font-12 text-over pointer">
@@ -56,7 +56,7 @@ const playMusic = () => {
         <song-tag class="mar-ri-5 pointer" v-if="song.song.mvid > 0" tag="MV">
           <svg-icon name="play-fill" class-name="font-10" vertical="-0.13"></svg-icon>
         </song-tag>
-        <span class="grey-color artist-name">{{ song.song.artists[0].name }}</span>
+        <span class="grey-color text-over artist-name">{{ song.song.artists[0].name }}</span>
       </p>
     </div>
   </div>
@@ -75,9 +75,9 @@ const playMusic = () => {
     justify-content: space-around;
 
     p {
+      max-width: 300px;
       height: 20px;
       line-height: 20px;
-
       .artist-name:hover {
         color: @listDark;
       }

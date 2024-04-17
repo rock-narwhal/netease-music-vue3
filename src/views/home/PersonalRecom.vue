@@ -8,6 +8,7 @@ import SvgIcon from "@/components/svg/SvgIcon.vue";
 import {getRecNewSong} from "@/api/api_music.js";
 import MusicCard from "@/components/card/MusicCard.vue";
 import PrivateMvList from "@/components/list/PrivateMvList.vue";
+import ImgGrid from "@/components/grid/ImgGrid.vue";
 
 const imgList = ref([])
 onMounted(async () => {
@@ -106,33 +107,33 @@ const toPrivateMv = () => {
         热门推荐
         <svg-icon name="arrow-right"></svg-icon>
       </h2>
-      <ImgList type="playlist"
+      <img-grid type="playlist"
                @clickPlay="playlistAll"
                @clickImg="toPlayListDetail"
                :list="recPlaylist"
                btn-size="middle">
         <template v-slot="{item}">
-          <div class="text-hidden"></div>
+          <div class="text-hidden mar-top-10"></div>
           {{ item.name }}
         </template>
-      </ImgList>
+      </img-grid>
     </div>
-    <div class="play-list  mar-top-20">
+    <div class="play-list">
       <h2 class="font-20 font-bold pointer" @click="toPlayList" v-show="recommendList.length > 0">
         推荐歌单
         <svg-icon name="arrow-right"></svg-icon>
       </h2>
-      <ImgList type="playlist"
-               @clickPlay="playlistAll"
-               @clickImg="toPlayListDetail"
-               :list="recommendList">
+      <img-grid type="playlist"
+                @clickPlay="playlistAll"
+                @clickImg="toPlayListDetail"
+                :list="recommendList">
         <template v-slot="{item}">
-          <div class="text-hidden"></div>
+          <div class="text-hidden mar-top-10"></div>
           {{ item.name }}
         </template>
-      </ImgList>
+      </img-grid>
     </div>
-    <div class="play-list  mar-top-20">
+    <div class="play-list  mar-top-15">
       <h2 class="font-20 font-bold pointer" @click="toPrivateMv" v-show="priMvList.length > 0">
         独家放送
         <svg-icon name="arrow-right"></svg-icon>
@@ -144,11 +145,10 @@ const toPrivateMv = () => {
         最新音乐
         <svg-icon name="arrow-right"></svg-icon>
       </h2>
-      <div class="music-card-list">
+      <div class="grid-container">
         <music-card v-for="item in recNewSongs"
                     :key="item.id"
-                    :song="item"
-                    class="mar-bot-15">
+                    :song="item">
         </music-card>
       </div>
     </div>
@@ -166,10 +166,11 @@ const toPrivateMv = () => {
       margin-bottom: 10px;
     }
 
-    .music-card-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 15px;
     }
   }
 }

@@ -44,11 +44,11 @@ const playMusic = (id) => {
 
 const playingInfo = playStore().playingInfo
 
-const qualityTag = (item) =>{
-  if(item.hr){
+const qualityTag = (item) => {
+  if (item.hr) {
     return 'Hi-Res'
   }
-  if(item.sq){
+  if (item.sq) {
     return 'SQ'
   }
   return null
@@ -73,17 +73,20 @@ const qualityTag = (item) =>{
           <i v-else class="iconfont icon-shengyin"></i>
         </div>
         <div class="cover float-left clearfix">
-          <img-cover :src="item.album.picUrl + '?param=100y100'"
-                     btn-pos="center"
-                     show-type="always"
-                     btn-size="small"
-                     size="60px"
-                     @click-btn="playMusic(item.id)"
-          ></img-cover>
+          <div style="width: 60px;height: 60px">
+            <img-cover :src="item.album.picUrl + '?param=100y100'"
+                       btn-pos="center"
+                       show-type="always"
+                       btn-size="small"
+                       @click-btn="playMusic(item.id)">
+            </img-cover>
+          </div>
+
         </div>
         <div class="name float-left clearfix">
           <div class="float-left">
-            <span :class="{'red-color' : playingInfo.id === item.id}">{{ item.name }}</span><span class="grey-color" v-if="item.alias.length"> ({{item.alias[0]}})</span>
+            <span :class="{'red-color' : playingInfo.id === item.id}">{{ item.name }}</span><span class="grey-color"
+                                                                                                  v-if="item.alias.length"> ({{ item.alias[0] }})</span>
           </div>
           <div class="float-left" style="margin-left: 5px">
             <song-tag tag="VIP" v-if="item.fee === 1" style="margin-right: 5px" color="#FE672E"></song-tag>
@@ -91,7 +94,8 @@ const qualityTag = (item) =>{
             <song-tag tag="MV" style="margin-right: 5px">
               <svg-icon name="play-fill" class-name="font-10" vertical="-0.05"></svg-icon>
             </song-tag>
-            <song-tag style="margin-right: 5px" v-if="item.originCoverType === 1 || item.originCoverType === 2" :tag="item.originCoverType === 1 ? '原唱' : '翻唱'"></song-tag>
+            <song-tag style="margin-right: 5px" v-if="item.originCoverType === 1 || item.originCoverType === 2"
+                      :tag="item.originCoverType === 1 ? '原唱' : '翻唱'"></song-tag>
           </div>
         </div>
         <div class="artist float-left dark-color">{{ item.artists[0].name }}</div>

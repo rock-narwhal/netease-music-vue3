@@ -2,6 +2,10 @@
 import {computed} from 'vue'
 import SvgIcon from "@/components/svg/SvgIcon.vue";
 
+/**
+ * 封面组件，大小取决于父组件包裹该组件元素宽度为准
+ * @type {Prettify<Readonly<ExtractPropTypes<{src: {type: StringConstructor, required: boolean}, btnSize: {default: string, validator: (function(*): boolean), type: StringConstructor}, btnPos: {default: string, validator: (function(*): boolean), type: StringConstructor}, showType: {default: string, validator: (function(*): boolean), type: StringConstructor}, radius: {default: string, type: StringConstructor}}>>>}
+ */
 const props = defineProps({
   src: {
     type: String,
@@ -26,10 +30,6 @@ const props = defineProps({
     type: String,
     default: '5px'
   },
-  size:{ //指定大小 npx 或者 100%
-    type:String,
-    default: '200px'
-  }
 })
 
 const btnClass = computed(() => {
@@ -55,13 +55,6 @@ const iconStyle = computed(() => {
 })
 const emit = defineEmits(['clickImg', 'clickBtn'])
 
-const coverStyle =  computed(() =>{
-  if(props.size === '100%'){
-    return {}
-  }else{
-    return {width: props.size, height: props.size}
-  }
-})
 </script>
 
 <template>
@@ -85,11 +78,11 @@ const coverStyle =  computed(() =>{
 @import "@/assets/less/lessDefine.less";
 .img-cover-wrapper {
   position: relative;
-  height: 100%;
-  width: 100%;
 
   img {
+    width: 100%;
     border: 1px solid @greyEF;
+    display: block;
   }
 
   .right-top-area {
