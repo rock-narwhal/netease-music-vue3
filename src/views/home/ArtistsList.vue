@@ -16,7 +16,7 @@ const hasMore = ref(false)
 const isLoading = ref(false)
 
 const queryParam = ref({
-  limit: 50,
+  limit: 30,
   offset: 0,
   type: -1,
   area: -1,
@@ -37,7 +37,7 @@ const queryArtists = async (option) => {
 const loadArtist = async () => {
   if(!hasMore.value) return
   isLoading.value = true
-  queryParam.value.offset += artistList.value.length
+  queryParam.value.offset = artistList.value.length
   const res = await queryArtist(queryParam.value)
   if (res.code !== 200) return
   artistList.value.push(...res.artists)

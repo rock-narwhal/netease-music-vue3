@@ -5,7 +5,7 @@ import emitter from '@/utils/MittBus.js'
 import {useRouter} from "vue-router";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
 import CatList from "@/components/list/CatList.vue";
-import ImgList from "@/components/list/ImgList.vue";
+import ImgGrid from "@/components/grid/ImgGrid.vue";
 
 const showAllCats = ref(false)
 
@@ -131,10 +131,10 @@ const toPlaylistDetail = (id) => {
       </div>
     </div>
     <!--    歌单标签-->
-    <div class="list-tag mtop-10 clearfix">
+    <div class="list-tag mtop-10 mar-bot-10 clearfix">
       <div class="tag-list-left">
-        <button class="cir-btn-white pointer" @click="triggerCatList" @blur="showAllCats=false">
-          {{ currentTag }}
+        <button class="cir-btn-white pointer dark-color" @click="triggerCatList" @blur="showAllCats=false">
+          {{ currentTag }}<svg-icon name="arrow-right" class-name="font-18" vertical="-0.25"></svg-icon>
           <i class="el-icon-arrow-right"></i>
           <CatList class="tag-pop-list"
                    title="全部歌单"
@@ -154,15 +154,16 @@ const toPlaylistDetail = (id) => {
     </div>
 
     <!--    歌单列表-->
-    <ImgList type="playlist"
+    <img-grid type="playlist"
              :list="playList"
              class="mtop-10"
              @clickImg="toPlaylistDetail">
       <template v-slot="{item}">
-        <div class="text-hidden"></div>
-        {{ item.name }}
+        <div class="mar-top-10">
+          {{ item.name }}
+        </div>
       </template>
-    </ImgList>
+    </img-grid>
     <!--    分页-->
     <div class="pagination" v-show="playList.length > 0">
       <el-pagination
@@ -251,6 +252,7 @@ const toPlaylistDetail = (id) => {
 
     .tag-list-right {
       float: right;
+      line-height: 30px;
     }
   }
 

@@ -113,8 +113,9 @@ const toPrivateMv = () => {
                :list="recPlaylist"
                btn-size="middle">
         <template v-slot="{item}">
-          <div class="text-hidden mar-top-10"></div>
-          {{ item.name }}
+          <div class="mar-top-10">
+            {{ item.name }}
+          </div>
         </template>
       </img-grid>
     </div>
@@ -128,8 +129,9 @@ const toPrivateMv = () => {
                 @clickImg="toPlayListDetail"
                 :list="recommendList">
         <template v-slot="{item}">
-          <div class="text-hidden mar-top-10"></div>
-          {{ item.name }}
+          <div class="mar-top-10">
+            {{ item.name }}
+          </div>
         </template>
       </img-grid>
     </div>
