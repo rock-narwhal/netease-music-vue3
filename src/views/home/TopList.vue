@@ -2,14 +2,14 @@
 import {ref, onMounted, computed} from 'vue'
 import {getTopList} from "@/api/api_toplist.js";
 import {useRouter} from "vue-router";
-import ImgList from '@/components/list/ImgList.vue'
 import TopListBanner from "@/components/banner/TopListBanner.vue";
+import ImgGrid from "@/components/grid/ImgGrid.vue";
 
 const topList = ref([])
 onMounted(async () => {
   const res = await getTopList()
   if (res.code !== 200) return
-  topList.value = res.list.slice(0, 39)
+  topList.value = res.list
 })
 
 const officialTopList = computed(() => {
@@ -48,14 +48,16 @@ const toListDetail = (id) => {
         @clickPlay="clickPlay"
         :list="officialTopList"></TopListBanner>
     <div class="list-title">全球榜</div>
-    <ImgList type="playlist"
+    <img-grid type="playlist"
              :list="globalTopList"
              @clickPlay="clickPlay"
              @clickImg="toListDetail">
       <template v-slot="{item}">
-        {{ item.name }}
+        <div class="mar-top-10 dark-color">
+          {{ item.name }}
+        </div>
       </template>
-    </ImgList>
+    </img-grid>
   </div>
 </template>
 
