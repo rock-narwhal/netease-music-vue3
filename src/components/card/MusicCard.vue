@@ -10,10 +10,6 @@ const props = defineProps({
     type: Object,
     required: true
   },
-  width: {
-    type: String,
-    default: '360px'
-  },
   height: {
     type: String,
     default: '50px'
