@@ -32,28 +32,28 @@ const playMusic = () => {
 
 <template>
   <div class="card-wrapper">
-    <div style="width: 50px; height: 50px">
+    <div style="width: 50px; height: 50px; min-width: 50px;min-height: 50px">
       <img-cover :src="song.picUrl + '?param=100y100'"
-                 size="50px"
                  btn-size="small"
                  btn-pos="center"
                  show-type="always"
-                 @click-btn="playMusic"></img-cover>
+                 @click-btn="playMusic">
+      </img-cover>
     </div>
 
     <div class="card-info">
-      <p class="text-over default-cursor">
+      <div class="text-eli default-cursor">
         {{ song.name }}
-        <span class="grey-color text-over" v-if="song.song.alias && song.song.alias.length > 0"> ({{ song.song.alias[0] }})
+        <span class="grey-color" v-if="song.song.alias && song.song.alias.length > 0"> ({{ song.song.alias[0] }})
         </span>
-      </p>
-      <p class="font-12 text-over pointer">
+      </div>
+      <div class="font-12 text-eli pointer">
         <song-tag class="mar-ri-5" v-if="qualityTag" :tag="qualityTag"></song-tag>
         <song-tag class="mar-ri-5 pointer" v-if="song.song.mvid > 0" tag="MV">
           <svg-icon name="play-fill" class-name="font-10" vertical="-0.13"></svg-icon>
         </song-tag>
-        <span class="grey-color text-over artist-name">{{ song.song.artists[0].name }}</span>
-      </p>
+        <span class="grey-color artist-name">{{ song.song.artists[0].name }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -65,18 +65,17 @@ const playMusic = () => {
   display: flex;
 
   .card-info {
+    flex-shrink: 1;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
-    p {
-      max-width: 300px;
-      height: 20px;
-      line-height: 20px;
-      .artist-name:hover {
-        color: @listDark;
-      }
+    .text-eli{
+      height: 18px;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }
