@@ -1,8 +1,7 @@
 <script setup>
 import {onMounted, ref, reactive} from 'vue'
-import PrivateMvList from "@/components/list/PrivateMvList.vue";
 import {priContentList} from "@/api/api_other.js";
-import SvgIcon from "@/components/svg/SvgIcon.vue";
+import PriContentGrid from "@/components/grid/PriContentGrid.vue";
 
 const queryInfo = reactive({
   limit: 15,
@@ -33,11 +32,6 @@ const loadContent = async () => {
   queryInfo.offset = res.offset
   isLoading.value = false
 }
-//
-// const loadMoreContent = async () =>{
-//   queryInfo.offset += 15
-//   await loadContent()
-// }
 </script>
 
 <template>
@@ -47,12 +41,12 @@ const loadContent = async () => {
       <h2 class="font-20 font-bold pointer mar-bot-15">
         独家放送
       </h2>
-      <private-mv-list :list="contents"
+      <pri-content-grid :list="contents"
                        :is-loading="isLoading"
                        :infinite="true"
                        :has-more="hasMore"
                        @load-more="loadContent"
-      ></private-mv-list>
+      ></pri-content-grid>
     </div>
     <div class="space-wrap"></div>
   </div>
