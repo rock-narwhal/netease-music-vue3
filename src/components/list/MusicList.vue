@@ -2,6 +2,7 @@
 import {timeConvert} from "@/utils/DateUtil.js";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
 import SongTag from "@/components/commons/SongTag.vue";
+import {playStore} from "@/store/playStore.js";
 
 defineProps({
   titles: {
@@ -51,6 +52,8 @@ const qualityTag = (item) =>{
   }
   return null
 }
+
+const playingInfo = playStore().playingInfo
 </script>
 
 <template>
@@ -65,8 +68,14 @@ const qualityTag = (item) =>{
         v-for="(item,index) in dataList"
         :key="item.id"
         @dblclick.stop="emit('clickItem', item.id)">
-      <li :style="styleCfg[0]" class="grey-color">
-        <span>
+      <li :style="styleCfg[0]">
+        <span v-if="playingInfo.id === item.id && playingInfo.playing" class="red-color">
+          <svg-icon name="volume-small"></svg-icon>
+        </span>
+        <span v-else-if="playingInfo.id === item.id" class="red-color">
+          <svg-icon name="pause"></svg-icon>
+        </span>
+        <span class="grey-color" v-else>
           {{ index < 9 ? '0' + (index + 1) : (index + 1) }}
         </span>
       </li>
