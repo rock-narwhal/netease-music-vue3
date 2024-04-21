@@ -111,7 +111,7 @@ const iconName = computed(()=>{
         border-radius: 5px;
         background-color: #fff;
         display: none;
-        z-index: 99;
+        z-index: 199;
       }
       &:hover .volume-slider-wrapper{
         display: block;

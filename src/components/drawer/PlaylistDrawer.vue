@@ -38,7 +38,8 @@ const playMusic = (id) =>{
   <el-drawer v-model="open"
              direction="rtl"
              :size="500"
-             :with-header="false">
+             :with-header="false"
+  :z-index="99">
     <div class="title-wrapper font-20">当前播放</div>
     <div class="btn-wrapper">
       <div class="grey-color font-12">总{{playlist.length}}首</div>
