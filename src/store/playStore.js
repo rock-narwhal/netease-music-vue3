@@ -22,6 +22,7 @@ export const playStore = defineStore('play', {
             data: [], //音源信息，多种音质的音源,
             volume: 50, //音量
             mute: false, //静音
+            fee: 0, //收费/免费
         },
         // 播放列表
         playlist: []
@@ -77,7 +78,7 @@ export const playStore = defineStore('play', {
         }
     },
     actions: {
-        updatePlayingInfo({id, duration, current, name, coverUrl, album, artists, src, data, playing}) {
+        updatePlayingInfo({id, duration, current, name, coverUrl, album, artists, src, data, playing,fee}) {
             console.log('updatePlayingInfo', id)
 
             this.playingInfo.id = id
@@ -90,14 +91,14 @@ export const playStore = defineStore('play', {
             this.playingInfo.artists = artists
             this.playingInfo.data = data
             this.playingInfo.playing = playing
-            this.updatePlayList({id, duration, current:0, name, coverUrl, album, artists, src, data, playing: false})
+            this.playingInfo.fee = fee
+            this.updatePlayList({id, duration, current:0, name, coverUrl, album, artists, src, data, playing: false, fee})
         },
         updatePlayList(song) {
-            console.log('updatePlayList')
+            if(!song.id) return
             if (this.playlist.find(item => item.id === song.id)) {
                 return
             }
-            console.log('updatePlayList111, ', song)
             this.playlist.unshift(song)
         },
         // 播放歌单或专辑时，替换全部播放列表
@@ -121,6 +122,27 @@ export const playStore = defineStore('play', {
         },
         triggerMute(){
             this.playingInfo.mute = !this.playingInfo.mute
+        },
+        updatePlayingData(data){
+            this.playingInfo.src = data[0].url
+            this.playingInfo.data = data
+        },
+        clearPlaylist(){ //清空播放列表
+            this.updatePlayingInfo({
+                id: 0,
+                src: '',
+                duration: 0,
+                name: '未知音乐',
+                coverUrl: defaultCover,
+                album: {},
+                artists: [{
+                    name: '未知歌手'
+                }],
+                data: [],
+                fee: 0,
+                playing: false
+            })
+            this.playlist = []
         }
     },
     persist: { //持久化到localStorage
