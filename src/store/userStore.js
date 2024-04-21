@@ -51,14 +51,14 @@ export const userStore = defineStore('user', {
         },
         async checkLogin() {
             const res = await checkLoginStatus()
-            if (!res.data || res.data.code !== 200) {
+            if (!res.data || res.data.code !== 200 || !res.data.profile) {
                 this.clearLogInfo()
                 return
             }
             console.log("checkLoginStatus success :")
             this.isLogin = true
             this.account = res.data.account
-            this.profile = res.data.profile || {}
+            this.profile = res.data.profile
             await this.queryUserDetail()
         },
         clearLogInfo() {
