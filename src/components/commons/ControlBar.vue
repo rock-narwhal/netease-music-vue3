@@ -58,17 +58,15 @@ const playFinish = async () => {
 }
 // 查询歌曲src并播放
 const getSrcAndPlay = async (song) => {
-  if (!song.src) {
-    await getSongData(song.id)
-    if (songData.value.length > 0) {
-      song.src = songData.value[0].url
-      song.data = songData.value
-    } else {
-      window.setTimeout(() => {
-        playFinish()
-      }, 3000)
-      return
-    }
+  await getSongData(song.id)
+  if (songData.value.length > 0) {
+    song.src = songData.value[0].url
+    song.data = songData.value
+  } else {
+    window.setTimeout(() => {
+      playFinish()
+    }, 3000)
+    return
   }
   song.playing = false
   playS.updatePlayingInfo(song)
@@ -173,6 +171,20 @@ watch(() => playingInfo.src, val => {
     audioRef.value.load()
   }
 })
+
+watch(() => playingInfo.volume, val => {
+  if(audioRef.value){
+    audioRef.value.volume = val / 100
+  }
+})
+
+watch(() => playingInfo.mute, val =>{
+  if(!val){
+    audioRef.value.volume = playingInfo.volume / 100
+  }else{
+    audioRef.value.volume = 0
+  }
+})
 const doPlayMusic = () => {
   if (!playingInfo.src) return
   if (!audioRef.value.play) {
@@ -208,6 +220,7 @@ onMounted(() => {
   if (playingInfo.src && playingInfo.id && playingInfo.current > 0) {
     progress.value = Math.floor(playingInfo.current * 100000 / playingInfo.duration)
     if (audioRef.value) {
+      audioRef.value.volume = playingInfo.volume / 100
       audioRef.value.load()
       audioRef.value.currentTime = playingInfo.current
     }

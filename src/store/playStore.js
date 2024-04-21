@@ -20,7 +20,9 @@ export const playStore = defineStore('play', {
             artists: [{
                 name: '未知歌手'
             }],
-            data: [] //音源信息，多种音质的音源
+            data: [], //音源信息，多种音质的音源,
+            volume: 50, //音量
+            mute: false, //静音
         },
         // 播放列表
         playlist: []
@@ -111,6 +113,15 @@ export const playStore = defineStore('play', {
         },
         getSongById(id) {
             return this.playlist.filter(item => item.id === id)
+        },
+        updateVolume(val){
+            this.playingInfo.volume = val
+            if(val > 0){
+                this.playingInfo.mute = false
+            }
+        },
+        triggerMute(){
+            this.playingInfo.mute = !this.playingInfo.mute
         }
     },
     persist: { //持久化到localStorage

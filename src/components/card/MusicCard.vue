@@ -77,6 +77,9 @@ const playMusic = () => {
       overflow: hidden;
       text-overflow: ellipsis;
     }
+    .artist-name:hover {
+      color: @listDark;
+    }
   }
 }
 </style>
