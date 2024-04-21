@@ -1,6 +1,5 @@
 import {defineStore} from 'pinia'
 import defaultCover from '@/assets/img/music.jpg'
-import {ref} from 'vue'
 
 export const playStore = defineStore('play', {
     state: () => ({
@@ -91,7 +90,7 @@ export const playStore = defineStore('play', {
             this.playingInfo.artists = artists
             this.playingInfo.data = data
             this.playingInfo.playing = playing
-            this.updatePlayList({id, duration, current, name, coverUrl, album, artists, src, data, playing: false})
+            this.updatePlayList({id, duration, current:0, name, coverUrl, album, artists, src, data, playing: false})
         },
         updatePlayList(song) {
             console.log('updatePlayList')

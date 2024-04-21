@@ -117,12 +117,9 @@ const playMusic = async (id) => {
   } else { // 切换歌曲
     playS.updatePlaying(false)
     let s = playS.getSongById(id);
-    if (s && s.length && s[0].src) {
-      playS.updatePlayingInfo(s[0])
-      await nextTick(() => {
-        progress.value = 0
-        playS.updatePlaying(true)
-      })
+    if (s && s.length) {
+      s[0].current = 0
+      await getSrcAndPlay(s[0])
       return
     }
 

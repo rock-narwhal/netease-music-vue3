@@ -156,7 +156,6 @@ const toPlaylistDetail = (id) => {
     <!--    歌单列表-->
     <img-grid type="playlist"
              :list="playList"
-             class="mtop-10"
              @clickImg="toPlaylistDetail">
       <template v-slot="{item}">
         <div class="mar-top-10">

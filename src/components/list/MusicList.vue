@@ -29,6 +29,14 @@ defineProps({
   dataList: {
     type: Array,
     require: true
+  },
+  showTitle:{
+    type: Boolean,
+    default: true
+  },
+  pl:{ //内容 padding-left
+    type: String,
+    default: '30px'
   }
 })
 
@@ -47,12 +55,16 @@ const qualityTag = (item) =>{
 
 <template>
   <div class="music-list-wrapper">
-    <ul class="title-bar grey-color flex-box default-cursor">
+    <ul class="title-bar grey-color flex-box default-cursor" v-if="showTitle">
       <li v-for="(val,index) in titles" :key="val" :style="styleCfg[index]">
         {{ val }}
       </li>
     </ul>
-    <ul class="music-list flex-box hover-list default-cursor" v-for="(item,index) in dataList" :key="item.id" @dblclick.stop="emit('clickItem', item.id)">
+    <ul class="music-list flex-box hover-list default-cursor"
+        :style="{paddingLeft: pl}"
+        v-for="(item,index) in dataList"
+        :key="item.id"
+        @dblclick.stop="emit('clickItem', item.id)">
       <li :style="styleCfg[0]" class="grey-color">
         <span>
           {{ index < 9 ? '0' + (index + 1) : (index + 1) }}
@@ -70,9 +82,9 @@ const qualityTag = (item) =>{
         </song-tag>
         <song-tag v-if="item.originCoverType === 1 || item.originCoverType === 2" :tag="item.originCoverType === 1 ? '原唱' : '翻唱'"></song-tag>
       </li>
-      <li :style="styleCfg[3]" class="text-over dark-color">{{ item.ar[0].name }}</li>
-      <li :style="styleCfg[4]" class="text-over dark-color">{{ item.al.name }}</li>
-      <li :style="styleCfg[5]" class="text-over grey-color">{{ timeConvert(item.dt / 1000) }}</li>
+      <li :style="styleCfg[3]" class="text-over dark-color">{{ item.ar ? item.ar[0].name : item.artists[0].name}}</li>
+      <li :style="styleCfg[4]" class="text-over dark-color">{{ item.al ? item.al.name : item.album.name}}</li>
+      <li :style="styleCfg[5]" class="text-over grey-color">{{ timeConvert(item.dt ?  (item.dt / 1000) : (item.duration / 1000)) }}</li>
     </ul>
   </div>
 </template>
@@ -108,14 +120,9 @@ ul {
 .title-bar{
   padding-left: 30px;
 }
-.music-list{
+.padding-30{
   padding-left: 30px;
-  //.grey-item{
-  //  color: @listGrey;
-  //}
-  //.dark-item{
-  //  color: @listDark;
-  //}
+  padding-right: 30px;
 }
 
 .music-list:nth-child(even) {

@@ -6,6 +6,7 @@ import HeaderBar from "@/components/layout/HeaderBar.vue";
 import LeftAside from "@/components/layout/LeftAside.vue";
 import FooterBar from "@/components/layout/FooterBar.vue";
 import LoginWindow from "@/components/commons/LoginWindow.vue";
+import PlaylistDrawer from "@/components/drawer/PlaylistDrawer.vue";
 import {userStore} from "@/store/userStore.js";
 
 const contentRef = ref(null)
@@ -61,7 +62,9 @@ watch(() => route.path, val => {
       <div class="player-drawer"></div>
 
       <!--    右侧播放列表抽屉-->
-      <div class="playlist-drawer"></div>
+      <div class="playlist-drawer">
+        <playlist-drawer></playlist-drawer>
+      </div>
     </div>
 
     <!--  底部栏-->
