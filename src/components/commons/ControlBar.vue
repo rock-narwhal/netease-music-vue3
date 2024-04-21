@@ -134,6 +134,7 @@ const playMusic = async (id) => {
       coverUrl: song.al.picUrl,
       album: song.al,
       artists: song.ar,
+      fee: song.fee
     })
   }
 }
@@ -212,14 +213,18 @@ const playAll = (list) => {
 
 }
 
-onMounted(() => {
+onMounted(async () => {
   playS.updatePlaying(false)
-  if (playingInfo.src && playingInfo.id && playingInfo.current > 0) {
-    progress.value = Math.floor(playingInfo.current * 100000 / playingInfo.duration)
-    if (audioRef.value) {
-      audioRef.value.volume = playingInfo.volume / 100
-      audioRef.value.load()
-      audioRef.value.currentTime = playingInfo.current
+  if (playingInfo.id && playingInfo.current > 0) {
+    await getSongData(playingInfo.id)
+    if (songData.value.length > 0) {
+      playS.updatePlayingData(songData.value)
+      progress.value = Math.floor(playingInfo.current * 100000 / playingInfo.duration)
+      if (audioRef.value) {
+        audioRef.value.volume = playingInfo.volume / 100
+        audioRef.value.load()
+        audioRef.value.currentTime = playingInfo.current
+      }
     }
   } else {
     playS.updateCurrent(0)
