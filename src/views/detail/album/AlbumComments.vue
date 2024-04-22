@@ -4,6 +4,7 @@ import {useRoute} from "vue-router";
 import {albumComment} from "@/api/api_other.js";
 import UserComment from "@/components/commons/UserComment.vue";
 import CommentInput from "@/components/commons/CommentInput.vue";
+import emitter from "@/utils/MittBus.js";
 
 const hotComments = ref([])
 
@@ -27,15 +28,27 @@ const route = useRoute()
 
 onMounted(async () => {
   queryInfo.id = route.query.id
+  await loadComments()
+})
+
+const loadComments = async () => {
   isLoading.value = true
   const res = await albumComment(queryInfo)
   if (res.code !== 200) return
   comments.value = res.comments
   pageInfo.hasMore = res.more
   pageInfo.total = res.total
-  if (res.hotComments) hotComments.value = res.hotComments
+  hotComments.value = res.hotComments || []
   isLoading.value = false
-})
+}
+
+const onPageChange = (page) => {
+  if (page === pageInfo.current) return
+  pageInfo.current = page
+  queryInfo.offset = (page - 1) * queryInfo.limit
+  loadComments()
+  emitter.emit('contentScrollTop')
+}
 
 const commentObj = reactive({
   send: 1,
@@ -87,6 +100,18 @@ const doReply = (item) => {
         </li>
       </ul>
     </div>
+    <div class="pagination" v-show="comments.length > 0">
+      <el-pagination
+          background
+          :small="true"
+          :page-size="50"
+          layout="prev, pager, next"
+          :total="pageInfo.total"
+          @current-change="onPageChange"
+          @prev-click="onPageChange(pageInfo.currentPage -1)"
+          @next-click="onPageChange(pageInfo.currentPage -1)">
+      </el-pagination>
+    </div>
   </div>
 </template>
 
@@ -98,5 +123,12 @@ const doReply = (item) => {
 .title {
   font-size: 14px;
   font-weight: bold;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 </style>
