@@ -69,8 +69,8 @@ const qualityTag = (item) => {
       <li class="clearfix" v-for="(item,index) in songList" :key="item.id" @dblclick.stop="playMusic(item.id)">
         <div class="play-icon float-left grey-color">
           <span v-if="playingInfo.id !== item.id">{{ String(index + 1).padStart(2, '0') }}</span>
-          <i v-else-if="playingInfo.pause" class="iconfont icon-shengyinguanbi"></i>
-          <i v-else class="iconfont icon-shengyin"></i>
+          <svg-icon v-else-if="playingInfo.playing" name="volume-small" class-name="red-color"></svg-icon>
+          <svg-icon v-else name="pause" class-name="red-color"></svg-icon>
         </div>
         <div class="cover float-left clearfix">
           <div style="width: 60px;height: 60px">

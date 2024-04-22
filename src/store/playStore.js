@@ -103,7 +103,11 @@ export const playStore = defineStore('play', {
         },
         // 播放歌单或专辑时，替换全部播放列表
         updatePlaylistAll(list) {
-            this.playList = list
+            this.$patch(state =>{
+                state.playlist.length = 0 //清空数组直接将length = 0就行
+                state.playlist.push(...list)
+            })
+            // this.playList = list
         },
         updatePlaying(val) {
             this.playingInfo.playing = val
@@ -142,7 +146,7 @@ export const playStore = defineStore('play', {
                 fee: 0,
                 playing: false
             })
-            this.playlist = []
+            this.playlist.length = 0
         }
     },
     persist: { //持久化到localStorage
