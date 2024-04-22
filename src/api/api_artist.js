@@ -10,3 +10,5 @@ export const artistAlbum = ({id, offset, limit}) => get('/artist/album', {id, of
 export const artistMV = ({id, offset, limit}) => get('/artist/mv', {id, offset, limit})
 //歌手信息
 export const artistDesc = (id) => get('/artist/desc', {id})
+
+export const similarArtist = (id) => get('/simi/artist', {id})

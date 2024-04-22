@@ -19,7 +19,8 @@ const props = defineProps({
   },
   type: {
     type: String,
-    required: true
+    required: true,
+    validator : (val) => ['artist','playlist','album'].includes(val)
   },
   isLoading: {
     type: Boolean,
