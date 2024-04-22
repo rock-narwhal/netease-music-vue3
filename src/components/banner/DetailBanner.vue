@@ -27,7 +27,7 @@ defineProps({
 @import "@/assets/less/lessDefine.less";
 .banner {
   display: flex;
-
+  width: 100%;
   img {
     width: 180px;
     border: 1px solid @greyF2;
@@ -36,6 +36,7 @@ defineProps({
 
   .banner-info {
     margin-left: 30px;
+    width: 100%;
   }
 }
 </style>

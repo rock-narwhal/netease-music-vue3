@@ -44,7 +44,7 @@ const queryPlaylistInfo = async () => {
       <detail-banner :avatar="playlistInfo.coverImgUrl + '?param=400y400'" v-show="playlistInfo.coverImgUrl">
         <template v-slot:title>
           <song-tag tag="歌单" size="large" style="float: left;margin-top: 5px; margin-right: 8px"></song-tag>
-          <div class="playlist-title">{{ playlistInfo.name }}</div>
+          <div class="playlist-title text-hidden">{{ playlistInfo.name }}</div>
           <div class="creator-info">
             <img v-lazy="creator.avatarUrl" class="pointer">
             <span class="pointer" style="color: #0077aa; margin: 0 5px">{{ creator.nickname }}</span>
@@ -95,6 +95,7 @@ const queryPlaylistInfo = async () => {
 
   .playlist-banner {
     margin: 0 30px 20px;
+    width: 100%;
 
     img {
       width: 30px;

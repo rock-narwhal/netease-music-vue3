@@ -58,7 +58,7 @@ const checkVip = computed(() => {
       <detail-banner :avatar="album.picUrl + '?param=400y400'" v-show="album.picUrl">
         <template v-slot:title>
           <song-tag tag="专辑" size="large" style="float: left;margin-top: 5px; margin-right: 8px"></song-tag>
-          <div class="album-title">{{ album.name }}</div>
+          <div class="album-title text-hidden">{{ album.name }}</div>
         </template>
         <template v-slot:buttons>
           <div class="button-group">
