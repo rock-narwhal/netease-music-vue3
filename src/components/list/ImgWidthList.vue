@@ -85,7 +85,10 @@ ul {
   li {
     padding: 0 30px;
     &:nth-child(odd) {
-      background-color: @grey57;
+      background-color: @listBg;
+    }
+    &:hover{
+      background-color: @listHover;
     }
   }
 }

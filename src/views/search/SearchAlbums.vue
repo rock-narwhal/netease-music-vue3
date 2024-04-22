@@ -59,8 +59,8 @@ const onPageChange = async (page) => {
     <el-skeleton :rows="10" animated v-show="isLoading"></el-skeleton>
     <ImgWidthList :list="list" mode="al" @clickItem="toAlbumDetail">
       <template v-slot="{scope}">
-        <span class="dark-color">{{ scope.artist.name }}</span>
-        <span class="grey-color" v-if="scope.artist.trans">&nbsp;({{ scope.artist.trans }})</span>
+        <span class="dark-color font-12">{{ scope.artist.name }}</span>
+        <span class="grey-color font-12" v-if="scope.artist.trans">&nbsp;({{ scope.artist.trans }})</span>
       </template>
     </ImgWidthList>
     <div class="pagination" v-show="list.length > 0">

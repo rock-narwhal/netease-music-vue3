@@ -49,12 +49,13 @@ const toPlaylistDetail = (id) => {
     <el-skeleton :rows="10" animated v-show="isLoading"></el-skeleton>
     <ImgWidthList :list="list" mode="pl" @clickItem="toPlaylistDetail">
       <template v-slot="{scope}">
-        <div class="float-item track-count">{{ scope.trackCount }} 首</div>
-        <div class="float-item ar-name">by {{ scope.creator.nickname }}</div>
-        <div class="float-item play-count clearfix">
-          <div class="play-icon">
-            <svg-icon name="play-fill"></svg-icon>
-          </div>
+        <div class="float-item track-count grey-color font-12">{{ scope.trackCount }} 首</div>
+        <div class="float-item ar-name font-12">
+          <span class="grey-color">by </span>
+          <span class="dark-color">{{ scope.creator.nickname }}</span>
+        </div>
+        <div class="float-item play-count clearfix grey-color">
+            <svg-icon name="play-cir-fill"></svg-icon>
           <span style="line-height: 16px; margin-left: 5px">{{ toCNNum(scope.playCount) }}</span>
         </div>
       </template>
@@ -63,6 +64,7 @@ const toPlaylistDetail = (id) => {
 </template>
 
 <style scoped lang="less">
+@import "@/assets/less/lessDefine.less";
 .float-item {
   float: left;
   line-height: 100%;
@@ -85,7 +87,7 @@ const toPlaylistDetail = (id) => {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid @listGrey;
     float: left;
     border-radius: 50%
   }

@@ -67,8 +67,8 @@ const toAlbumDetail = (id) => {
                 @loadMore="loadMore"
                 @clickItem="toAlbumDetail">
     <template v-slot="{scope}">
-      <div class="song-count">{{ scope.size }}首</div>
-      <div class="publish-date">发行时间: {{ format(scope.publishTime) }}</div>
+      <div class="song-count grey-color font-12">{{ scope.size }}首</div>
+      <div class="publish-date grey-color font-12">发行时间: {{ format(scope.publishTime) }}</div>
     </template>
   </ImgWidthList>
 </template>
