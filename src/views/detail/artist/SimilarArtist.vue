@@ -26,7 +26,7 @@ const toArtistDetail = (id)=>{
 </script>
 
 <template>
-<div class="artists-wrapper">
+<div class="mar-side-30">
   <img-grid type="artist" :list="artists" @click-img="toArtistDetail">
     <template v-slot="{item}">
       <div class="mar-top-10 dark-color">
@@ -38,7 +38,4 @@ const toArtistDetail = (id)=>{
 </template>
 
 <style scoped lang="less">
-.artists-wrapper{
-  margin: 0 30px;
-}
 </style>

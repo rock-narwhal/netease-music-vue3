@@ -88,7 +88,7 @@ const toPrivateMv = () => {
 
 <template>
   <!--  个性推荐页面-->
-  <div class="container">
+  <div class="container mar-bot-30">
     <div class="swiper-wrap">
       <el-carousel :interval="4000" type="card" :height="bannerHeight + 'px'">
         <el-carousel-item

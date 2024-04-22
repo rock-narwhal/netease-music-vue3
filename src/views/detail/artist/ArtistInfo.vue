@@ -47,17 +47,16 @@ const infoContent = computed(() => {
 </script>
 
 <template>
-  <div class="info-wrap" v-html="infoContent">
+  <div class="info-wrap mar-side-30" v-html="infoContent">
   </div>
 </template>
 
 <style scoped lang="less">
 @import "@/assets/less/lessDefine";
 .info-wrap {
-  padding: 0 30px;
-
+  margin-bottom: 50px;
   /deep/ .title {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: bold;
