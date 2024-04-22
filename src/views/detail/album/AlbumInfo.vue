@@ -43,14 +43,14 @@ const infoContent = computed(() => {
 .info-wrap {
   padding: 0 30px;
 
-  /deep/ .title {
+  :deep(.title) {
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: bold;
   }
 
-  /deep/ .content {
+  :deep(.content) {
     text-indent: 2em;
     line-height: 200%;
     white-space: pre-wrap;

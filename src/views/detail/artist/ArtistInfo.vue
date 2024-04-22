@@ -55,14 +55,14 @@ const infoContent = computed(() => {
 @import "@/assets/less/lessDefine";
 .info-wrap {
   margin-bottom: 50px;
-  /deep/ .title {
+  :deep(.title) {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: bold;
   }
 
-  /deep/ .content {
+  :deep(.content) {
     text-indent: 2em;
     line-height: 200%;
     white-space: pre-wrap;
