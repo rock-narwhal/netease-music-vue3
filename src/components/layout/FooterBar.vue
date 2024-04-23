@@ -14,6 +14,8 @@ const playS = playStore()
 
 const volume = ref(0)
 
+const volBeforeMute = ref(0)
+
 onMounted(() =>{
   volume.value = playingInfo.volume
 })
@@ -24,7 +26,7 @@ watch(volume, (val) =>{
 
 watch(()=>playingInfo.mute, val =>{
   if(!val){
-    volume.value  = playingInfo.volume
+    volume.value  = volBeforeMute.value
   }else{
     volume.value = 0
   }
@@ -39,6 +41,13 @@ const iconName = computed(()=>{
   }
   return 'volume-notice'
 })
+
+const triggerMute = () =>{
+  if(!playingInfo.mute){ //切换到静音前保存音量
+    volBeforeMute.value = volume.value
+  }
+  playS.triggerMute()
+}
 </script>
 
 <template>
@@ -52,7 +61,7 @@ const iconName = computed(()=>{
     </div>
 
     <div class="right-area">
-      <div class="volume-wrapper pointer" @click.stop="playS.triggerMute">
+      <div class="volume-wrapper pointer" @click.stop="triggerMute">
         <svg-icon :name="iconName" class-name="font-24" vertical="-0.3"></svg-icon>
         <div class="volume-slider-wrapper">
           <control-slider v-model="volume" :vertical="true" :size="100"></control-slider>
