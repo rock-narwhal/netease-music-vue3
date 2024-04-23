@@ -1,0 +1,287 @@
+{
+  "result": {
+    "new_mlog": [
+      {
+        "resourceId": "419807",
+        "resourceType": "new_mlog",
+        "internalType": null,
+        "resourceName": "视频",
+        "baseInfo": {
+          "id": "419807",
+          "type": 1,
+          "mlogBaseDataType": 3,
+          "position": null,
+          "resource": {
+            "mlogBaseData": {
+              "id": "419807",
+              "type": 3,
+              "text": "Shots (Broiler Remix)",
+              "interveneText": null,
+              "pubTime": 1433472225565,
+              "coverUrl": "http://p1.music.126.net/ZORdhYN9oVkyf0Vt3hD-YQ==/7808731581356191.jpg",
+              "coverHeight": 800,
+              "coverWidth": 1280,
+              "coverColor": -1118482,
+              "coverPicKey": "7808731581356191",
+              "coverDynamicUrl": null,
+              "audio": null,
+              "threadId": "R_MV_5_419807",
+              "duration": 260320
+            },
+            "mlogExtVO": {
+              "likedCount": 86472,
+              "commentCount": 4096,
+              "playCount": 7972708,
+              "song": {
+                "id": 31789013,
+                "name": "Shots (Broiler Extended Club Remix)",
+                "coverUrl": "http://p1.music.126.net/_WUjq86Db9pfhpwaYeoLqQ==/109951163219130849.jpg",
+                "duration": 288066,
+                "artists": [
+                  {
+                    "artistId": 94779,
+                    "artistName": "Imagine Dragons"
+                  },
+                  {
+                    "artistId": 886022,
+                    "artistName": "Broiler"
+                  }
+                ],
+                "privilege": null,
+                "albumName": "Shots",
+                "startTime": null,
+                "endTime": null
+              },
+              "canCollect": true,
+              "artistName": "Imagine Dragons",
+              "rcmdInfo": null,
+              "strongPushMark": null,
+              "strongPushIcon": null,
+              "specialTag": null,
+              "channelTag": null,
+              "artists": [
+                {
+                  "id": 94779,
+                  "name": "Imagine Dragons",
+                  "img1v1Url": "http://p1.music.126.net/_yDVvfmDLOTPxkQ_vCKVDg==/109951166366047050.jpg"
+                },
+                {
+                  "id": 886022,
+                  "name": "Broiler",
+                  "img1v1Url": "http://p1.music.126.net/KYdcDpcRZoLI2LWXSQt2RQ==/109951164231651358.jpg"
+                }
+              ]
+            },
+            "userProfile": null,
+            "status": 1,
+            "shareUrl": "https://music.163.com/mv/419807/?userid=5183929434"
+          },
+          "alg": null,
+          "reason": null,
+          "matchField": 0,
+          "matchFieldContent": null,
+          "sameCity": false
+        },
+        "alg": "alg_search_precision_bestmatch_normal_song_typing_{\"fea\":\"27322;185;123#1175;20;16#528;214;168#3017;8;13#44;2;0#25;3;4\",\"cvrUv\":0.664865,\"impressUv30d\":27322.0,\"ctrUv\":0.006771,\"strategy\":\"normal\"}"
+      }
+    ],
+    "playlist": [
+      {
+        "name": "【英文】燃爆全场的英文歌曲，嗨到天亮！",
+        "id": 2669325401,
+        "trackNumberUpdateTime": 1713596559283,
+        "status": 0,
+        "userId": 1704916943,
+        "createTime": 1550234364198,
+        "updateTime": 1713596559283,
+        "subscribedCount": 93081,
+        "trackCount": 155,
+        "cloudTrackCount": 0,
+        "coverImgUrl": "http://p1.music.126.net/rl4R2vYVjkMMRWEB0r5oNg==/109951168650680922.jpg",
+        "coverImgId": 109951168650680930,
+        "description": "请不必感到惊异，因为这就是音乐的魅力。听吧，当一首流行音乐在你耳中跳动时，音乐已化作一个个精灵激动着你身上的每一个细胞！感觉到了吗？血液正在燃烧；听到了吗？心跳正在加剧。当你发觉自己不知不觉间跟着音乐节拍翩翩起舞时，请不要感到惊奇，因为这就是音乐的魅力。\n音乐给人灵感,给人奋起，催人前进,达到意境合人, 这就是音乐！",
+        "tags": [
+          "欧美",
+          "流行",
+          "兴奋"
+        ],
+        "playCount": 11453081,
+        "trackUpdateTime": 1713853858704,
+        "specialType": 0,
+        "totalDuration": 0,
+        "creator": {
+          "defaultAvatar": false,
+          "province": 530000,
+          "authStatus": 0,
+          "followed": false,
+          "avatarUrl": "http://p1.music.126.net/FZviKzh6aCMCFPIEYFrTIA==/109951164776172492.jpg",
+          "accountStatus": 0,
+          "gender": 1,
+          "city": 532900,
+          "birthday": 1030278126631,
+          "userId": 1704916943,
+          "userType": 0,
+          "nickname": "到月球上走走",
+          "signature": "",
+          "description": "",
+          "detailDescription": "",
+          "avatarImgId": 109951164776172500,
+          "backgroundImgId": 109951165358182820,
+          "backgroundUrl": "http://p1.music.126.net/kYZ9VCk-dhjy7zM0zGCanA==/109951165358182814.jpg",
+          "authority": 0,
+          "mutual": false,
+          "expertTags": null,
+          "experts": null,
+          "djStatus": 0,
+          "vipType": 0,
+          "remarkName": null,
+          "authenticationTypes": 0,
+          "avatarDetail": null,
+          "avatarImgIdStr": "109951164776172492",
+          "backgroundImgIdStr": "109951165358182814",
+          "anchor": false,
+          "avatarImgId_str": "109951164776172492"
+        },
+        "tracks": null,
+        "subscribers": [],
+        "subscribed": false,
+        "commentThreadId": "A_PL_0_2669325401",
+        "newImported": false,
+        "adType": 0,
+        "highQuality": false,
+        "privacy": 0,
+        "ordered": true,
+        "anonimous": false,
+        "coverStatus": 3,
+        "recommendInfo": null,
+        "socialPlaylistCover": null,
+        "recommendText": null,
+        "coverText": null,
+        "relateResType": null,
+        "relateResId": null,
+        "coverImgId_str": "109951168650680922",
+        "alg": "alg_search_precision_bestmatch_normal_song_typing_{\"fea\":\"37370;524;204#12639;330;99#577;75;39#2926;11;4#204;2;2#24;0;0\",\"cvrUv\":0.389313,\"impressUv30d\":37370.0,\"ctrUv\":0.014022,\"strategy\":\"normal\"}"
+      }
+    ],
+    "artist": [
+      {
+        "name": "Imagine Dragons",
+        "id": 94779,
+        "picId": 109951166366047060,
+        "img1v1Id": 109951166366036370,
+        "briefDesc": "",
+        "picUrl": "https://p1.music.126.net/_yDVvfmDLOTPxkQ_vCKVDg==/109951166366047050.jpg",
+        "img1v1Url": "https://p1.music.126.net/Q04eBKwDH_QbxbxspuhwBw==/109951166366036375.jpg",
+        "albumSize": 76,
+        "alias": [],
+        "trans": "梦龙乐队、梦想之龙乐队、谜团乐队",
+        "musicSize": 3735,
+        "picId_str": "109951166366047050",
+        "img1v1Id_str": "109951166366036375",
+        "transNames": [
+          "梦龙乐队、梦想之龙乐队、谜团乐队"
+        ],
+        "mvSize": 206,
+        "alg": "alg_search_precision_bestmatch_normal_song_typing_{\"fea\":\"74049;2032;1334#305;10;6#142;30;20#5869;57;28#4;0;0#3;1;1\",\"cvrUv\":0.656496,\"impressUv30d\":74049.0,\"ctrUv\":0.027441,\"strategy\":\"normal\"}",
+        "fansSize": 2638023,
+        "videoSize": 0,
+        "officialTags": [],
+        "searchCircle": null,
+        "occupation": "歌手"
+      },
+      {
+        "name": "Broiler",
+        "id": 886022,
+        "picId": 109951164231651360,
+        "img1v1Id": 109951164231658130,
+        "briefDesc": "",
+        "picUrl": "https://p1.music.126.net/KYdcDpcRZoLI2LWXSQt2RQ==/109951164231651358.jpg",
+        "img1v1Url": "https://p1.music.126.net/hHB8Sl01zGEI2qTsih8ePA==/109951164231658127.jpg",
+        "albumSize": 60,
+        "alias": [],
+        "trans": "",
+        "musicSize": 193,
+        "picId_str": "109951164231651358",
+        "img1v1Id_str": "109951164231658127",
+        "transNames": null,
+        "mvSize": 16,
+        "alg": "alg_search_precision_bestmatch_normal_song_typing_{\"fea\":\"59438;165;80#47;0;0#26;1;0#5646;4;0#0;0;0#0;0;0\",\"cvrUv\":0.484848,\"impressUv30d\":59438.0,\"ctrUv\":0.002776,\"strategy\":\"addition\"}",
+        "fansSize": 28497,
+        "videoSize": 0,
+        "officialTags": [],
+        "searchCircle": null,
+        "occupation": "歌手"
+      }
+    ],
+    "album": [
+      {
+        "name": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "id": 192833347,
+        "type": "专辑",
+        "size": 31,
+        "picId": 109951169510761060,
+        "blurPicUrl": "http://p1.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "companyId": 0,
+        "pic": 109951169510761060,
+        "picUrl": "http://p1.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "publishTime": 1713456002000,
+        "description": "",
+        "tags": "",
+        "company": "Taylor Swift",
+        "briefDesc": "",
+        "artist": {
+          "name": "Taylor Swift",
+          "id": 44266,
+          "picId": 109951167881974530,
+          "img1v1Id": 109951169384495890,
+          "briefDesc": "",
+          "picUrl": "http://p2.music.126.net/J9vY1-_n5msBf8nyCKdL_w==/109951167881974520.jpg",
+          "img1v1Url": "http://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+          "albumSize": 169,
+          "alias": [],
+          "trans": "泰勒·斯威夫特",
+          "musicSize": 2382,
+          "topicPerson": 0,
+          "picId_str": "109951167881974520",
+          "transNames": [
+            "泰勒·斯威夫特"
+          ],
+          "img1v1Id_str": "109951169384495891"
+        },
+        "songs": null,
+        "alias": [],
+        "status": 1,
+        "copyrightId": 7003,
+        "commentThreadId": "R_AL_3_192833347",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "id": 44266,
+            "picId": 0,
+            "img1v1Id": 109951169384495890,
+            "briefDesc": "",
+            "picUrl": "http://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+            "img1v1Url": "http://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+            "albumSize": 0,
+            "alias": [],
+            "trans": "",
+            "musicSize": 0,
+            "topicPerson": 0,
+            "img1v1Id_str": "109951169384495891"
+          }
+        ],
+        "paid": false,
+        "onSale": false,
+        "picId_str": "109951169510761055",
+        "alg": "feature",
+        "mark": 0
+      }
+    ],
+    "orders": [
+      "artist",
+      "new_mlog",
+      "playlist"
+    ]
+  },
+  "code": 200
+}

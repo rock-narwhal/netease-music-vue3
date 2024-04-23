@@ -1,0 +1,239 @@
+{
+  "result": {
+    "albums": [
+      {
+        "id": 3138008,
+        "name": "Shots",
+        "artist": {
+          "id": 94779,
+          "name": "Imagine Dragons",
+          "picUrl": "https://p2.music.126.net/_yDVvfmDLOTPxkQ_vCKVDg==/109951166366047050.jpg",
+          "alias": [],
+          "albumSize": 73,
+          "picId": 109951166366047060,
+          "fansGroup": null,
+          "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+          "img1v1": 0,
+          "transNames": [
+            "梦龙乐队、梦想之龙乐队、谜团乐队"
+          ],
+          "trans": "梦龙乐队、梦想之龙乐队、谜团乐队"
+        },
+        "publishTime": 1430668800000,
+        "size": 4,
+        "copyrightId": 7003,
+        "status": 1,
+        "picId": 109951163219130850,
+        "mark": 0
+      },
+      {
+        "id": 154101028,
+        "name": "Shots (Broiler Remix)",
+        "artist": {
+          "id": 53184558,
+          "name": "XiRXG",
+          "picUrl": "https://p2.music.126.net/t6Mcap0Ni14SNMdXOElhSA==/109951167565426932.jpg",
+          "alias": [
+            "中国独立电子制作人"
+          ],
+          "albumSize": 53,
+          "picId": 109951167565426930,
+          "fansGroup": null,
+          "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+          "img1v1": 0,
+          "alia": [
+            "中国独立电子制作人"
+          ],
+          "trans": null
+        },
+        "publishTime": 1667116322559,
+        "size": 4,
+        "copyrightId": 0,
+        "status": 1,
+        "picId": 109951168015717600,
+        "mark": 0
+      }
+    ],
+    "songs": [
+      {
+        "id": 1930803949,
+        "name": "Shots",
+        "artists": [
+          {
+            "id": 94779,
+            "name": "Imagine Dragons",
+            "picUrl": null,
+            "alias": [],
+            "albumSize": 0,
+            "picId": 0,
+            "fansGroup": null,
+            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+            "img1v1": 0,
+            "trans": null
+          },
+          {
+            "id": 886022,
+            "name": "Broiler",
+            "picUrl": null,
+            "alias": [],
+            "albumSize": 0,
+            "picId": 0,
+            "fansGroup": null,
+            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+            "img1v1": 0,
+            "trans": null
+          }
+        ],
+        "album": {
+          "id": 142273160,
+          "name": "红心安利 - 洗脑神曲 Vol.4",
+          "artist": {
+            "id": 0,
+            "name": "",
+            "picUrl": null,
+            "alias": [],
+            "albumSize": 0,
+            "picId": 0,
+            "fansGroup": null,
+            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+            "img1v1": 0,
+            "trans": null
+          },
+          "publishTime": 1647964800000,
+          "size": 148,
+          "copyrightId": 7003,
+          "status": 1,
+          "picId": 109951167183882270,
+          "mark": 0
+        },
+        "duration": 191573,
+        "copyrightId": 7003,
+        "status": 0,
+        "alias": [],
+        "rtype": 0,
+        "ftype": 0,
+        "mvid": 0,
+        "fee": 8,
+        "rUrl": null,
+        "mark": 17180139520
+      },
+      {
+        "id": 31789010,
+        "name": "Shots (Broiler Remix)",
+        "artists": [
+          {
+            "id": 886022,
+            "name": "Broiler",
+            "picUrl": null,
+            "alias": [],
+            "albumSize": 0,
+            "picId": 0,
+            "fansGroup": null,
+            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+            "img1v1": 0,
+            "trans": null
+          },
+          {
+            "id": 94779,
+            "name": "Imagine Dragons",
+            "picUrl": null,
+            "alias": [],
+            "albumSize": 0,
+            "picId": 0,
+            "fansGroup": null,
+            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+            "img1v1": 0,
+            "trans": null
+          }
+        ],
+        "album": {
+          "id": 3138008,
+          "name": "Shots",
+          "artist": {
+            "id": 0,
+            "name": "",
+            "picUrl": null,
+            "alias": [],
+            "albumSize": 0,
+            "picId": 0,
+            "fansGroup": null,
+            "img1v1Url": "https://p1.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+            "img1v1": 0,
+            "trans": null
+          },
+          "publishTime": 1430668800000,
+          "size": 4,
+          "copyrightId": 7003,
+          "status": 1,
+          "picId": 109951163219130850,
+          "mark": 0
+        },
+        "duration": 191573,
+        "copyrightId": 7003,
+        "status": 0,
+        "alias": [],
+        "rtype": 0,
+        "ftype": 0,
+        "mvid": 419807,
+        "fee": 1,
+        "rUrl": null,
+        "mark": 17180139520
+      },
+      {
+        "id": 30373640,
+        "name": "Shots",
+        "artists": [
+          {
+            "id": 94779,
+            "name": "Imagine Dragons",
+            "picUrl": null,
+            "alias": [],
+            "albumSize": 0,
+            "picId": 0,
+            "fansGroup": null,
+            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+            "img1v1": 0,
+            "trans": null
+          }
+        ],
+        "album": {
+          "id": 3098384,
+          "name": "Shots",
+          "artist": {
+            "id": 0,
+            "name": "",
+            "picUrl": null,
+            "alias": [],
+            "albumSize": 0,
+            "picId": 0,
+            "fansGroup": null,
+            "img1v1Url": "https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+            "img1v1": 0,
+            "trans": null
+          },
+          "publishTime": 1422288000007,
+          "size": 1,
+          "copyrightId": 7003,
+          "status": 1,
+          "picId": 7888995929406149,
+          "mark": 0
+        },
+        "duration": 232333,
+        "copyrightId": 7003,
+        "status": 0,
+        "alias": [],
+        "rtype": 0,
+        "ftype": 0,
+        "mvid": 384613,
+        "fee": 1,
+        "rUrl": null,
+        "mark": 17180139520
+      }
+    ],
+    "order": [
+      "songs",
+      "albums"
+    ]
+  },
+  "code": 200
+}

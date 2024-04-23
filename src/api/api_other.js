@@ -1,5 +1,4 @@
-import {get} from './request'
-import {post} from "./request.js";
+import {get,post} from './request'
 // 获取搜索结果
 export const getSuggest = ({type, keywords}) => get('/search/suggest', {type, keywords})
 // 获取热搜榜
@@ -14,3 +13,5 @@ export const doComment = ({t, type, id, content, commentId}) => post('/comment',
 export const privateContent = () => get('/personalized/privatecontent')
 
 export const priContentList = ({limit,offset}) => get('/personalized/privatecontent/list',{limit, offset})
+
+export const searchMutiMatch = (keywords) => get('/search/multimatch', {keywords})

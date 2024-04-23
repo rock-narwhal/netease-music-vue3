@@ -1,29 +1,10 @@
 <script setup>
+
 import {toCNNum} from "@/utils/FormatUtil.js";
-import {useRouter} from "vue-router";
-
-/**
- * 搜索页推荐banner歌单
- * @type {Prettify<Readonly<ExtractPropTypes<{data: {require: boolean, type: ObjectConstructor}}>>>}
- */
-const props = defineProps({
-  data: {
-    type: Object,
-    require: true
-  }
-})
-
-const router = useRouter()
-const clickPlayList = ()=>{
-  router.push({
-    name:'PlaylistDetail',
-    query:{id : props.data.id}
-  })
-}
 </script>
 
 <template>
-  <div @click="clickPlayList" class="pointer banner-content">
+  <div @click="" class="pointer banner-content">
     <img v-lazy="data.coverImgUrl + '?param=100y100'" alt="">
     <div class="banner-info">
       <div class="text-hidden">歌单: {{ data.name }}</div>
@@ -33,6 +14,7 @@ const clickPlayList = ()=>{
 </template>
 
 <style scoped lang="less">
+@import "@/assets/less/lessDefine.less";
 @import "@/assets/less/lessDefine.less";
 
 .banner-content {
@@ -49,7 +31,7 @@ const clickPlayList = ()=>{
   }
 
   .banner-info {
-    width: 250px;
+    width: 260px;
     margin-left: 10px;
   }
 }
