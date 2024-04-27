@@ -25,7 +25,11 @@ export const playStore = defineStore('play', {
             fee: 0, //收费/免费
         },
         // 播放列表
-        playlist: []
+        playlist: [],
+        // 播放器页面
+        player:{
+            open: false, //是否打开
+        }
     }),
     getters: {
         getNext() {

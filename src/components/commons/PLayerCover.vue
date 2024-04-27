@@ -2,6 +2,7 @@
 import {ref} from 'vue'
 import {ArrowDownBold, ArrowUpBold, Download, FolderAdd} from "@element-plus/icons-vue";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
+import {playStore} from "@/store/playStore.js";
 
 defineProps({
   playingInfo: {
@@ -11,11 +12,12 @@ defineProps({
 })
 
 const hiddenCover = ref(false)
+const player = playStore().player
 
 const emit = defineEmits(['clickCover'])
 const targetPlayPage = (val) => {
   hiddenCover.value = val
-  emit('clickCover', val)
+  player.open = val
 }
 </script>
 
