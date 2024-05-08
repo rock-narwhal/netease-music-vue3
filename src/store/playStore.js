@@ -12,7 +12,7 @@ export const playStore = defineStore('play', {
             name: '未知音乐',
             src: '',//声源
             coverUrl: defaultCover, //封面
-            lyric: '歌词',
+            lyric: '',
             album: { //专辑
 
             },
