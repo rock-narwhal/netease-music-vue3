@@ -1,5 +1,5 @@
 <script setup>
-import {ref, onMounted, watch} from 'vue'
+import {ref, onMounted, watch,shallowRef} from 'vue'
 import TabMenu from "@/components/menu/TabMenu.vue";
 import PlayListBanner from "@/components/banner/PlayListBanner.vue";
 import ArtistBanner from "@/components/banner/ArtistBanner.vue";
@@ -22,11 +22,11 @@ const keywords = ref('')
 const banners = ref([])
 
 const config = {
-  songs: SongBanner,
-  playlist: PlayListBanner,
-  album: AlbumBanner,
-  artist: ArtistBanner,
-  new_mlog: VideoBanner
+  songs: shallowRef(SongBanner),
+  playlist: shallowRef(PlayListBanner),
+  album: shallowRef(AlbumBanner),
+  artist: shallowRef(ArtistBanner),
+  new_mlog: shallowRef(VideoBanner)
 }
 
 const searchPlaylist = async () => {
