@@ -25,7 +25,7 @@ const updateLyric = async () => {
 }
 
 watch(() => playingInfo.id, () => {
-  index.value = 0
+  curIdx.value = 0
   lyricArr.value = []
   updateLyric()
 })
@@ -73,7 +73,7 @@ const doDraw = () =>{
 </script>
 
 <template>
-  <div class="lyric-wrapper" @wheel="doDraw">
+  <div class="lyric-wrap" @wheel="doDraw">
     <div v-for="(item,index) in lyricArr"
          :key="item.time"
          :class="{active: index === curIdx}"
@@ -85,7 +85,7 @@ const doDraw = () =>{
 </template>
 
 <style scoped lang="less">
-.lyric-wrapper{
+.lyric-wrap{
   width: 100%;
   height: 100%;
   overflow-y: auto;
@@ -98,6 +98,7 @@ const doDraw = () =>{
   .active{
     font-size: 18px;
     color: #000;
+    font-weight: bolder;
   }
 }
 </style>

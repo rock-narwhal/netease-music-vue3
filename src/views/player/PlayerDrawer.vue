@@ -38,7 +38,7 @@ const onOpen = async () => {
           </div>
           <div class="lyric-wrapper">
             <div class="song-name">
-              <span>{{ playingInfo.name }}</span>
+              <span>{{ playingInfo.name + '&nbsp;'}}</span>
               <song-tag tag="MV">
                 <svg-icon name="play-fill" class-name="font-10" vertical="-0.13"></svg-icon>
               </song-tag>
@@ -52,6 +52,12 @@ const onOpen = async () => {
               <ScrollLyric></ScrollLyric>
             </div>
           </div>
+        </div>
+        <div class="other-infos">
+<!--          评论区-->
+          <div class="comments-area"></div>
+<!--          推荐-->
+          <div class="recommend-area"></div>
         </div>
       </div>
 
@@ -98,7 +104,7 @@ const onOpen = async () => {
   .content-area {
     width: 920px;
 
-    padding-top: 100px;
+    padding-top: 80px;
   }
 
   .cover-lyric {
@@ -109,7 +115,7 @@ const onOpen = async () => {
 
     .cover-wrapper {
       width: 240px;
-
+      padding-top: 100px;
       img {
         border-radius: 8px;
         display: block;
@@ -118,10 +124,19 @@ const onOpen = async () => {
 
     .lyric-wrapper {
       width: 680px;
-      border: 1px solid black;
+      //border: 1px solid black;
+      padding: 0 100px;
 
+      .song-name{
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .song-info{
+        margin-bottom: 30px;
+        color: #969896;
+      }
       .lyric-area{
-        height: 400px;
+        height: 300px;
       }
     }
   }
