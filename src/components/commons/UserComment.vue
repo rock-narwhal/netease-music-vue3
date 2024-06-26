@@ -75,7 +75,7 @@ const emit = defineEmits(['clickReport', 'clickLike','clickShear','clickReply'])
       float: right;
 
       button {
-        background-color: white;
+        background-color: transparent;
         border: none;
         border-right: 1px solid @border;
       }

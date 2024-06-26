@@ -1,10 +1,12 @@
 <script setup>
-import {ref, onMounted, onUnmounted, computed} from "vue";
+import {ref, computed, reactive, watch} from "vue";
 import {playStore} from "@/store/playStore.js";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
 import SongTag from "@/components/commons/SongTag.vue";
 import mitt from "@/utils/MittBus.js";
 import ScrollLyric from "@/components/commons/ScrollLyric.vue";
+import {songComments} from "@/api/api_music.js";
+import UserComment from "@/components/commons/UserComment.vue";
 
 const player = playStore().player
 const playingInfo = playStore().playingInfo
@@ -18,6 +20,59 @@ const bgStyle = computed(() => {
 const onOpen = async () => {
   // 打开时更新歌词
   mitt.emit('doUpdateLyric')
+
+  queryInfo.id = playingInfo.id
+  await queryComments()
+}
+
+const comments = ref([])
+
+const hotComments = ref([])
+
+const queryInfo = reactive({
+  id: 0,
+  offset: 0,
+  limit: 20
+})
+
+const pageInfo = reactive({
+  curPage: 1,
+  total: 1,
+  hasMore: false
+})
+
+const isLoading = ref(false)
+
+const queryComments = async () => {
+  if (playingInfo.id === 0) return
+  isLoading.value = true
+  const res = await songComments(queryInfo)
+  if (res.code !== 200) {
+    isLoading.value = false
+    return
+  }
+  comments.value = res.comments
+  pageInfo.hasMore = res.more
+  pageInfo.total = res.total
+  hotComments.value = res.hotComments || []
+  isLoading.value = false
+}
+
+watch(() => playingInfo.id, (val) => {
+  queryInfo.id = val
+  queryInfo.offset = 0
+  queryComments()
+})
+
+const onPageChange = (page) => {
+  if (page === pageInfo.current) return
+  pageInfo.current = page
+  queryInfo.offset = (page - 1) * queryInfo.limit
+  queryComments()
+}
+
+const doReply = (item) => {
+
 }
 
 </script>
@@ -38,7 +93,7 @@ const onOpen = async () => {
           </div>
           <div class="lyric-wrapper">
             <div class="song-name">
-              <span>{{ playingInfo.name + '&nbsp;'}}</span>
+              <span>{{ playingInfo.name + '&nbsp;' }}</span>
               <song-tag tag="MV">
                 <svg-icon name="play-fill" class-name="font-10" vertical="-0.13"></svg-icon>
               </song-tag>
@@ -54,10 +109,44 @@ const onOpen = async () => {
           </div>
         </div>
         <div class="other-infos">
-<!--          评论区-->
-          <div class="comments-area"></div>
-<!--          推荐-->
-          <div class="recommend-area"></div>
+          <!--          评论区-->
+          <div class="comments-area">
+            <div style="margin-top: 10px; margin-bottom: 50px" v-show="hotComments.length > 0">
+              <span class="title">全部评论({{ pageInfo.total }})</span>
+              <ul>
+                <li v-for="item in hotComments" :key="item.commentId">
+                  <user-comment :comment="item"
+                                @click-reply="doReply(item)">
+                  </user-comment>
+                </li>
+              </ul>
+            </div>
+
+            <div style="margin-bottom: 50px">
+              <span class="title">最新评论({{ pageInfo.total }})</span>
+              <ul>
+                <li v-for="item in comments" :key="item.commentId">
+                  <user-comment :comment="item"
+                                @click-reply="doReply(item)">
+                  </user-comment>
+                </li>
+              </ul>
+            </div>
+            <div class="pagination" v-show="comments.length > 0">
+              <el-pagination
+                  background
+                  :small="true"
+                  :page-size="50"
+                  layout="prev, pager, next"
+                  :total="pageInfo.total"
+                  @current-change="onPageChange"
+                  @prev-click="onPageChange(pageInfo.currentPage -1)"
+                  @next-click="onPageChange(pageInfo.currentPage -1)">
+              </el-pagination>
+            </div>
+          </div>
+          <!--          推荐-->
+<!--          <div class="recommend-area"></div>-->
         </div>
       </div>
 
@@ -116,6 +205,8 @@ const onOpen = async () => {
     .cover-wrapper {
       width: 240px;
       padding-top: 100px;
+      margin-left: 30px;
+
       img {
         border-radius: 8px;
         display: block;
@@ -127,16 +218,30 @@ const onOpen = async () => {
       //border: 1px solid black;
       padding: 0 100px;
 
-      .song-name{
+      .song-name {
         font-size: 24px;
         margin-bottom: 10px;
       }
-      .song-info{
+
+      .song-info {
         margin-bottom: 30px;
         color: #969896;
       }
-      .lyric-area{
+
+      .lyric-area {
         height: 300px;
+      }
+    }
+  }
+
+  .other-infos{
+    margin-top: 100px;
+    .comments-area{
+      .pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
       }
     }
   }

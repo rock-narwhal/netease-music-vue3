@@ -50,7 +50,9 @@ const scrollLyric = (time) => {
     }
   }
   // 平滑滚动到div中间
-  lyricRef.value[curIdx.value].scrollIntoView({behavior: 'smooth', block: 'center'})
+  if(lyricRef.value && lyricRef.value.length > 0 && lyricRef.value[curIdx.value] && lyricRef.value[curIdx.value].scrollIntoView){
+    lyricRef.value[curIdx.value].scrollIntoView({behavior: 'smooth', block: 'center'})
+  }
 }
 
 onMounted(async () => {
