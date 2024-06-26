@@ -96,6 +96,7 @@ export const playStore = defineStore('play', {
             this.playingInfo.data = data
             this.playingInfo.playing = playing
             this.playingInfo.fee = fee
+            // this.playingInfo.lyric = ''
             this.updatePlayList({id, duration, current:0, name, coverUrl, album, artists, src, data, playing: false, fee})
         },
         updatePlayList(song) {
@@ -148,7 +149,8 @@ export const playStore = defineStore('play', {
                 }],
                 data: [],
                 fee: 0,
-                playing: false
+                playing: false,
+                lyric: '',
             })
             this.playlist.length = 0
         }

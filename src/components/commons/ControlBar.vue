@@ -20,6 +20,8 @@ const audioRef = ref(null)
 const changeProgress = (val) => {
   if (!playingInfo.id) return
   let current = Math.floor(playingInfo.duration * val / 100000)
+  console.log("changeProgress ",val, current)
+  progress.value = val
   if (playingInfo.current === current) return
   audioRef.value.currentTime = current
   playS.updateCurrent(current)

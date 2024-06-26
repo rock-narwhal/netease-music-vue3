@@ -135,18 +135,20 @@ const doChangeProgress = (event) => {
     if (offset < 0) offset = 0
     if (offset > props.size) offset = props.size
     progress.value = (offset) * 100 / props.size
-    onchangeValue(Math.ceil(progress.value))
+    console.log("offset ", offset, props.size, progress.value)
+    // onchangeValue(Math.ceil(progress.value))
   }
 }
 // 双向绑定更新
-const onchangeValue = (val) => {
-  mode.value = val
-}
+// const onchangeValue = (val) => {
+//   console.log("onchangeValue ",val)
+//   // mode.value = val
+// }
 
 // 通知父组件 进度改变
 const afterChange = () => {
   if (isActive.value) {
-    emit('progressChange', mode.value)
+    emit('progressChange', Math.ceil(progress.value))
   }
 }
 </script>

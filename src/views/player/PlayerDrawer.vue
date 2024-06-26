@@ -1,9 +1,10 @@
 <script setup>
 import {ref, onMounted, onUnmounted, computed} from "vue";
 import {playStore} from "@/store/playStore.js";
-import {getLyric} from "@/api/api_music.js";
 import SvgIcon from "@/components/svg/SvgIcon.vue";
 import SongTag from "@/components/commons/SongTag.vue";
+import mitt from "@/utils/MittBus.js";
+import ScrollLyric from "@/components/commons/ScrollLyric.vue";
 
 const player = playStore().player
 const playingInfo = playStore().playingInfo
@@ -15,12 +16,10 @@ const bgStyle = computed(() => {
 })
 
 const onOpen = async () => {
-  if (playingInfo.id > 0 && !playingInfo.lyric) {
-    const res = await getLyric(playingInfo.id)
-    if (res.code !== 200) return
-    playingInfo.lyric = res.lrc.lyric
-  }
+  // 打开时更新歌词
+  mitt.emit('doUpdateLyric')
 }
+
 </script>
 
 <template>
@@ -45,10 +44,12 @@ const onOpen = async () => {
               </song-tag>
             </div>
             <div class="song-info">
-              <p>歌手:{{ playingInfo.artists[0].name }}&nbsp;&nbsp;&nbsp;专辑:{{ playingInfo.album.name }}&nbsp;&nbsp;&nbsp;来源:{{ playingInfo.artists[0].name }}</p>
+              <p>歌手:{{ playingInfo.artists[0].name }}&nbsp;&nbsp;&nbsp;专辑:{{ playingInfo.album.name }}&nbsp;&nbsp;&nbsp;来源:{{
+                  playingInfo.artists[0].name
+                }}</p>
             </div>
             <div class="lyric-area">
-
+              <ScrollLyric></ScrollLyric>
             </div>
           </div>
         </div>
@@ -94,9 +95,10 @@ const onOpen = async () => {
     min-width: 30px;
   }
 
-  .content-area{
+  .content-area {
     width: 920px;
 
+    padding-top: 100px;
   }
 
   .cover-lyric {
@@ -117,6 +119,10 @@ const onOpen = async () => {
     .lyric-wrapper {
       width: 680px;
       border: 1px solid black;
+
+      .lyric-area{
+        height: 400px;
+      }
     }
   }
 }
