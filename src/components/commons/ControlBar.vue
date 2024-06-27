@@ -24,7 +24,7 @@ const changeProgress = (val) => {
   progress.value = val
   if (playingInfo.current === current) return
   audioRef.value.currentTime = current
-  playS.updateCurrent(current)
+  playingInfo.current = current
 }
 
 const playOrPause = () => {

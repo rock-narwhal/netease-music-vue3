@@ -135,7 +135,6 @@ const doChangeProgress = (event) => {
     if (offset < 0) offset = 0
     if (offset > props.size) offset = props.size
     progress.value = (offset) * 100 / props.size
-    console.log("offset ", offset, props.size, progress.value)
     // onchangeValue(Math.ceil(progress.value))
   }
 }
@@ -155,7 +154,7 @@ const afterChange = () => {
 
 <template>
   <div class="slider-wrapper" :style="sliderWrapperStyle">
-    <div class="slider-runaway" @click="clickSlider" ref="sliderRunaway" :style="sliderRunawayStyle">
+    <div class="slider-runaway" @click.stop="clickSlider" ref="sliderRunaway" :style="sliderRunawayStyle">
       <div class="slider-bar" :style="sliderBarStyle"></div>
       <div class="slider-btn-wrapper" :style="sliderBtnStyle"
            @mousedown.stop="mouseDown"

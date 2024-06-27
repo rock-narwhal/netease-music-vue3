@@ -40,14 +40,14 @@ const clickHot = (keywords) => {
     <div class="search-his">
       <div class="his-title clearfix">
         <div class="font-16">搜索历史</div>
-        <button class="no-btn" @click="clearHis" v-show="searchHis.length">
+        <button class="no-btn" @click.stop="clearHis" v-show="searchHis.length">
           <Delete style="width: 1em; height: 1em"/>
         </button>
       </div>
       <div class="his-wrap">
-        <button class="btn btn-white his-item font-12" v-for="val in searchHis" :key="val" @click="clickHot(val)">
+        <button class="btn btn-white his-item font-12" v-for="val in searchHis" :key="val" @click.stop="clickHot(val)">
           {{ val }}
-          <Close class="his-item-btn" @click="deleteHis(val)"/>
+          <Close class="his-item-btn" @click.stop="deleteHis(val)"/>
         </button>
       </div>
     </div>
@@ -58,7 +58,7 @@ const clickHot = (keywords) => {
            :class="{'top-item':(index < 3)}"
            v-for="(item,index) in hotList"
            :key="item.searchWord"
-           @click="clickHot(item.searchWord)">
+           @click.stop="clickHot(item.searchWord)">
         <div class="item-index">{{ index + 1 }}</div>
         <div class="item-info">
           <div class="key-word">

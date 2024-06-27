@@ -197,15 +197,13 @@ const doReply = (item) => {
   }
 
   .cover-lyric {
-    //flex-shrink: 0.1;
-    //z-index: 10;
     display: flex;
     width: 100%;
 
     .cover-wrapper {
       width: 240px;
       padding-top: 100px;
-      margin-left: 30px;
+      margin-left: 60px;
 
       img {
         border-radius: 8px;
@@ -214,8 +212,7 @@ const doReply = (item) => {
     }
 
     .lyric-wrapper {
-      width: 680px;
-      //border: 1px solid black;
+      width: 640px;
       padding: 0 100px;
 
       .song-name {

@@ -9,7 +9,7 @@ import mitt from "@/utils/MittBus.js";
 // 当前播放到哪句歌词
 const curIdx = ref(0)
 const lyricArr = ref([])
-const draw = ref(false) // 手动拖动？？
+const draw = ref(false) // 手动拖动
 
 const playingInfo = playStore().playingInfo
 
@@ -87,7 +87,10 @@ let timer = 0
 const doDraw = () =>{
   window.clearTimeout(timer)
   draw.value = true
-  window.setTimeout(()=> draw.value = false, 10000)
+  window.setTimeout(()=> {
+    draw.value = false
+    scroll(curIdx.value)
+  }, 5000)
 }
 
 </script>
@@ -109,6 +112,7 @@ const doDraw = () =>{
   width: 100%;
   height: 100%;
   overflow-y: auto;
+  transition: all 1.5s;
 
   .lyric-line{
     font-size: 14px;

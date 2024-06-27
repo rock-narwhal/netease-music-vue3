@@ -48,6 +48,11 @@ const triggerMute = () =>{
   }
   playS.triggerMute()
 }
+
+const changeVolume = (val) =>{
+  volume.value = val
+  playingInfo.mute = false
+}
 </script>
 
 <template>
@@ -64,7 +69,7 @@ const triggerMute = () =>{
       <div class="volume-wrapper pointer" @click.stop="triggerMute">
         <svg-icon :name="iconName" class-name="font-24" vertical="-0.3"></svg-icon>
         <div class="volume-slider-wrapper">
-          <control-slider v-model="volume" :vertical="true" :size="100"></control-slider>
+          <control-slider v-model="volume" :vertical="true" :size="100" @progress-change="changeVolume"></control-slider>
         </div>
       </div>
       <div class="playlist-btn pointer" @click.stop="emitter.emit('triggerPlaylistDrawer')">
