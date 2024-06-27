@@ -50,8 +50,26 @@ const scrollLyric = (time) => {
     }
   }
   // 平滑滚动到div中间
-  if(lyricRef.value && lyricRef.value.length > 0 && lyricRef.value[curIdx.value] && lyricRef.value[curIdx.value].scrollIntoView){
-    lyricRef.value[curIdx.value].scrollIntoView({behavior: 'smooth', block: 'center'})
+  // if(lyricRef.value && lyricRef.value.length > 0 && lyricRef.value[curIdx.value] && lyricRef.value[curIdx.value].scrollIntoView){
+  //   lyricRef.value[curIdx.value].scrollIntoView({behavior: 'smooth', block: 'center'})
+  // }
+  scroll(curIdx.value)
+}
+const wrapRef = ref(null)
+
+const scroll = (index) =>{
+  let hw = wrapRef.value.offsetHeight / 2 //歌词容器高度的一半
+
+  let ch = 0  //歌词内容到index的高度
+  for(let i=0;i<= index; i++){
+    if(i === index){
+      ch += lyricRef.value[i].offsetHeight / 2
+    }else{
+      ch += lyricRef.value[i].offsetHeight
+    }
+  }
+  if(ch > hw){
+    wrapRef.value.scrollTop = ch - hw
   }
 }
 
@@ -75,7 +93,7 @@ const doDraw = () =>{
 </script>
 
 <template>
-  <div class="lyric-wrap" @wheel="doDraw">
+  <div class="lyric-wrap" @wheel="doDraw" ref="wrapRef">
     <div v-for="(item,index) in lyricArr"
          :key="item.time"
          :class="{active: index === curIdx}"
@@ -91,6 +109,7 @@ const doDraw = () =>{
   width: 100%;
   height: 100%;
   overflow-y: auto;
+
   .lyric-line{
     font-size: 14px;
     color: #969896;
