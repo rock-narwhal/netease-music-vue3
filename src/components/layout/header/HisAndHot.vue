@@ -64,10 +64,11 @@ const clickHot = (keywords) => {
           <div class="key-word">
             <span class="font-12 item-key">{{ item.searchWord }}</span>
             <span style="color: #c2c1c1" class="font-12 mleft-10">{{ item.score }}</span>
+<!--            <span style="color: #999999" class="font-12">{{ item.content }}</span>-->
           </div>
-          <div>
-            <span style="color: #999999" class="font-12">{{ item.content }}</span>
-          </div>
+<!--          <div>-->
+<!--            <span style="color: #999999" class="font-12">{{ item.content }}</span>-->
+<!--          </div>-->
         </div>
       </div>
     </div>

@@ -39,12 +39,13 @@ watch(() => playingInfo.current, (val) => {
 const scrollLyric = (time) => {
   if (lyricArr.value.length === 0) return
   if (draw.value) return
+  let ind = 0
   for (let i = 0; i < lyricArr.value.length; i++) {
     if (i === lyricArr.value.length - 1) {
-      curIdx.value = i
+      ind = i
     } else {
       if (lyricArr.value[i].time <= time && lyricArr.value[i + 1].time > time) {
-        curIdx.value = i
+        ind = i
         break
       }
     }
@@ -53,6 +54,8 @@ const scrollLyric = (time) => {
   // if(lyricRef.value && lyricRef.value.length > 0 && lyricRef.value[curIdx.value] && lyricRef.value[curIdx.value].scrollIntoView){
   //   lyricRef.value[curIdx.value].scrollIntoView({behavior: 'smooth', block: 'center'})
   // }
+  if(ind === curIdx.value) return
+  curIdx.value = ind
   scroll(curIdx.value)
 }
 const wrapRef = ref(null)
