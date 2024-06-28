@@ -27,6 +27,7 @@ const updateLyric = async () => {
 watch(() => playingInfo.id, () => {
   curIdx.value = 0
   lyricArr.value = []
+  lyricRef.value.scrollTop = 0
   updateLyric()
 })
 
