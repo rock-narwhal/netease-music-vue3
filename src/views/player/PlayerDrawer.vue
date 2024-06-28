@@ -61,6 +61,9 @@ const queryComments = async () => {
 watch(() => playingInfo.id, (val) => {
   queryInfo.id = val
   queryInfo.offset = 0
+  if(playerRef.value){
+    playerRef.value.scrollTop = 0
+  }
   queryComments()
 })
 
