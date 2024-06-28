@@ -119,6 +119,7 @@ const doDraw = () =>{
   width: 100%;
   height: 100%;
   overflow-y: auto;
+  scroll-behavior: smooth;
   transition: all 1.5s;
 
   .lyric-line{

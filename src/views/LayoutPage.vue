@@ -119,6 +119,7 @@ watch(() => route.path, val => {
     overflow-x: hidden;
     width: 100%;
     height: auto;
+    scroll-behavior: smooth; //平滑滚动
   }
 }
 
