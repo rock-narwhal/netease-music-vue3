@@ -22,6 +22,9 @@ const onOpen = async () => {
   mitt.emit('doUpdateLyric')
 
   queryInfo.id = playingInfo.id
+  if(playerRef.value){
+    playerRef.value.scrollTop = 0
+  }
   await queryComments()
 }
 
