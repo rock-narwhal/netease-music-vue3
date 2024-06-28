@@ -58,8 +58,8 @@ const styleObj = computed(() => {
 <style scoped lang="less">
 .song-tag-wrapper {
   outline: 0;
-  background-color: #ffffff;
   box-sizing: border-box;
   display: inline-block;
+  background-color: transparent;
 }
 </style>
