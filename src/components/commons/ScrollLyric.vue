@@ -27,7 +27,9 @@ const updateLyric = async () => {
 watch(() => playingInfo.id, () => {
   curIdx.value = 0
   lyricArr.value = []
-  lyricRef.value.scrollTop = 0
+  if(lyricRef.value){
+    lyricRef.value.scrollTop = 0
+  }
   updateLyric()
 })
 
@@ -62,6 +64,7 @@ const scrollLyric = (time) => {
 const wrapRef = ref(null)
 
 const scroll = (index) =>{
+  if(lyricRef.value.length === 0) return
   let hw = wrapRef.value.offsetHeight / 2 //歌词容器高度的一半
 
   let ch = 0  //歌词内容到index的高度

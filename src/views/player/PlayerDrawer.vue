@@ -64,8 +64,13 @@ watch(() => playingInfo.id, (val) => {
   queryComments()
 })
 
+const playerRef = ref(null)
+
 const onPageChange = (page) => {
   if (page === pageInfo.current) return
+  if(playerRef.value){
+    playerRef.value.scrollTop = 600
+  }
   pageInfo.current = page
   queryInfo.offset = (page - 1) * queryInfo.limit
   queryComments()
@@ -84,7 +89,7 @@ const doReply = (item) => {
              :with-header="false"
              :z-index="90"
              @open="onOpen">
-    <div class="player-wrapper" :style="bgStyle">
+    <div class="player-wrapper" :style="bgStyle" ref="playerRef">
       <div class="space-aside"></div>
       <div class="content-area">
         <div class="cover-lyric">
@@ -158,16 +163,19 @@ const doReply = (item) => {
 <style scoped lang="less">
 .full-height-drawer .el-drawer__container {
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  //overflow-x: hidden;
+  //overflow-y: auto;
 }
 
 .player-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
   height: 100%;
   width: 100%;
   z-index: 1;
   display: flex;
   position: relative;
+  scroll-behavior: smooth;
 
   &::before {
     content: "";
@@ -234,6 +242,7 @@ const doReply = (item) => {
   .other-infos{
     margin-top: 100px;
     .comments-area{
+      scroll-behavior: smooth;
       .pagination {
         width: 100%;
         display: flex;
