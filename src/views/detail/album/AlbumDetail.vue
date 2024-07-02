@@ -34,7 +34,7 @@ onMounted(() => {
 })
 
 const getAlbumDetail = async () => {
-  const res = await albumDetail(album.value.id)
+  const res = await albumDetail({id: album.value.id})
   if (res.code !== 200) return
   album.value = res.album
   songs.value = res.songs

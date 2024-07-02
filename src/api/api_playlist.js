@@ -15,7 +15,7 @@ export const getPlayListByCat = ({limit, order, cat, offset}) => get('/top/playl
 /* 歌单详情 */
 export const getPlayListDetail = (id) => get('/playlist/detail',{id})
 /* 歌单歌曲列表 */
-export const playlistSongs = (id) => get('/playlist/track/all',{id})
+export const playlistSongs = ({id, offset, limit}) => get('/playlist/track/all',{id, offset, limit})
 /* 歌单动态信息，点赞收藏等 */
 export const playlistDynamic = (id) => get('/playlist/detail/dynamic', {id})
 /* 歌单评论 */
