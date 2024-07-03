@@ -69,6 +69,8 @@ ul {
     img {
       border-radius: 5px;
       width: 314px;
+      aspect-ratio: 1.77;
+      object-fit: cover;
     }
 
     button {

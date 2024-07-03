@@ -44,13 +44,17 @@ const clickLogout = () => {
       }).catch(() => {
       })
 }
+
+const toHomePage = () =>{
+  router.push({name:'HomePage'})
+}
 </script>
 
 <template>
   <div class="header-bar">
     <!-- logo区 -->
     <div class="logo-wrap pointer">
-      <i class="iconfont icon-logView"></i>
+      <i class="iconfont icon-logView" @click="toHomePage"></i>
     </div>
     <!-- 历史按钮 -->
     <div class="history-btn">
