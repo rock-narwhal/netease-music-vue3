@@ -56,19 +56,22 @@ const load = () => {
 
 <style scoped lang="less">
 ul {
+
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+  // 网格布局
+  grid-template-columns: repeat(auto-fill,minmax(265px, 1fr));
 
   li {
-    width: 19%;
+    //width: 19%;
+    width: 100%;
     position: relative;
-    margin-bottom: 30px;
 
     img {
       border-radius: 5px;
-      width: 314px;
+      width: 1fr;
       aspect-ratio: 1.77;
       object-fit: cover;
     }
