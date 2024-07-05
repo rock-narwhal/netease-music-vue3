@@ -14,7 +14,10 @@ const draw = ref(false) // 手动拖动
 const playingInfo = playStore().playingInfo
 
 const updateLyric = async () => {
-  if (lyricArr.value.length !== 0) return
+  if (lyricArr.value.length !== 0){
+    scrollLyric(playingInfo.current * 1000)
+    return
+  }
   if (playingInfo.id === 0) return
   const res = await getLyric(playingInfo.id)
   if (res.code !== 200) return
@@ -22,6 +25,7 @@ const updateLyric = async () => {
   if (playingInfo.lyric) {
     lyricArr.value = parseLyric(playingInfo.lyric)
   }
+  scrollLyric(playingInfo.current * 1000)
 }
 
 watch(() => playingInfo.id, () => {
@@ -40,7 +44,10 @@ watch(() => playingInfo.current, (val) => {
 })
 
 const scrollLyric = (time) => {
-  if (lyricArr.value.length === 0) return
+  if (lyricArr.value.length === 0){
+    wrapRef.value.scrollTop = 0
+    return
+  }
   if (draw.value) return
   let ind = 0
   for (let i = 0; i < lyricArr.value.length; i++) {
@@ -57,14 +64,17 @@ const scrollLyric = (time) => {
   // if(lyricRef.value && lyricRef.value.length > 0 && lyricRef.value[curIdx.value] && lyricRef.value[curIdx.value].scrollIntoView){
   //   lyricRef.value[curIdx.value].scrollIntoView({behavior: 'smooth', block: 'center'})
   // }
-  if(ind === curIdx.value) return
+  // if(ind === curIdx.value) return
   curIdx.value = ind
   scroll(curIdx.value)
 }
 const wrapRef = ref(null)
 
 const scroll = (index) =>{
-  if(lyricRef.value.length === 0) return
+  if(!lyricRef.value || lyricRef.value.length === 0){
+    wrapRef.value.scrollTop = 0
+    return
+  }
   let hw = wrapRef.value.offsetHeight / 2 //歌词容器高度的一半
 
   let ch = 0  //歌词内容到index的高度
@@ -77,6 +87,8 @@ const scroll = (index) =>{
   }
   if(ch > hw){
     wrapRef.value.scrollTop = ch - hw
+  }else{
+    wrapRef.value.scrollTop = 0
   }
 }
 
